@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrey Pandit</title>
+    <style>
+        :root {
+            --main-color: #0366d6;
+            --text-color: #24292e;
+            --bg-color: #fff;
+            --secondary-bg: #f6f8fa;
+            --border-color: #e1e4e8;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--main-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+            color: var(--main-color);
+        }
+        
+        .quick-links-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link {
+            display: flex;
+            align-items: center;
+            background-color: var(--secondary-bg);
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .quick-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #f0f3f9;
+        }
+        
+        .quick-link-icon {
+            margin-right: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .cv-link {
+            background-color: var(--main-color);
+            color: white;
+        }
+        
+        .cv-link:hover {
+            background-color: #0550a0;
+        }
+        
+        nav {
+            margin: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 1rem 0.5rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s, color 0.3s;
+        }
+        
+        nav a:hover {
+            border-bottom: 2px solid var(--main-color);
+            color: var(--main-color);
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: var(--main-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .intro {
+            background-color: var(--secondary-bg);
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        
+        .highlights-container {
+            background-color: var(--secondary-bg);
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        
+        .highlights-scroll {
+            max-height: 200px;
+            overflow-y: auto;
+            padding-right: 10px;
+            /* Styling the scrollbar */
+            scrollbar-width: thin;
+            scrollbar-color: var(--main-color) var(--secondary-bg);
+        }
+        
+        .highlights-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .highlights-scroll::-webkit-scrollbar-track {
+            background: var(--secondary-bg);
+            border-radius: 10px;
+        }
+        
+        .highlights-scroll::-webkit-scrollbar-thumb {
+            background-color: var(--main-color);
+            border-radius: 10px;
+        }
+        
+        .highlights-container ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        .highlights-container li {
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .highlights-container li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .publication {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .publication:last-child {
+            border-bottom: none;
+        }
+        
+        .publication h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication p {
+            margin: 0.5rem 0;
+        }
+        
+        .authors {
+            font-style: italic;
+        }
+        
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-header h3 {
+            margin: 0;
+        }
+        
+        .experience-header span {
+            color: #586069;
+        }
+        
+        .experience-content {
+            padding-left: 1rem;
+            border-left: 2px solid var(--main-color);
+        }
+        
+        .top-section {
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+        }
+        
+        /* Affiliations styles */
+        .affiliations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .affiliation-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: var(--secondary-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .affiliation-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .affiliation-logo {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .affiliation-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .affiliation-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--main-color);
+            font-size: 1.1rem;
+        }
+        
+        .affiliation-title, .affiliation-period, .affiliation-area {
+            margin: 0.2rem 0;
+        }
+        
+        .affiliation-title {
+            font-weight: bold;
+        }
+        
+        .affiliation-period {
+            color: #586069;
+            font-size: 0.9rem;
+        }
+        
+        .affiliation-area {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .internships-title {
+            margin: 2rem 0 1.5rem 0;
+            color: var(--main-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            color: #586069;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            margin: 0 0.5rem;
+            color: var(--main-color);
+            text-decoration: none;
+        }
+        
+                    @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .quick-links-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .quick-link {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            nav {
+                flex-direction: column;
+            }
+            
+            .main-nav {
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0.5rem;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .affiliations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/api/placeholder/150/150" alt="Profile Picture" class="profile-img">
+            <h1>Shrey Pandit</h1>
+            <p>AI Researcher | MS CS @ UT Austin</p>
+            
+            <div class="quick-links-container">
+                <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" class="quick-link">
+                    <span class="quick-link-icon">🎓</span>
+                    <span>Google Scholar</span>
+                </a>
+                <a href="#" class="quick-link cv-link">
+                    <span class="quick-link-icon">📄</span>
+                    <span>CV</span>
+                </a>
+                <a href="mailto:shreypandit@utexas.edu" class="quick-link">
+                    <span class="quick-link-icon">✉️</span>
+                    <span>Email</span>
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#technical">Technical Website</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <div class="intro">
+                <p>Hey, I am <strong>Shrey Pandit</strong></p>
+                <p>I am currently pursuing a Master's in Computer Science at the University of Texas at Austin, following my undergraduate studies in Computer Science at Birla Institute of Technology and Science, Pilani - Goa Campus. My passion lies in Machine Learning, with a particular focus on Natural Language Processing. I am committed to bridging the gap between theoretical knowledge and practical application.</p>
+                <p>My professional journey includes a research internship at Salesforce in Palo Alto, California, where I worked with Dr. Shafiq Joty on training state-of-the-art Large Language Models (LLMs).</p>
+                <p>Additionally, I served as a research intern at Microsoft Research Lab, collaborating with Sunayana Sitaram on evaluation techniques for massive multilingual models. I have also worked as a collaborator at Princeton-NLP alongside Ameet Deshpande and Karthik Narasimhan.</p>
+                <p>These experiences have equipped me with a robust foundation in machine learning and natural language processing, fueling my dedication to advancing in this dynamic field.</p>
+            </div>
+            
+            <section id="affiliations" class="top-section">
+                <h2>Affiliations</h2>
+                
+                <div class="affiliations-grid">
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="BITS Pilani Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>BITS Pilani, Goa</h3>
+                            <p class="affiliation-title">Gold Medallist</p>
+                            <p class="affiliation-period">2016-2020</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="Microsoft Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>Microsoft</h3>
+                            <p class="affiliation-period">2020-2021</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="UIUC Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>UIUC</h3>
+                            <p class="affiliation-title">Siebel Scholar</p>
+                            <p class="affiliation-period">2021-2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="DeepMind Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>Google DeepMind</h3>
+                            <p class="affiliation-period">2023-Present</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="internships-title">Internships</h3>
+                
+                <div class="affiliations-grid">
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="TUM Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>Technical University of Munich</h3>
+                            <p class="affiliation-title">DAAD Scholar</p>
+                            <p class="affiliation-period">Summer 2019</p>
+                            <p class="affiliation-area">Interpretable ML</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="American Express Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>American Express</h3>
+                            <p class="affiliation-title">ML Research Intern</p>
+                            <p class="affiliation-period">Spring 2020</p>
+                            <p class="affiliation-area">Model Reliability & Calibration</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="Meta Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>Meta</h3>
+                            <p class="affiliation-title">Reality Labs, SWE Intern</p>
+                            <p class="affiliation-period">Summer 2022</p>
+                            <p class="affiliation-area">Augmented Reality</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliation-item">
+                        <div class="affiliation-logo">
+                            <img src="/api/placeholder/100/100" alt="Amazon Logo" />
+                        </div>
+                        <div class="affiliation-info">
+                            <h3>Amazon, Search Science and AI</h3>
+                            <p class="affiliation-title">Applied Science Intern</p>
+                            <p class="affiliation-period">Summer 2023</p>
+                            <p class="affiliation-area">Multi-task Learning in Language Models</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="highlights-container">
+                <h2>Highlights!</h2>
+                <div class="highlights-scroll">
+                    <ul>
+                        <li><strong>Feb 25'</strong> - Paper accepted at ICLR 2025 on LLM Reasoning / Long Context Analysis! 🎉</li>
+                        <li><strong>Aug 23'</strong> - Joined UT Austin for my Master's in Computer Science</li>
+                        <li><strong>Jul 24'</strong> - Paper accepted at ICML 2024 on Next Generation of Sequence Modeling Architectures! 🔥</li>
+                        <li><strong>May 23'</strong> - Got a paper accepted at ACL 2023 🔥</li>
+                        <li><strong>Jan 23'</strong> - Started a project at <strong>APPCAIR Lab</strong> in collaboration with <strong>TCS Research 🥳</strong></li>
+                        <li><strong>Jan 23'</strong> - Got selected for <strong>Google Research week</strong> 🎊</li>
+                        <li><strong>Jul 22'</strong> - Joined Microsoft Research as a Research Intern 🎉</li>
+                        <li><strong>Apr 22'</strong> - Our paper on modality selection via submodular maximization is accepted at UAI 2022! 📄</li>
+                        <li><strong>May 22'</strong> - Started internship at Meta Reality Labs as a SWE intern</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="publication">
+                <h3>FaithEval: Can Your Language Model Stay Faithful to Context</h3>
+                <p>Accepted at ICLR 2025</p>
+            </div>
+            
+            <div class="publication">
+                <h3>SFR-RAG: Towards Contextually Faithful LLMs</h3>
+                <p><a href="https://blog.salesforceairesearch.com/sfr-rag/">Blog Post</a></p>
+                <p class="authors">Authors - Xuan-Phi Nguyen, <strong>Shrey Pandit</strong>, Senthil Purushwalkam, Austin Xu, Hailin Chen, Yifei Ming, Zixuan Ke, Silvio Savarese, Caiming Xong, Shafiq Joty</p>
+                <p>Technical Report, 2024</p>
+            </div>
+            
+            <div class="publication">
+                <h3>CodeUpdateArena: Benchmarking Knowledge Editing on API Updates</h3>
+                <p>Preprint, Under Review, 2024</p>
+                <p class="authors">Authors - Zeyu Leo Liu, <strong>Shrey Pandit</strong>, Xi Ye, Eunsol Choi, Greg Durrett</p>
+            </div>
+            
+            <div class="publication">
+                <h3>AdaPT: A Set of Guidelines for Hyperbolic Multimodal Multilingual NLP</h3>
+                <p>Accepted at NAACL 2024</p>
+                <p class="authors">Authors - Ramit Sawhney, <strong>Shrey Pandit</strong>, Vishwa Shah, Megh Thakkar, Shafiq Joty</p>
+            </div>
+            
+            <div class="publication">
+                <h3>A Comparative Study of Model Compression Techniques on Fairness in Language Models</h3>
+                <p>Accepted at ACL 2023</p>
+                <p class="authors">Authors - Krithika Ramesh, Arnav Chavan, <strong>Shrey Pandit</strong>, Sunayana Sitaram</p>
+            </div>
+            
+            <div class="publication">
+                <h3>Can LLMs solve generative visual analogies?</h3>
+                <p>Accepted at Interactions between Analogical Reasoning & ML @IJCAI, 2023</p>
+                <p class="authors">Authors - <strong>Shrey Pandit</strong>, Gautam Shroff, Lovekesh Vig, Ashwin Srinivasan</p>
+            </div>
+            
+            <div class="publication">
+                <h3>DMIX: Adaptive distance-aware interpolative mixup</h3>
+                <p>Accepted at ACL, 2022</p>
+                <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Di Jin, Diyi Yang, Lucie Flek</p>
+            </div>
+            
+            <div class="publication">
+                <h3>CIAug: Equipping Interpolative Augmentation with Curriculum Learning</h3>
+                <p>Accepted at NAACL, 2022</p>
+                <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Sarvagya Malaviya, Yuval Pinter</p>
+            </div>
+            
+            <div class="publication">
+                <h3>An Autoencoder-Based Approach to Simulate Sports Games</h3>
+                <p>Presented at MLSA@PKDD/ECML, 2020</p>
+                <p class="authors">Authors - Vaswani Ashwin, Ganguly Rijul, Shah Het, S Sharan Ranjit, <strong>Pandit Shrey</strong>, and Bothara Samruddhi</p>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Salesforce Research, Palo Alto, California</h3>
+                    <span>June 2024 – August 2024</span>
+                </div>
+                <p><em>AI Research Intern</em></p>
+                <div class="experience-content">
+                    <ul>
+                        <li>Created a novel modification in LLM structure that results in competitive performance in RAG tasks, surpassing GPT-4 and Command R Plus models while being 10x-100x smaller in size.</li>
+                        <li>Curated high quality Faithful evaluation dataset, that checks faithfulness and hallucination problems in LLMs.</li>
+                        <li>Worked on creating SFR-RAG 9B, which is a novel LLM, that outperformed (at the time of release) models 10x its size.</li>
+                        <li>It included a novel "thought" "observation" strategy which gave significant performance boost in Multihop QA tasks.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>TAUR Lab, University of Texas at Austin, TX</h3>
+                    <span>July 2023 – June 2024</span>
+                </div>
+                <p><em>Graduate Research Assistant</em></p>
+                <div class="experience-content">
+                    <ul>
+                        <li>Pioneered efficient debugging methods for correcting LLM-generated programs, employing feedback and error trace techniques tailored to LLMs.</li>
+                        <li>Achieved significant improvements in model accuracy & error rates.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Microsoft Research, Bengaluru, India</h3>
+                    <span>July 2022 – Jan 2023</span>
+                </div>
+                <p><em>Research Intern</em></p>
+                <div class="experience-content">
+                    <ul>
+                        <li>Spearheaded the compression of large language models using adapters, achieving a balance between computational efficiency & bias.</li>
+                        <li>Successfully deployed models, enhancing speed and fairness in applications.</li>
+                        <li>Worked with Dr. Sunayana Sitaram on evaluation of zero-shot performance of compressed massive multilingual models.</li>
+                        <li>Also worked on the effect on fairness of compressed vs original models, in both intrinsic and extrinsic measures.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Google Summer of Code, Online</h3>
+                    <span>June 2022 – September 2022</span>
+                </div>
+                <p><em>Student Collaborator</em></p>
+                <div class="experience-content">
+                    <ul>
+                        <li>Engineered a novel end-to-end multimodal vision transformer to detect hand gestures in TV news clippings, facilitating the creation of accessible captions for the specially-abled.</li>
+                        <li>Contributor to Red Hen Lab, project based on multimodal analysis.</li>
+                        <li>Topic - Classification of body keypoint trajectories of gesture co-occurring with time expressions.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Princeton NLP Lab, Online</h3>
+                    <span>June 2021 – May 2022</span>
+                </div>
+                <p><em>Informal Research Collaborator</em></p>
+                <div class="experience-content">
+                    <ul>
+                        <li>Innovated a unique data augmentation method to bolster the performance of low-resourced languages in transformer models.</li>
+                        <li>This approach led to improvements in language processing capabilities.</li>
+                        <li>Working on Data-augmentation techniques in NLP with Ameet Deshpande and Karthik Narasimhan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="teaching">
+            <h2>Teaching</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Teaching Assistant - Elements of Software engineering - CS330E</h3>
+                    <span>@ UT Austin</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Had to take office hours for doubt clarification</li>
+                        <li>Evaluation of assignments, quizzes and projects</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Instructor for Intro to Machine Learning and Deep Learning - Jan '21</h3>
+                    <span>@ CTE BITS Goa</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Delivering lectures related to ML and DL to various students of the different semesters</li>
+                        <li>Creating tests and code notebooks</li>
+                        <li>Overall management of the course</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Instructor for Introduction to Deep Learning - May '21</h3>
+                    <span>@ QSTP 2021</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Taught Deep Learning course to 300+ Students from various campuses across India, in a span of 2 months.</li>
+                        <li>Content varied across from basic python to CNN, NLP problems.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Mentor for Intro to Deep Learning - Oct '20</h3>
+                    <span>@ CTE BITS Goa</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>I was responsible for taking lectures, creating code notebooks, creating and evaluating Quizzes for students of various semesters and colleges.</li>
+                        <li>Also helped and mentored students create a personal project related to DL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <footer>
+            <div class="social-links">
+                <a href="mailto:shreypandit@utexas.edu">Email</a> |
+                <a href="https://linkedin.com/in/shreypandit/">LinkedIn</a> |
+                <a href="https://github.com/ShreyPandit">GitHub</a>
+            </div>
+            <p>&copy; 2025 Shrey Pandit. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
