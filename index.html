@@ -370,6 +370,99 @@
                 grid-template-columns: 1fr;
             }
         }
+        .publication {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    }
+    
+    .publication:last-child {
+        border-bottom: none;
+    }
+    
+    .publication-image {
+        flex: 0 0 80px;
+        margin-right: 1.5rem;
+    }
+    
+    .publication-image img {
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .publication-content {
+        flex: 1;
+    }
+    
+    .publication-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        color: var(--main-color);
+    }
+    
+    .publication-links {
+        margin: 0.75rem 0;
+    }
+    
+    .publication-links a {
+        display: inline-block;
+        margin-right: 0.75rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .paper-link {
+        background-color: var(--main-color);
+        color: white;
+    }
+    
+    .paper-link:hover {
+        background-color: #0550a0;
+    }
+    
+    .code-link {
+        background-color: #333;
+        color: white;
+    }
+    
+    .code-link:hover {
+        background-color: #555;
+    }
+    
+    .blog-link {
+        background-color: #28a745;
+        color: white;
+    }
+    
+    .blog-link:hover {
+        background-color: #218838;
+    }
+    
+    .authors {
+        font-style: italic;
+        font-size: 0.9rem;
+        margin: 0.5rem 0 0 0;
+        color: #586069;
+    }
+    
+    @media (max-width: 600px) {
+        .publication {
+            flex-direction: column;
+        }
+        
+        .publication-image {
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
+    }
     </style>
 </head>
 <body>
@@ -506,62 +599,159 @@
         </section>
         
         <section id="publications">
-            <h2>Publications</h2>
-            
-            <div class="publication">
-                <h3>FaithEval: Can Your Language Model Stay Faithful to Context</h3>
-                <p>Accepted at ICLR 2025</p>
+    <h2>Publications</h2>
+
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="FaithEval Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>Medical Hallucination Detection A Comprehensive Benchmark for Detecting Hallucinations in Medical LLM Outputs</h3>
+            <p>Preprint</p>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2502.14302" class="paper-link">Preprint</a>
+                <a href="https://medhallu.github.io/" class="code-link">Website</a>
             </div>
-            
-            <div class="publication">
-                <h3>SFR-RAG: Towards Contextually Faithful LLMs</h3>
-                <p><a href="https://blog.salesforceairesearch.com/sfr-rag/">Blog Post</a></p>
-                <p class="authors">Authors - Xuan-Phi Nguyen, <strong>Shrey Pandit</strong>, Senthil Purushwalkam, Austin Xu, Hailin Chen, Yifei Ming, Zixuan Ke, Silvio Savarese, Caiming Xong, Shafiq Joty</p>
-                <p>Technical Report, 2024</p>
+            <p class="authors">Authors - <strong>Shrey Pandit</strong>, Jiawei Xu, Junyuan Hong, Zhangyang Wang, Tianlong Chen, Kaidi Xu, Ying Ding</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="FaithEval Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>FaithEval: Can Your Language Model Stay Faithful to Context</h3>
+            <p>Accepted at ICLR 2025</p>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2410.03727" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>CodeUpdateArena: Benchmarking Knowledge Editing on API Updates</h3>
-                <p>Preprint, Under Review, 2024</p>
-                <p class="authors">Authors - Zeyu Leo Liu, <strong>Shrey Pandit</strong>, Xi Ye, Eunsol Choi, Greg Durrett</p>
+            <p class="authors">Authors - Yifei Ming, Senthil Purushwalkam, <strong>Shrey Pandit</strong>, Zixuan Ke, Xuan-Phi Nguyen, Caiming Xiong, Shafiq Joty </p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="SFR-RAG Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>SFR-RAG: Towards Contextually Faithful LLMs</h3>
+            <p>Technical Report, 2024</p>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2409.09916" class="paper-link">Paper</a>
+                <a href="https://blog.salesforceairesearch.com/sfr-rag/" class="blog-link">Blog Post</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>AdaPT: A Set of Guidelines for Hyperbolic Multimodal Multilingual NLP</h3>
-                <p>Accepted at NAACL 2024</p>
-                <p class="authors">Authors - Ramit Sawhney, <strong>Shrey Pandit</strong>, Vishwa Shah, Megh Thakkar, Shafiq Joty</p>
+            <p class="authors">Authors - Xuan-Phi Nguyen, <strong>Shrey Pandit</strong>, Senthil Purushwalkam, Austin Xu, Hailin Chen, Yifei Ming, Zixuan Ke, Silvio Savarese, Caiming Xong, Shafiq Joty</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="CodeUpdateArena Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>CodeUpdateArena: Benchmarking Knowledge Editing on API Updates</h3>
+            <p>Preprint, Under Review, 2024</p>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2407.06249" class="paper-link">Preprint</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>A Comparative Study of Model Compression Techniques on Fairness in Language Models</h3>
-                <p>Accepted at ACL 2023</p>
-                <p class="authors">Authors - Krithika Ramesh, Arnav Chavan, <strong>Shrey Pandit</strong>, Sunayana Sitaram</p>
+            <p class="authors">Authors - Zeyu Leo Liu, <strong>Shrey Pandit</strong>, Xi Ye, Eunsol Choi, Greg Durrett</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="AdaPT Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>AdaPT: A Set of Guidelines for Hyperbolic Multimodal Multilingual NLP</h3>
+            <p>Accepted at NAACL 2024</p>
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2024.findings-naacl.114/" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>Can LLMs solve generative visual analogies?</h3>
-                <p>Accepted at Interactions between Analogical Reasoning & ML @IJCAI, 2023</p>
-                <p class="authors">Authors - <strong>Shrey Pandit</strong>, Gautam Shroff, Lovekesh Vig, Ashwin Srinivasan</p>
+            <p class="authors">Authors - Ramit Sawhney, <strong>Shrey Pandit</strong>, Vishwa Shah, Megh Thakkar, Shafiq Joty</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="Compression Techniques Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>A Comparative Study of Model Compression Techniques on Fairness in Language Models</h3>
+            <p>Accepted at ACL 2023</p>
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2023.acl-long.878/" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>DMIX: Adaptive distance-aware interpolative mixup</h3>
-                <p>Accepted at ACL, 2022</p>
-                <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Di Jin, Diyi Yang, Lucie Flek</p>
+            <p class="authors">Authors - Krithika Ramesh, Arnav Chavan, <strong>Shrey Pandit</strong>, Sunayana Sitaram</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="Visual Analogies Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>Can LLMs solve generative visual analogies?</h3>
+            <p>Accepted at Interactions between Analogical Reasoning & ML @IJCAI, 2023</p>
+            <div class="publication-links">
+                <a href="https://ceur-ws.org/Vol-3492/paper3.pdf" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>CIAug: Equipping Interpolative Augmentation with Curriculum Learning</h3>
-                <p>Accepted at NAACL, 2022</p>
-                <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Sarvagya Malaviya, Yuval Pinter</p>
+            <p class="authors">Authors - <strong>Shrey Pandit</strong>, Gautam Shroff, Lovekesh Vig, Ashwin Srinivasan</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="DMIX Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>DMIX: Adaptive distance-aware interpolative mixup</h3>
+            <p>Accepted at ACL, 2022</p>
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2022.acl-short.67/" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-            
-            <div class="publication">
-                <h3>An Autoencoder-Based Approach to Simulate Sports Games</h3>
-                <p>Presented at MLSA@PKDD/ECML, 2020</p>
-                <p class="authors">Authors - Vaswani Ashwin, Ganguly Rijul, Shah Het, S Sharan Ranjit, <strong>Pandit Shrey</strong>, and Bothara Samruddhi</p>
+            <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Di Jin, Diyi Yang, Lucie Flek</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="CIAug Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>CIAug: Equipping Interpolative Augmentation with Curriculum Learning</h3>
+            <p>Accepted at NAACL, 2022</p>
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2022.naacl-main.127/" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
             </div>
-        </section>
+            <p class="authors">Authors - Ramit Sawhney, Megh Thakkar, <strong>Shrey Pandit</strong>, Ritesh Singh Soun, Sarvagya Malaviya, Yuval Pinter</p>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div class="publication-image">
+            <img src="/api/placeholder/80/80" alt="Autoencoder Paper" />
+        </div>
+        <div class="publication-content">
+            <h3>An Autoencoder-Based Approach to Simulate Sports Games</h3>
+            <p>Presented at MLSA@PKDD/ECML, 2020</p>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2007.10257" class="paper-link">Paper</a>
+<!--                 <a href="#" class="code-link">Code</a> -->
+            </div>
+            <p class="authors">Authors - Vaswani Ashwin, Ganguly Rijul, Shah Het, S Sharan Ranjit, <strong>Pandit Shrey</strong>, and Bothara Samruddhi</p>
+        </div>
+    </div>
+</section>
         
         <section id="experience">
             <h2>Experience</h2>
