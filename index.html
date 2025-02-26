@@ -154,27 +154,32 @@
         }
         
         .highlights-scroll {
-            max-height: 200px;
-            overflow-y: auto;
-            padding-right: 10px;
-            /* Styling the scrollbar */
-            scrollbar-width: thin;
-            scrollbar-color: var(--main-color) var(--secondary-bg);
-        }
-        
-        .highlights-scroll::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        .highlights-scroll::-webkit-scrollbar-track {
-            background: var(--secondary-bg);
-            border-radius: 10px;
-        }
-        
-        .highlights-scroll::-webkit-scrollbar-thumb {
-            background-color: var(--main-color);
-            border-radius: 10px;
-        }
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+    /* Make scrollbar always visible */
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) var(--secondary-bg);
+    overflow-y: scroll; /* Forces scrollbar to always show */
+    }
+    
+    .highlights-scroll::-webkit-scrollbar {
+        width: 8px;
+        background: #f1f1f1;
+    }
+    
+    .highlights-scroll::-webkit-scrollbar-track {
+        background: var(--secondary-bg);
+        border-radius: 10px;
+    }
+    
+    .highlights-scroll::-webkit-scrollbar-thumb {
+        background-color: var(--main-color);
+        border-radius: 10px;
+    }
         
         .highlights-container ul {
             margin: 0;
@@ -489,9 +494,65 @@
     .email-link:hover {
         background-color: #b73b30;
     }
+        .top-navbar {
+    background-color: #f6f8fa;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-link:hover {
+    background-color: rgba(3, 102, 214, 0.1);
+    color: var(--main-color);
+}
+
+.navbar-link.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        padding: 0 1rem;
+        justify-content: space-between;
+    }
+    
+    .navbar-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
     </style>
 </head>
 <body>
+    <div class="top-navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-link active">Home</a>
+        <a href="teaching.html" class="navbar-link">Teaching & Mentorship</a>
+        <a href="talks.html" class="navbar-link">Presentations & Talks</a>
+    </div>
+    </div>
     <div class="container">
         <header>
             <img src="images/Profile.jpg" alt="Profile Picture" class="profile-img">
