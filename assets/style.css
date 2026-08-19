@@ -130,6 +130,14 @@ strong {
     margin-bottom: 0.5rem;
 }
 
+.name-devanagari {
+    font-family: "Noto Serif Devanagari", var(--serif);
+    font-size: 0.58em;
+    font-weight: 500;
+    color: var(--text-soft);
+    white-space: nowrap;
+}
+
 .page-header .role {
     font-size: 1.05rem;
     color: var(--text-soft);
