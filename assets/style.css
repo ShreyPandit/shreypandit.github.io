@@ -1,0 +1,486 @@
+/* ---------------------------------------------------------------
+   Shrey Pandit — personal academic site
+   Quiet, typographic design: warm white ground, serif display,
+   one muted steel-blue accent.
+   --------------------------------------------------------------- */
+
+:root {
+    --bg: #fffefb;
+    --text: #24292f;
+    --text-soft: #4b5258;
+    --muted: #6e7781;
+    --accent: #1f5a83;
+    --accent-dark: #164263;
+    --rule: #e7e3d8;
+    --rule-soft: #efece3;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.container {
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* --- Top navigation ------------------------------------------- */
+
+.site-nav {
+    border-bottom: 1px solid var(--rule);
+}
+
+.site-nav .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-nav .brand {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.site-nav .brand:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.4rem;
+    list-style: none;
+}
+
+.site-nav ul a {
+    font-size: 0.93rem;
+    color: var(--muted);
+}
+
+.site-nav ul a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-nav ul a.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+}
+
+/* --- Header ---------------------------------------------------- */
+
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: 3rem 0 2.4rem;
+}
+
+.page-header .identity {
+    flex: 1;
+}
+
+.page-header h1 {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+}
+
+.page-header .role {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+    margin-bottom: 0.2rem;
+}
+
+.page-header .role a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+}
+
+.page-header .role a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
+.page-header .affil-note {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+}
+
+.contact-line {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.contact-line a {
+    white-space: nowrap;
+}
+
+.contact-line .sep {
+    margin: 0 0.45rem;
+    color: var(--rule);
+}
+
+.portrait {
+    flex: 0 0 auto;
+}
+
+.portrait img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    display: block;
+}
+
+/* --- Sections --------------------------------------------------- */
+
+main section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+h2 a {
+    color: inherit;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+    max-width: 72ch;
+}
+
+.bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- News -------------------------------------------------------- */
+
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    display: flex;
+    gap: 1.1rem;
+    padding: 0.32rem 0;
+}
+
+.news-date {
+    flex: 0 0 5.2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    padding-top: 0.12em;
+}
+
+.news-text {
+    flex: 1;
+}
+
+details.older-news {
+    margin-top: 0.6rem;
+}
+
+details.older-news > summary {
+    cursor: pointer;
+    color: var(--accent);
+    font-size: 0.93rem;
+    list-style: none;
+    width: fit-content;
+}
+
+details.older-news > summary::-webkit-details-marker {
+    display: none;
+}
+
+details.older-news > summary::after {
+    content: " +";
+}
+
+details.older-news[open] > summary::after {
+    content: " −";
+}
+
+details.older-news > summary:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* --- Publications ------------------------------------------------ */
+
+.pub-note {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 1.4rem;
+}
+
+.pub-year {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 1.8rem 0 0.9rem;
+}
+
+.pub-year:first-of-type {
+    margin-top: 0;
+}
+
+.pub {
+    margin-bottom: 1.35rem;
+    max-width: 76ch;
+}
+
+.pub-title {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pub-title a {
+    color: var(--text);
+}
+
+.pub-title a:hover {
+    color: var(--accent);
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    margin-top: 0.1rem;
+}
+
+.pub-venue {
+    font-size: 0.92rem;
+    font-style: italic;
+    color: var(--muted);
+}
+
+.pub-links {
+    font-size: 0.92rem;
+    margin-top: 0.1rem;
+}
+
+.pub-links a {
+    margin-right: 0.75rem;
+}
+
+.pub-links a::before {
+    content: "[";
+    color: var(--muted);
+}
+
+.pub-links a::after {
+    content: "]";
+    color: var(--muted);
+}
+
+/* --- Experience / education / teaching / talks ------------------- */
+
+.entry {
+    margin-bottom: 1.7rem;
+}
+
+.entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.entry-head h3 {
+    font-size: 1.02rem;
+    font-weight: 600;
+}
+
+.entry-head h3 a {
+    color: inherit;
+}
+
+.entry-head h3 a:hover {
+    color: var(--accent);
+}
+
+.entry-dates {
+    font-size: 0.9rem;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.entry-role {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+}
+
+.entry ul {
+    padding-left: 1.2rem;
+    max-width: 74ch;
+}
+
+.entry ul li {
+    margin-bottom: 0.3rem;
+    color: var(--text-soft);
+}
+
+.edu-list {
+    list-style: none;
+}
+
+.edu-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--rule-soft);
+}
+
+.edu-list li:last-child {
+    border-bottom: none;
+}
+
+.edu-degree {
+    color: var(--text-soft);
+    font-size: 0.95rem;
+}
+
+/* --- Talks -------------------------------------------------------- */
+
+.talk {
+    margin-bottom: 1.5rem;
+    max-width: 76ch;
+}
+
+.talk-title {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.talk-meta {
+    font-size: 0.92rem;
+    font-style: italic;
+    color: var(--muted);
+}
+
+.talk-links {
+    font-size: 0.92rem;
+    margin-top: 0.1rem;
+}
+
+.talk-links a {
+    margin-right: 0.75rem;
+}
+
+.talk-links a::before {
+    content: "[";
+    color: var(--muted);
+}
+
+.talk-links a::after {
+    content: "]";
+    color: var(--muted);
+}
+
+/* --- Footer ------------------------------------------------------- */
+
+footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 3.5rem;
+    padding: 1.4rem 0 2.2rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+
+/* --- Small screens ------------------------------------------------ */
+
+@media (max-width: 640px) {
+    .page-header {
+        flex-direction: column-reverse;
+        gap: 1.4rem;
+        padding-top: 2rem;
+    }
+
+    .portrait img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .news-list li {
+        gap: 0.8rem;
+    }
+
+    .news-date {
+        flex-basis: 4.4rem;
+    }
+
+    .entry-head,
+    .edu-list li {
+        flex-direction: column;
+        gap: 0;
+    }
+}
