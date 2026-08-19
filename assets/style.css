@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: var(--sans);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.65;
     color: var(--text);
     background: var(--bg);
@@ -130,14 +130,6 @@ strong {
     margin-bottom: 0.5rem;
 }
 
-.name-devanagari {
-    font-family: "Noto Serif Devanagari", var(--serif);
-    font-size: 0.58em;
-    font-weight: 500;
-    color: var(--text-soft);
-    white-space: nowrap;
-}
-
 .page-header .role {
     font-size: 1.05rem;
     color: var(--text-soft);
@@ -187,6 +179,117 @@ strong {
     border-radius: 6px;
     border: 1px solid var(--rule);
     display: block;
+}
+
+/* --- Home layout: sticky profile sidebar + content column -------- */
+
+.layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 5rem;
+    align-items: start;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3.5rem 2.5rem;
+}
+
+.sidebar {
+    position: sticky;
+    top: 2.5rem;
+}
+
+.side-portrait {
+    display: block;
+    width: 100%;
+    max-width: 225px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--rule);
+}
+
+.sidebar h1 {
+    font-family: var(--serif);
+    font-size: 1.85rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 1.2rem 0 0;
+}
+
+.name-devanagari {
+    font-family: "Noto Serif Devanagari", var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-soft);
+    margin: 0.1rem 0 0.9rem;
+}
+
+.side-role {
+    color: var(--text-soft);
+    line-height: 1.45;
+    margin-bottom: 0.25rem;
+}
+
+.side-role a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+}
+
+.side-role a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
+.side-loc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-bottom: 1.1rem;
+}
+
+.side-links {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.side-links a {
+    white-space: nowrap;
+}
+
+.side-links .sep {
+    margin: 0 0.4rem;
+    color: var(--rule);
+}
+
+.main-col {
+    min-width: 0;
+}
+
+.main-col footer {
+    margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 2.2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .side-portrait {
+        max-width: 150px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
 }
 
 /* --- Sections --------------------------------------------------- */
