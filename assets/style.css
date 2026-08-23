@@ -443,6 +443,11 @@ details.older-news > summary:hover {
     color: var(--muted);
 }
 
+.pub-cites {
+    color: var(--muted);
+    white-space: nowrap;
+}
+
 /* --- Experience / education / teaching / talks ------------------- */
 
 .entry {
