@@ -1,0 +1,652 @@
+{
+ "batch": "ext-4",
+ "results": [
+  {
+   "paper_key": "compression-fairness",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Understanding the Effect of Model Compression on Social Bias in Large Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Citation previously confirmed via exact-title match in its indexed full text, but no citing sentence could be reliably attributed to this paper in this session's searches.",
+     "evidence_notes": "An exact-phrase search for 'provided an initial study on the impact of model compression' (site:arxiv.org) returned arXiv 2312.05662 as the top hit, suggesting a similar Ramesh-citing sentence appears in its text; however the identical sentence was verbatim-confirmed in arXiv 2405.13039, so attribution to this paper is left unconfirmed rather than quoted. A search answer also stated (unattributed) that 'Ramesh et al. (2023) showed that compression strategies exacerbate social biases in language models'. Topically this EMNLP 2023 paper is a direct concurrent study of compression and social bias."
+    },
+    {
+     "idx": 1,
+     "title": "Decoding Compressed Trust: Scrutinizing the Trustworthiness of Efficient LLMs Under Compression",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "This session's searches confirmed Ramesh et al. (2023) is cited as related research on the fairness dimension of compressed-LLM trustworthiness, but no verbatim citing sentence was retrievable.",
+     "evidence_notes": "Query quoting 'Ramesh et al' with the paper's arXiv ID returned the Decoding Compressed Trust PDF/HTML as top hits and the search answer stated the Ramesh ACL 2023 comparative study 'is cited as related research in the field, examining how compression affects fairness — one of the trustworthiness dimensions evaluated'. The prior-run paraphrase ('provided an initial study...') could not be re-confirmed for this paper and is omitted."
+    },
+    {
+     "idx": 2,
+     "title": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Ramesh et al. (2023) evaluate how different compression methods affect language model's fairness dimensions, but the experiments are restricted to moderate-sized, encoder-only models.",
+       "source_url": "https://arxiv.org/pdf/2407.04965"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The paper dedicates an individual sentence to Ramesh et al. (2023), characterizing its scope and positioning its own multi-dimensional safety evaluation as extending beyond that scope.",
+     "evidence_notes": "Sentence surfaced verbatim in a session search answer with the paper's arXiv PDF among the top results; consistent with the prior-run snippet."
+    },
+    {
+     "idx": 3,
+     "title": "Surgical Feature-Space Decomposition of LLMs: Why, When and How?",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "In the context of this work, Ramesh et al. (2023) provided an initial study on the impact of model compression on the fairness and bias of language models.",
+       "source_url": "https://arxiv.org/pdf/2405.13039"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "motivation",
+     "rationale": "The paper (a self-citation by co-author Arnav Chavan) individually credits Ramesh et al. (2023) as the initial study of compression's fairness impact that contextualizes its own fairness analysis of feature-space decomposition.",
+     "evidence_notes": "Quote returned verbatim by a session search explicitly attributing it to this paper. Self-citation: Chavan is a co-author of the cited work."
+    },
+    {
+     "idx": 4,
+     "title": "Fair-GPTQ: Bias-Aware Quantization for Large Language Models",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Recent studies have shown that quantization can amplify biases a priori present in large language models (Liu et al., 2023; Ramesh et al., 2023; Gonçalves and Strubell, 2023; Mohammadshahi et al., 2022).",
+       "source_url": "https://arxiv.org/abs/2509.15206"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "low",
+     "usage_type": "motivation",
+     "rationale": "The confirmed mention is a grouped citation supporting the motivating claim that quantization can amplify bias, which Fair-GPTQ is designed to fix.",
+     "evidence_notes": "The prior-run snippet about disparate quantization loss in multilingual LLMs could not be re-confirmed this session and is omitted; there may be an additional individual mention. The paper's topic (bias-aware quantization) is directly downstream of the cited work's problem framing."
+    },
+    {
+     "idx": 5,
+     "title": "Downsized and Compromised?: Assessing the Faithfulness of Model Compression",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence for Ramesh et al. (2023) could be retrieved from this paper this session; citation previously confirmed via full-text marker match.",
+     "evidence_notes": "The prior-run snippet ('Under two separate constructs of fairness, quantization is reported to reduce intrinsic stereotype scores yet to worsen extrinsic, task-level fairness (Ramesh et al. 2023).') closely matches a sentence this session verbatim-confirmed in arXiv 2608.19670, so its attribution to this paper is uncertain and it is not quoted here. Same author pair (Kamal & Talbert) as the FLAIRS 2024 paper."
+    },
+    {
+     "idx": 6,
+     "title": "Beyond Size and Accuracy: The Impact of Model Compression on Fairness",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Full-text presence of 'Ramesh' confirmed on the FLAIRS article pages this session, but no citing sentence could be unambiguously attributed to this paper.",
+     "evidence_notes": "A domain-restricted search (journals.flvc.org) for 'Ramesh' + fairness compression returned this article's view/download pages, confirming the citation. One search answer attributed the 'intrinsic stereotype scores / extrinsic task-level fairness (Ramesh et al. 2023)' sentence to this paper, but the same sentence was verbatim-confirmed in arXiv 2608.19670, so it is not quoted here."
+    },
+    {
+     "idx": 7,
+     "title": "The Asymmetric Harms of LLM Compression",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Quantization is reported to reduce intrinsic stereotype scores (Gonçalves and Strubell 2023) yet to worsen extrinsic, task-level fairness (Ramesh et al. 2023).",
+       "source_url": "https://arxiv.org/html/2608.19670"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The paper uses a specific empirical finding of Ramesh et al. (2023) — worsened extrinsic, task-level fairness under quantization — as evidence in its account of metric-dependent compression harms.",
+     "evidence_notes": "Search answer explicitly attributed this sentence to 'The Asymmetric Harms of LLM Compression', whose arXiv HTML page was the top result; the paper matched quoted-marker queries in the prior run as well."
+    },
+    {
+     "idx": 8,
+     "title": "Weight Pruning Amplifies Bias: A Multi-Method Study of Compressed LLMs for Edge AI",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Ramesh et al. conducted a comparative study across pruning, quantization, and distillation, finding that all compression techniques degrade fairness in language models, with pruning showing particularly pronounced effects.",
+       "source_url": "https://arxiv.org/html/2605.08137"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The paper individually discusses Ramesh et al.'s comparative findings across the three compression families and its own multi-method fairness study follows the same protocol territory, with pruning effects as its focus.",
+     "evidence_notes": "Two independent session searches surfaced this sentence; the second search answer explicitly stated 'This sentence appears in the paper ... (arXiv:2605.08137)'. Citation-marker formatting in the original may differ slightly."
+    },
+    {
+     "idx": 9,
+     "title": "Preserving Fairness and Safety in Quantized LLMs Through Critical Weight Protection",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "A session search answer reported that this paper's related work individually cites Ramesh et al. (2023) as finding that dynamic post-training quantization may degrade performance particularly for extrinsic bias, but no verbatim sentence was retrievable.",
+     "evidence_notes": "Search answer: 'Ramesh et al. (2023) found that dynamic PTQ may degrade performance, particularly with respect to extrinsic bias, which is cited in the paper as part of prior work showing mixed results on how quantization affects fairness.' (paraphrase, not quoted). The paper's fairness-preserving quantization goal is directly downstream of the cited work."
+    },
+    {
+     "idx": 10,
+     "title": "What is Left After Distillation? How Knowledge Transfer Impacts Fairness and Bias",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed only via quoted-marker full-text match.",
+     "evidence_notes": "Multiple sub-searches on the paper (distillation fairness/bias study by Mohammadshahi & Ioannou) surfaced no Ramesh citing context."
+    },
+    {
+     "idx": 11,
+     "title": "Model Sparsity Can Simplify Machine Unlearning",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in its reference list.",
+     "evidence_notes": "Topic (machine unlearning via sparsity) is peripheral to the cited work, consistent with a passing citation, but no context was observed to grade impact."
+    },
+    {
+     "idx": 12,
+     "title": "You Never Know: Quantization Induces Inconsistent Biases in Vision-Language Foundation Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in its reference list.",
+     "evidence_notes": "Search answer noted the paper contrasts with 'past research indicating that compression typically amplifies biases in unimodal models', which is plausibly where the target is cited, but the link was not explicit. Note: this paper also plausibly cites Aditya Ramesh (CLIP/DALL-E), so only the exact-title reference-list match, not the 'Ramesh' surname, anchors the citation."
+    },
+    {
+     "idx": 13,
+     "title": "Quantization Undoes Alignment: Bias Emergence in Compressed LLMs Across Models and Precision Levels",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The target's full bibliographic entry (K. Ramesh, A. Chavan, S. Pandit, S. Sitaram, ACL 2023, pp. 15762-15782) was surfaced from this paper's indexed reference list this session, but no citing sentence was retrievable."
+    },
+    {
+     "idx": 14,
+     "title": "Fairness Evaluation and Inference Level Mitigation in LLMs",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in its indexed full text."
+    },
+    {
+     "idx": 15,
+     "title": "Benchmarking Trustworthiness of SLMs: Pre-trained vs. Compressed",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in its indexed full text.",
+     "evidence_notes": "The paper's topic (trustworthiness of pre-trained vs compressed SLMs, incl. fairness dimension) is squarely downstream of the cited work, but no context was observed."
+    },
+    {
+     "idx": 16,
+     "title": "Unmasking Vacuous Neutrality in Small Language Models",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Some studies show that compression strategies exacerbate social biases in language models (Ramesh et al., 2023)",
+       "source_url": "https://arxiv.org/pdf/2506.08487"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "The confirmed mention cites Ramesh et al. (2023) as support for a general background claim about compression exacerbating social bias.",
+     "evidence_notes": "Sentence surfaced in a session search answer with the paper's arXiv PDF (2506.08487, preprint of the EACL 2026 SRW paper) in results; search answer hedged with 'this appears to be the reference', so minor wording drift is possible. Sentence-final punctuation not captured."
+    },
+    {
+     "idx": 17,
+     "title": "How Quantization Shapes Bias in Large Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in the EACL 2026 PDF's reference list."
+    },
+    {
+     "idx": 18,
+     "title": "Are Compressed Language Models Less Subgroup Robust?",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; citation previously confirmed via exact-title match in its PDF references."
+    },
+    {
+     "idx": 19,
+     "title": "Through a Compressed Lens: Investigating The Impact of Quantization on Factual Knowledge Recall",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The target's full bibliographic entry was re-surfaced from this paper's indexed content this session, but no citing sentence was retrievable.",
+     "evidence_notes": "Search answer: the paper 'cites Ramesh et al. (2023)', full ACL title given; no usage context visible."
+    },
+    {
+     "idx": 20,
+     "title": "The Cost of Compression: Investigating the Impact of Compression on Parametric Knowledge in Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was an OpenReview page match for the exact target title."
+    },
+    {
+     "idx": 21,
+     "title": "F-PvE: Fairness-Aware Structured Neural Network Pruning via Evolution",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was an OpenReview page match for the exact target title. The paper's fairness-aware pruning topic is downstream of the cited work, but no context was observed."
+    },
+    {
+     "idx": 22,
+     "title": "Social Bias in Multilingual Language Models: A Survey",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session re-confirmed the survey's bibliography lists the target ('Ramesh et al. (2023a)' with the full ACL title), but the in-text citing sentence was not retrievable.",
+     "evidence_notes": "The '2023a' disambiguator implies the survey also cites another 2023 Ramesh paper; the exact-title bibliography match anchors this entry to the correct work."
+    },
+    {
+     "idx": 23,
+     "title": "When Quantization Affects Confidence of Large Language Models?",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session.",
+     "evidence_notes": "A search answer paraphrased the paper's motivation that 'quantization might compromise performance and exacerbate biases in LLMs', which is plausibly where the target is cited (same author group as Fair-GPTQ), but no citation marker was visible."
+    },
+    {
+     "idx": 24,
+     "title": "Model Compression Techniques in Biometrics Applications: A Survey",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation to the target (vs. another Ramesh reference) remains unverified for this biometrics survey."
+    },
+    {
+     "idx": 25,
+     "title": "Comprehensive Study on Performance Evaluation and Optimization of Model Compression: Bridging Traditional Deep Learning and Large Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was a full-text match on a distinctive title fragment plus author surnames."
+    },
+    {
+     "idx": 26,
+     "title": "Integrating Pruning with Quantization for Efficient Deep Neural Networks Compression",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; whether the 'Ramesh et al., 2023' marker in this paper refers to the target (rather than another Ramesh 2023 paper) remains unverified.",
+     "evidence_notes": "The paper did not surface at all in this session's targeted search; treat the prior loose marker match with caution."
+    },
+    {
+     "idx": 27,
+     "title": "Towards Understanding and Improving Refusal in Compressed Models via Mechanistic Interpretability",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation to the target itself remains unverified (prior evidence was topical co-occurrence only)."
+    },
+    {
+     "idx": 28,
+     "title": "Huff-LLM: End-to-End Lossless Compression for Efficient LLM Inference",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation to the target itself remains unverified (prior evidence was co-occurrence in another paper's result set)."
+    }
+   ]
+  },
+  {
+   "paper_key": "sfr-deepresearch",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "baseline",
+     "rationale": "Session searches confirm DR Tulu compares against SFR-DeepResearch (SFR-DR) as one of the named open deep research models in its evaluation, but no verbatim citing sentence was retrievable.",
+     "evidence_notes": "A site-restricted search returned the DR Tulu arXiv pages as top hits and the answer stated: 'The comparison includes existing open deep research models, namely Search-R1, WebThinker, WebExplorer, SFR-DeepResearch (SFR-DR), Tongyi Deep Research (Tongyi DR), Ai2 ScholarQA, SFT-Enterprise Deep Research (SFR-EDR) and WebWeaver', referencing Table 5 of the paper (answer wording, not a verified verbatim quote)."
+    },
+    {
+     "idx": 1,
+     "title": "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "baseline",
+     "rationale": "Prior full-text evidence (both the string 'SFR-DeepResearch' and the target's arXiv ID in its reference list) plus this session's benchmark-comparison signals indicate MiroThinker reports SFR-DR among compared systems, but no verbatim citing sentence was retrievable.",
+     "evidence_notes": "Session search answers discussed SFR-DR-20B's HLE score relative to MiroThinker variants but were partly synthesized across sources; no sentence attributable to the MiroThinker paper was captured."
+    },
+    {
+     "idx": 2,
+     "title": "An Open and Reproducible Deep Research Agent for Long-Form Question Answering",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence confirms the string 'SFR-DeepResearch' appears in its full text."
+    },
+    {
+     "idx": 3,
+     "title": "DualResearch: Entropy-Gated Dual-Graph Retrieval for Answer Reconstruction",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "A session search answer indicates DualResearch mentions SFR-DeepResearch only as part of the broader deep-research-systems context, without detailed discussion.",
+     "evidence_notes": "Answer: 'The DualResearch paper mentions SFR-DeepResearch as part of the broader context of deep-research systems ... does not appear to provide extensive details about SFR-DeepResearch specifically.'"
+    },
+    {
+     "idx": 4,
+     "title": "Don't Stop Early: Scalable Enterprise Deep Research with Controlled Information Flow and Evidence-Aware Termination",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "A session search answer states the paper 'references related work on SFR-DeepResearch and other deep research systems in its citations'; no verbatim sentence was retrievable.",
+     "evidence_notes": "ACL 2026 Industry track; prior run confirmed the string in both its arXiv and ACL Anthology full texts."
+    },
+    {
+     "idx": 5,
+     "title": "DR^3-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence confirms the string 'SFR-DeepResearch' appears in its full text."
+    },
+    {
+     "idx": 6,
+     "title": "ViDR: Grounding Multimodal Deep Research Reports in Source Visual Evidence",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence confirms the string 'SFR-DeepResearch' appears in its full text."
+    },
+    {
+     "idx": 7,
+     "title": "LiveResearchBench: A Live Benchmark for User-Centric Deep Research in the Wild",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session. SFR-DeepResearch is not among the 17 evaluated systems enumerated in session search results, so the confirmed full-text mention ('SFR-DeepResearch' adjacent to 'Nguyen et al') is most likely in related work.",
+     "evidence_notes": "LiveResearchBench is a Salesforce AI Research project (github.com/SalesforceAIResearch/LiveResearchBench), i.e., a likely same-organization citation."
+    },
+    {
+     "idx": 8,
+     "title": "Deep Research of Deep Research: From Transformer to Agent, From AI to AI for Science",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "SFR-DeepResearch was a native single-agent featuring minimal web crawling and Python tool integration.",
+       "source_url": "https://arxiv.org/pdf/2603.28361"
+      }
+     ],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The survey individually describes SFR-DeepResearch's system design (native single agent with minimal crawling and Python tool integration) in its account of deep research agents.",
+     "evidence_notes": "Sentence produced by a domain-restricted session search whose top hit was this survey's PDF, framed as how the survey describes SFR-DR. Wording overlaps the target's own abstract, so minor drift from the survey's exact sentence is possible."
+    },
+    {
+     "idx": 9,
+     "title": "Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and Synthesis for SLMs",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "baseline",
+     "rationale": "A session search answer states Fathom-DeepResearch 'references SFR-DeepResearch as a baseline for comparison'; no verbatim sentence was retrievable.",
+     "evidence_notes": "Prior run confirmed full-text co-occurrence of 'SFR-DeepResearch' and 'Nguyen et al' in its arXiv HTML."
+    },
+    {
+     "idx": 10,
+     "title": "Step-DeepResearch Technical Report",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "This session confirmed the Step-DeepResearch technical report lists the target ('SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents (2025)') among its related work, with no detailed discussion surfaced.",
+     "evidence_notes": "Answer: 'this is part of a list of related work papers'."
+    },
+    {
+     "idx": 11,
+     "title": "Flash-Searcher: Fast and Effective Web Agents via DAG-Based Parallel Execution",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "baseline",
+     "rationale": "Session searches indicate Flash-Searcher (arXiv 2509.25301, ICLR 2026) uses SFR-DeepResearch as a performance comparison point on deep research benchmarks; no verbatim sentence was retrievable.",
+     "evidence_notes": "Answer: 'The search results reference SFR-DeepResearch ... as a comparison point for Flash-Searcher's performance' and 'Flash-Searcher outperforms comparison systems including SFR-DeepResearch' (synthesized answer wording; treat with moderate confidence). Prior run confirmed the string in its OpenReview PDF."
+    },
+    {
+     "idx": 12,
+     "title": "DeepResearchGuard: Deep Research with Open Domain Evaluation and Multi-Stage Guardrails for Safety",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was the string appearing on its OpenReview forum page (paper text or discussion). Paper also identified as arXiv 2510.10994 / ACL 2026."
+    },
+    {
+     "idx": 13,
+     "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; the original June 2025 version predates the target, so any citation would be in a revision or forum discussion."
+    },
+    {
+     "idx": 14,
+     "title": "Reverse the Walk: Long-Tail-Aware Sampling for Generalizable Tool Learning",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "Two independent runs (prior and this session) indicate the paper individually positions against SFR-DeepResearch, critiquing its focus on head tools/specific domains at the expense of long-tail tool generalization; no verbatim sentence was captured, so nothing is quoted.",
+     "evidence_notes": "This session's answer: 'The work specifically critiques approaches like SFR-DeepResearch, which focus on optimizing performance for head tools or specific domains, often neglecting the generalization capability required for handling the long tail.' The OpenReview PDF was the top hit. This matches the prior-run snippet in substance; both are search-answer prose, not verified paper sentences."
+    },
+    {
+     "idx": 15,
+     "title": "An Interactive Paradigm for Deep Research",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was the string on its OpenReview forum page. Paper also identified as arXiv 2605.24266 (SteER)."
+    },
+    {
+     "idx": 16,
+     "title": "TVIR: Building Deep Research Agents Towards Text-Visual Interleaved Report Generation",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; prior evidence was a full-text match for the quoted string."
+    },
+    {
+     "idx": 17,
+     "title": "Reinforcement Learning Foundations for Deep Research Systems: A Survey",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation itself remains unverified (prior evidence was co-occurrence in mixed-term queries).",
+     "evidence_notes": "Contemporaneous Salesforce-adjacent survey of RL for deep research; author overlap with the target unverified — flagged as possible self-citation in the input enum."
+    },
+    {
+     "idx": 18,
+     "title": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation itself remains unverified; a session answer explicitly found no direct mention of SFR-DeepResearch in the MiroEval paper."
+    },
+    {
+     "idx": 19,
+     "title": "DeepResearchEval: An Automated Framework for Deep Research Task Construction and Agentic Evaluation",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation itself remains unverified."
+    },
+    {
+     "idx": 20,
+     "title": "SurveyBench: Can LLM(-Agents) Write Academic Surveys that Align with Reader Needs?",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; a session answer explicitly reported no mention of 'SFR-DeepResearch' in the retrieved SurveyBench sources, so the citation itself remains unverified."
+    },
+    {
+     "idx": 21,
+     "title": "OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; a session answer explicitly found no direct mention of SFR-DeepResearch in the OpenResearcher results, so the citation itself remains unverified."
+    },
+    {
+     "idx": 22,
+     "title": "OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; session results discussed Tongyi DeepResearch instead, so the citation itself remains unverified."
+    },
+    {
+     "idx": 23,
+     "title": "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No verbatim sentence retrievable this session.",
+     "evidence_notes": "A session answer stated RubricEM 'also mentions evaluation against SFR-DeepResearch related systems' (vague, synthesized wording); prior run matched both quoted strings 'SFR-DeepResearch' and 'DR Tulu' to its PDF. Citation plausible but usage unclear."
+    },
+    {
+     "idx": 24,
+     "title": "Deep Reasoning in General Purpose Agents via Structured Meta-Cognition",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session, and the citation itself remains unverified."
+    },
+    {
+     "idx": 25,
+     "title": "DeepResearchGym: A Free, Transparent, and Reproducible Evaluation Sandbox for Deep Research",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; v1 predates the target so any citation would be in a revision (v3). Citation unverified."
+    },
+    {
+     "idx": 26,
+     "title": "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; session results enumerate the platform's three evaluated agents (Perplexity Deep Research, GPT Researcher, Simple Deepresearch) without SFR-DR, and the original version predates the target. Citation unverified.",
+     "evidence_notes": "Flagged in the input enum as possible self-citation via author overlap; not verified this session."
+    },
+    {
+     "idx": 27,
+     "title": "DeepResearch Eco: A Recursive Agentic Workflow for Complex Scientific Question Answering in Ecology",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "No citing sentence retrievable this session; the original bioRxiv posting predates the target, so any citation would be in a revision. Citation unverified. Also available as arXiv 2507.10522."
+    }
+   ]
+  }
+ ]
+}
