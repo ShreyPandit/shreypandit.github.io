@@ -1,0 +1,535 @@
+{
+ "batch": "ext-2",
+ "paper_key": "faitheval",
+ "entries": [
+  {
+   "idx": 45,
+   "title": "Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Citation evidenced by earlier full-text PDF search matches, but two targeted searches this session could not surface any verbatim FaithEval sentence from the paper (PDF-only, not excerptable via the index).",
+   "evidence_notes": "arXiv 2605.30087. Two searches confirmed the paper exists and is topically adjacent (conflicting-source QA), but returned no in-text FaithEval content; FaithEval descriptions in results traced to other papers (aiXamine)."
+  },
+  {
+   "idx": 46,
+   "title": "Understanding the Interplay between LLMs' Utilisation of Parametric and Contextual Knowledge (ECIR 2025 keynote paper)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Prior full-text PDF match indicates the keynote paper contains 'FaithEval', but two searches this session (including a targeted exact-sentence probe of arxiv.org/html/2603.09654) surfaced no quotable sentence.",
+   "evidence_notes": "arXiv 2603.09654, Isabelle Augenstein. Index returned the paper and its metadata but no FaithEval passage."
+  },
+  {
+   "idx": 47,
+   "title": "Knowledge Conflicts for LLMs: A Survey",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "The EMNLP 2024 survey predates FaithEval; a citation, if present, would be in an updated arXiv version or the maintainers' GitHub paper list, and this session's search surfaced no FaithEval sentence from any version.",
+   "evidence_notes": "arXiv 2403.08319. The 'FaithEval (Ming et al., 2025) attempts to benchmark conflicts...' sentence in results belongs to arXiv 2604.11209 (idx 24), not this survey. Citation remains unconfirmed."
+  },
+  {
+   "idx": 48,
+   "title": "C-FAITH: A Chinese Fine-Grained Benchmark for Automated Hallucination Evaluation",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2504.10167, CIKM 2025) but surfaced no FaithEval mention; only a prior PDF full-text match supports the citation.",
+   "evidence_notes": "Input confidence was 'uncertain'; this session found no FaithEval content in C-FAITH excerpts."
+  },
+  {
+   "idx": 49,
+   "title": "HuDEx: Integrating Hallucination Detection and Explainability for Enhancing the Reliability of LLM responses",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Citation evidenced by prior PDF full-text matches in two independent FaithEval-anchored queries, but two searches this session (including a targeted exact-sentence probe of arxiv.org/html/2502.08109) could not extract any sentence.",
+   "evidence_notes": "arXiv 2502.08109."
+  },
+  {
+   "idx": 50,
+   "title": "Medical Hallucinations in Foundation Models and Their Impact on Healthcare",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2503.05777) but returned no FaithEval sentence from it; the FaithEval description in results traced to HalluLens, a different paper.",
+   "evidence_notes": "Input confidence was 'uncertain' (single PDF full-text match)."
+  },
+  {
+   "idx": 51,
+   "title": "FaithBench: A Diverse Hallucination Benchmark for Summarization by Modern LLMs",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed FaithBench (arXiv 2410.13210, NAACL 2025) but surfaced no FaithEval sentence from its text; the FaithEval sentences in results belong to HalluLens.",
+   "evidence_notes": "Name similarity between FaithBench and FaithEval noted; the same team's FaithJudge paper (arXiv 2505.04847, idx 15) does cite FaithEval."
+  },
+  {
+   "idx": 52,
+   "title": "A Comprehensive Survey on Trustworthiness in Reasoning with Large Language Models",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the survey (arXiv 2509.03871) but surfaced no FaithEval sentence; citation rests on a prior PDF full-text match.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 53,
+   "title": "Large Language Models Hallucination: A Comprehensive Survey",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Two searches this session (including a targeted probe of arxiv.org/html/2510.06265v2) surfaced no FaithEval sentence; the survey's benchmark discussion visible in the index mentions FaithBench/FaithDial instead.",
+   "evidence_notes": "Prior evidence: PDF full-text match in two FaithEval-anchored searches. arXiv 2510.06265."
+  },
+  {
+   "idx": 54,
+   "title": "Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the Frontiers in AI article (DOI 10.3389/frai.2025.1622292) but surfaced no FaithEval sentence from it; the FaithEval description in results traced to HalluLens.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 55,
+   "title": "A Survey on Hallucination in Large Language Models: Definitions, Detection, and Mitigation",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the Preprints.org survey (10.20944/preprints202510.0540) but found no explicit FaithEval mention in indexed excerpts.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 56,
+   "title": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "The original (arXiv 2404.00216) predates FaithEval; this session's search surfaced no FaithEval sentence from any revised version, so the citation remains unconfirmed.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 57,
+   "title": "Does Context Matter? ContextualJudgeBench for Evaluating LLM-based Judges in Contextual Settings",
+   "status": "quotes-found",
+   "quotes": [
+    {
+     "text": "Split 2 contains unanswerable questions from FaithEval (Ming et al., 2024), making refusal the correct choice.",
+     "source_url": "https://aclanthology.org/2025.acl-long.470.pdf"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "impact": "high",
+   "usage_type": "extends",
+   "rationale": "ContextualJudgeBench constructs an entire benchmark split (Split 2, refusal evaluation) from FaithEval's unanswerable questions, making FaithEval data a load-bearing ingredient of the benchmark.",
+   "evidence_notes": "Salesforce paper with author overlap (Yifei Ming, Shafiq Joty) — partial self-citation. The quoted sentence was surfaced verbatim in two independent searches this session; also arXiv 2503.15620."
+  },
+  {
+   "idx": 58,
+   "title": "Aligning Language Models for Context-Faithfulness (Context-DPO)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "FaithEval's title appears in the paper's reference list per prior exact-title search, but no in-text sentence surfaced this session; its experiments center on its own ConFiQA benchmark.",
+   "evidence_notes": "ACL 2025 Findings (2025.findings-acl.536)."
+  },
+  {
+   "idx": 59,
+   "title": "Consensus or Conflict? Fine-Grained Evaluation of Conflicting Answers in Question-Answering",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search confirmed the FaithEval reference entry in the paper's bibliography (arXiv 2508.12355 / 2025.uncertainlp-main.13), but no in-text discussing sentence could be extracted verbatim.",
+   "evidence_notes": "A search-tool narration described FaithEval's inconsistent-context task in language adjacent to this paper's multi-answer conflict focus, but it could not be attributed verbatim to this paper, so it is excluded from quotes."
+  },
+  {
+   "idx": 60,
+   "title": "Unanswerability Evaluation for Retrieval Augmented Generation (UAEval4RAG)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (ACL 2025, arXiv 2412.12300; Salesforce) but surfaced no FaithEval sentence; the citation rests on a prior reference-list match.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 61,
+   "title": "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (ACL 2025, arXiv 2410.16672) but found no FaithEval content; topical relevance is weak and the citation remains unconfirmed beyond the earlier reference-list surface.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 62,
+   "title": "Multi-Attribute Steering of Language Models via Targeted Intervention (MAT-Steer)",
+   "status": "quotes-found",
+   "quotes": [
+    {
+     "text": "To further illustrate the generalization capability and interpretability advantages of our gating mechanism, we conduct experiments on the FaithEval (Ming et al., 2025) counterfactual dataset, a contextual QA benchmark designed to assess model faithfulness. This dataset presents questions with counterfactual context (statements that contradict common sense or widely accepted facts), challenging models to maintain robustness against misleading information.",
+     "source_url": "https://arxiv.org/html/2502.12446"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "impact": "high",
+   "usage_type": "evaluated-on",
+   "rationale": "MAT-Steer runs dedicated generalization experiments on the FaithEval counterfactual dataset, using it as an evaluation benchmark with results reported.",
+   "evidence_notes": "ACL 2025 (2025.acl-long.1007). Quote surfaced verbatim in this session; fragments of the same passage appeared consistently across three independent searches."
+  },
+  {
+   "idx": 63,
+   "title": "Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search confirmed FaithEval appears in the paper's reference list (cited as Ming et al.), but no in-text sentence could be extracted.",
+   "evidence_notes": "arXiv 2506.11930, JHU-CLSP."
+  },
+  {
+   "idx": 64,
+   "title": "Generate, Discriminate, Evolve: Enhancing Context Faithfulness via Fine-Grained Sentence-Level Self-Evolution (GenDiE)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (ACL 2025 Findings, arXiv 2503.01695) but surfaced no FaithEval sentence; its experiments are on ASQA and ConFiQA, so FaithEval likely appears only as a related-work citation, unverified.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 65,
+   "title": "LongFaith: Enhancing Long-Context Reasoning in LLMs with Faithful Synthetic Data",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (ACL 2025 Findings, arXiv 2502.12583) but surfaced no FaithEval sentence; the citation rests on a prior reference-list match on distinctive title words.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 66,
+   "title": "Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2605.25052, BONAFIDE benchmark for CoT faithfulness metrics) but surfaced no FaithEval sentence; note its subject is chain-of-thought faithfulness rather than context faithfulness.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 67,
+   "title": "Support-Contra Asymmetry in LLM Explanations",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Targeted search could not even resolve arXiv 2510.21884 alongside FaithEval; the citation remains unconfirmed beyond the earlier weak reference-list surface.",
+   "evidence_notes": "Input confidence was 'uncertain'; weakest evidence in this batch."
+  },
+  {
+   "idx": 68,
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search confirmed the WWW 2026 paper's reference list contains the FaithEval ICLR 2025 entry, but no in-text sentence surfaced (dl.acm.org full text not excerptable).",
+   "evidence_notes": "DOI 10.1145/3774904.3792289."
+  },
+  {
+   "idx": 69,
+   "title": "MARAG: Multi-agent Retrieval-Augmented Generation for Mitigating Knowledge Conflicts in Large Language Models",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the Springer chapter (10.1007/978-981-95-6426-2_48) but surfaced no FaithEval sentence from it; the FaithEval evaluation numbers in results belong to a different paper (MADAM-RAG, arXiv 2504.13079).",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 70,
+   "title": "LLM-Oriented Information Retrieval: A Denoising-First Perspective",
+   "status": "quotes-found",
+   "quotes": [
+    {
+     "text": "Complementary benchmarks such as RAGTruth (Niu et al., 2024), FaithEval (Ming et al., ), SafeRAG (Liang et al., 2025b), and RGB (Chen et al., 2024b) stress whether systems preserve faithfulness when eviden",
+     "source_url": "https://arxiv.org/html/2605.00505v2"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "impact": "low",
+   "usage_type": "background-mention",
+   "rationale": "FaithEval is cited once in a grouped list of complementary faithfulness benchmarks within this SIGIR 2026 survey, with no individual discussion.",
+   "evidence_notes": "The search snippet was cut off mid-word after 'eviden' (likely '...when evidence is considered.'); the quote is reproduced exactly as surfaced, without completing the truncation."
+  },
+  {
+   "idx": 71,
+   "title": "Assessing Support for the TREC 2024 RAG Track: A Large-Scale Comparative Study of LLM and Human Evaluations",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the SIGIR 2025 paper but surfaced no FaithEval sentence; the narrated 'referenced as a related contribution' claim was too vague to attribute.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 72,
+   "title": "FAITH: A Framework for Assessing Intrinsic Tabular Hallucinations in Finance",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2508.05201, ICAIF 2025) but surfaced no FaithEval mention in indexed excerpts.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 73,
+   "title": "ICL-KB: Charting the Failure Frontier of Few-Shot LLMs",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search confirmed the Springer chapter references the FaithEval paper (arXiv:2410.03727), but the chapter's full text is paywalled and no in-text sentence surfaced.",
+   "evidence_notes": "DOI 10.1007/978-981-92-1468-6_9."
+  },
+  {
+   "idx": 74,
+   "title": "RefusalBench: Generative Evaluation of Selective Refusal in Grounded Language Models",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (EACL 2026, arXiv 2510.10390, Microsoft Research) but surfaced no FaithEval sentence; the citation rests on prior reference-list matches.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 75,
+   "title": "FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Two searches this session (including a targeted probe of arxiv.org/html/2510.04040v1) surfaced no FaithEval sentence; the paper concerns CoT faithfulness and its indexed excerpts do not mention FaithEval.",
+   "evidence_notes": "ICLR 2026 per the PDF header surfaced in search."
+  },
+  {
+   "idx": 76,
+   "title": "The Map of Misbelief: Tracing Intrinsic and Extrinsic Hallucinations Through Attention Patterns",
+   "status": "quotes-found",
+   "quotes": [
+    {
+     "text": "We also include two subsets of the FaithEval benchmark (Ming et al. 2025):",
+     "source_url": "https://arxiv.org/html/2511.10837v1"
+    },
+    {
+     "text": "1) The counterfactual subset introduces passages that contradict real-world knowledge, challenging the model to rely exclusively on the provided context rather than fallback on prior knowledge, a suitable test for intrinsic hallucination detection.",
+     "source_url": "https://arxiv.org/html/2511.10837v1"
+    },
+    {
+     "text": "2) The inconsistent subset, on the other hand, contains passages with internal contradictions, making all associated questions unanswerable and thus directly assessing the model's ability to identify inconsistencies within the input itself.",
+     "source_url": "https://arxiv.org/html/2511.10837v1"
+    },
+    {
+     "text": "Table 1: Performance metrics (AUROC, AURAC, and PRR) for Qwen-2.5-7B-Instruct on the FaithEval‑inconsistent‑v1.0 dataset.",
+     "source_url": "https://arxiv.org/html/2511.10837v1"
+    },
+    {
+     "text": "Moreover, the largest performance gains over baselines occur on the most challenging intrinsic benchmarks (FaithEval‑inconsistent and the unanswerable portion of SQuAD‑v2), where RAUQ variants that aggregate attention over the input or across all tokens substantially outperform other methods, as seen in Table 1.",
+     "source_url": "https://arxiv.org/html/2511.10837v1"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "impact": "high",
+   "usage_type": "evaluated-on",
+   "rationale": "The paper adopts two FaithEval subsets (counterfactual and inconsistent) as core intrinsic-hallucination detection benchmarks, reports per-dataset metrics in a dedicated table, and highlights FaithEval-inconsistent in its headline results.",
+   "evidence_notes": "AAAI Symposium Series publication also exists (ojs.aaai.org)."
+  },
+  {
+   "idx": 77,
+   "title": "Rethinking Evaluation for LLM Hallucination Detection: A Desiderata, A New RAG-based Benchmark, New Insights (TRIVIA+)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's targeted search confirmed the FaithEval bibliography entry in arxiv.org/html/2605.11330 ('Faitheval: Can your language model stay faithful to context, even if \"the moon is made of marshmallows\"'), but no in-text discussing sentence surfaced.",
+   "evidence_notes": "Citation confirmed via reference list; in-text usage context not retrievable."
+  },
+  {
+   "idx": 78,
+   "title": "Cross-Lingual LLM-Judge Transfer via Evaluation Decomposition",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "An earlier session's search answer reported FaithEval among the paper's evaluated benchmarks, but two searches this session (including a direct probe of arxiv.org/html/2603.18557) surfaced no FaithEval text, so neither the quote nor the usage could be confirmed.",
+   "evidence_notes": "Unconfirmed prior snippet: 'monolingual evaluations consistently outperformed their cross-lingual counterparts in the FaithEval benchmark'. NOT reproduced in this session's results — kept out of quotes. If confirmed later, impact would likely be high (evaluated-on)."
+  },
+  {
+   "idx": 79,
+   "title": "Are DeepSeek R1 And Other Reasoning Models More Faithful?",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2501.08156) but surfaced no FaithEval mention; the paper concerns CoT cue-faithfulness on MMLU, so any FaithEval citation is likely peripheral and remains unverified.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 80,
+   "title": "Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the survey (arXiv 2502.06872) but surfaced no FaithEval sentence from its indexed content.",
+   "evidence_notes": "Input confidence was 'uncertain' (single PDF full-text match)."
+  },
+  {
+   "idx": 81,
+   "title": "Trustworthiness in Retrieval-Augmented Generation Systems: A Survey",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "The original (arXiv 2409.10102, Sept 2024) predates FaithEval; this session's search of its content (including v2) surfaced no FaithEval mention, so the citation remains unconfirmed.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 82,
+   "title": "SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs",
+   "status": "quotes-found",
+   "quotes": [
+    {
+     "text": "For intrinsic hallucination, we use three FaithEval subsets (Ming et al., 2025): counterfactual, inconsistent, and unanswerable.",
+     "source_url": "https://arxiv.org/html/2509.13450"
+    },
+    {
+     "text": "This cross-perspective interference persists under conditional steering, where FaithEval inconsistent questions degrade sharply (Figure 14).",
+     "source_url": "https://arxiv.org/html/2509.13450"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "impact": "high",
+   "usage_type": "evaluated-on",
+   "rationale": "SteeringSafety uses all three FaithEval subsets as its intrinsic-hallucination evaluation datasets within its 17-dataset framework and analyzes FaithEval-specific results in its findings.",
+   "evidence_notes": "Also at openreview.net (id VsEkWh3mXu) and arXiv 2509.13450; a variant rendering cites the subsets by reference number '(43)'."
+  },
+  {
+   "idx": 83,
+   "title": "ConvFaithEval: Evaluating Faithfulness of Large Language Models with Real-World Customer Service Conversations",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the OpenReview paper and its clear topical adjacency (name-inspired faithfulness benchmark), but surfaced no verbatim sentence citing Ming et al.'s FaithEval.",
+   "evidence_notes": "Its own name contains 'FaithEval', so index matches may be self-referential; a related-work citation of Ming et al. is plausible but unverified."
+  },
+  {
+   "idx": 84,
+   "title": "Correctness is not Faithfulness in RAG Attributions",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (arXiv 2412.18004) but surfaced no FaithEval mention; the citation rests on a prior title-fragment reference-list match.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 85,
+   "title": "On Positional Bias of Faithfulness for Long-form Summarization",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Search confirmed the paper (NAACL 2025, arXiv 2410.23609; Salesforce co-authors incl. Shafiq Joty) but surfaced no FaithEval sentence.",
+   "evidence_notes": "Possible self-citation overlap via Salesforce AI Research authorship."
+  },
+  {
+   "idx": 86,
+   "title": "FaithEyes: Towards Faithful Tool Use via Multi-Agent Process-Image Verification",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "A targeted search of arxiv.org/html/2607.28225v1 found no citation of Ming et al.'s FaithEval; the earlier full-text 'FaithEval' match may refer to the identically-named multimodal evaluation pipeline introduced by FaithAct (arXiv 2511.08409), a name collision.",
+   "evidence_notes": "Treat with caution: plausible name collision. If the citation exists it could not be evidenced this session; equally, non-citation could not be proven, so status is no-context-found rather than not-actually-citing."
+  },
+  {
+   "idx": 87,
+   "title": "Rethinking Visual Neglect: Steering via Context-Preference for MLLM Hallucination Mitigation",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Two searches this session (including a targeted probe of arxiv.org/html/2605.27993) surfaced no FaithEval sentence; the citation rests on a single prior PDF full-text match.",
+   "evidence_notes": "Input confidence was 'uncertain'."
+  },
+  {
+   "idx": 88,
+   "title": "Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation (FLAMe)",
+   "status": "no-context-found",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "The original (arXiv 2407.10817, July 2024) predates FaithEval; this session's search surfaced no FaithEval mention in any version, so the citation (presumably in a revised version, per prior evidence) remains unconfirmed.",
+   "evidence_notes": ""
+  }
+ ]
+}
