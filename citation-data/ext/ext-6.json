@@ -1,0 +1,701 @@
+{
+ "batch": "ext-6",
+ "results": [
+  {
+   "paper_key": "egovlm",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Incentivizing Temporal-Awareness in Egocentric Video Understanding Models (TGPO)",
+     "quotes": [
+      {
+       "text": "On EgoSchema (Table 3), TGPO improves upon the strongest open-source baseline (EgoVLM GRPO, 3B) by a clear margin (49.7 vs. 46.5), and surpasses substantially larger models such as LLaVA-Video (72B).",
+       "source_url": "https://arxiv.org/html/2603.27184"
+      }
+     ],
+     "mention_count_estimate": 3,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "baseline",
+     "rationale": "TGPO uses EgoVLM GRPO as its strongest open-source baseline and reports head-to-head numbers against it on at least three benchmarks (EgoSchema, EgoPlan2, EgoTempo), making EgoVLM a load-bearing comparison system throughout the evaluation.",
+     "evidence_notes": "Prior snippet re-confirmed this session via exact-phrase search ('TGPO improves upon the strongest open-source baseline' + 'EgoVLM'), top hits arxiv.org/html/2603.27184 and arxiv.org/pdf/2603.27184. Search summary additionally reported comparisons 'On EgoPlan 2 in particular, TGPO achieves a large gain over EgoVLM GRPO (42.3 vs. 37.1)' and 'on EgoTempo (45.2 vs. 40.8)' — those two are search-summary renderings, not independently verbatim-verified."
+    },
+    {
+     "idx": 1,
+     "title": "EgoVITA: Learning to Plan and Verify for Egocentric Video Reasoning",
+     "quotes": [
+      {
+       "text": "Unlike EgoVLM which relies on sparse, rule-based rewards for RL training, EgoVITA introduces dense ACMG and confidence rewards to guide planning and verification.",
+       "source_url": "https://arxiv.org/html/2511.18242"
+      },
+      {
+       "text": "EgoVITA outperforms recent egocentric reasoning models including EgoThinker and EgoVLM, despite using far fewer training samples (47k vs. 5M for EgoThinker).",
+       "source_url": "https://arxiv.org/html/2511.18242"
+      }
+     ],
+     "mention_count_estimate": 3,
+     "status": "quotes-found",
+     "impact": "medium",
+     "usage_type": "baseline",
+     "rationale": "EgoVITA contrasts its reward design against EgoVLM in a dedicated sentence and compares performance against EgoVLM as one of its main egocentric-reasoning baselines; substantive individual engagement but EgoVLM is not the central object of the paper.",
+     "evidence_notes": "Both prior snippets re-confirmed this session via exact-phrase searches; top hits were arxiv.org/html/2511.18242 and the EgoVITA project page."
+    },
+    {
+     "idx": 2,
+     "title": "EgoProceVQA: A Novel Egocentric Procedural Understanding Task with Self-Skill-Exploration Agent",
+     "quotes": [
+      {
+       "text": "Other methods depend on supervised training or reinforcement-learning-based optimization for tool use (Shah et al., 2023; Lin et al., 2022; Liu et al., 2025; Vinod et al., 2025), which can be resource-intensive and task-specific.",
+       "source_url": "https://arxiv.org/html/2607.13792v1"
+      }
+     ],
+     "mention_count_estimate": 1,
+     "status": "quotes-found",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "EgoVLM (Vinod et al., 2025) is cited only inside a grouped citation about supervised/RL-optimized methods, with no individual discussion.",
+     "evidence_notes": "Quote surfaced this session from the paper's arXiv HTML full text."
+    },
+    {
+     "idx": 3,
+     "title": "EgoDrive: Egocentric Multimodal Driver Behavior Recognition Using Project Aria (Gaze4NLP 2025)",
+     "quotes": [
+      {
+       "text": "Recent advances in egocentric representation learning include EgoVLM (Vinod et al., 2025) for vision-language understanding and EgoNCE (Lin et al., 2022) for self-supervised learning from temporal relationships.",
+       "source_url": "https://aclanthology.org/2025.gaze4nlp-1.3.pdf"
+      }
+     ],
+     "mention_count_estimate": 1,
+     "status": "quotes-found",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "Single related-work sentence naming EgoVLM alongside EgoNCE as recent advances; no individual discussion beyond a short characterization.",
+     "evidence_notes": "Quote surfaced this session; the ACL Anthology page identifies the paper as 'EgoDrive: Egocentric Multimodal Driver Behavior Recognition Using Project Aria'."
+    },
+    {
+     "idx": 4,
+     "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Ego-R1's arXiv PDF repeatedly returned on exact-phrase searches requiring 'EgoVLM'/'Vinod' this session and in the prior enumeration pass, but no verbatim citing sentence attributable with certainty to Ego-R1 was displayed.",
+     "evidence_notes": "A search summary rendered the descriptive sentence 'EgoVLM by Vinod et al. (2025) applied Group Relative Policy Optimization to directly align vision-language models with egocentric reasoning behaviors, demonstrating substantial gains over general-purpose VLMs and introducing a keyframe-based reward for temporal grounding' — provenance ambiguous between Ego-R1 (TPAMI version) and the 'Reinforcement Learning in Vision: A Survey' paper in the same result set, so it is not recorded as a quote."
+    },
+    {
+     "idx": 5,
+     "title": "EgoHandICL: Egocentric 3D Hand Reconstruction with In-Context Learning",
+     "quotes": [
+      {
+       "text": "We also demonstrate real-world generalization and improve EgoVLM hand-object interaction reasoning by using reconstructed hands as visual prompts.",
+       "source_url": "https://arxiv.org/html/2601.19850v1"
+      }
+     ],
+     "mention_count_estimate": 2,
+     "status": "quotes-found",
+     "impact": "medium",
+     "usage_type": "extends",
+     "rationale": "EgoHandICL (ICLR 2026) reports experiments improving EgoVLM's hand-object interaction reasoning by feeding it reconstructed hands as visual prompts — substantive use beyond a passing mention.",
+     "evidence_notes": "Quote re-confirmed via exact-phrase search (top hit the paper's own HTML). Caveat: the paper also uses 'EgoVLMs' as a generic plural for egocentric VLMs, so the singular 'EgoVLM' in this sentence may partly carry generic meaning; the prior enumeration matched the doubly-quoted query 'Vinod et al' + 'EgoVLM', confirming the specific model is cited."
+    },
+    {
+     "idx": 6,
+     "title": "PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Paper's arXiv HTML returned on this session's search requiring 'PhysBrain' + 'EgoVLM', and the prior enumeration matched the doubly-quoted 'Vinod et al' + 'EgoVLM' query against its PDF, but no citing sentence was displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 7,
+     "title": "Chain-of-Glimpse: Search-Guided Progressive Object-Grounded Reasoning for Video Understanding",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML/PDF returned on this session's quoted-'EgoVLM' searches (and the prior enumeration's EgoSchema-baseline query), implying EgoVLM appears in its text (likely as an EgoSchema comparison), but no citing sentence was displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 8,
+     "title": "Video Finetuning Improves Reasoning Between Frames",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session surfaced the paper's pages for queries containing quoted 'EgoVLM' but displayed no EgoVLM text from the paper; the citation could not be re-confirmed and the prior enumeration hit may be co-occurrence noise.",
+     "evidence_notes": "Held below 'citation-confirmed' deliberately: unlike other entries, no full-text (html/pdf) page of this paper surfaced under a strictly-quoted marker query this session."
+    },
+    {
+     "idx": 9,
+     "title": "From My View to Yours: Learning Egocentric Cues from Exocentric Video using Privileged Egocentric Supervision (Ego2ExoVLM)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "arxiv.org/html/2501.05711v3 returned this session for the query requiring quoted 'EgoVLM' + 'Vinod', consistent with the prior enumeration's two full-text hits; no citing sentence displayed. Citation appears only in the revised (v3) version.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 10,
+     "title": "Ego3S: Select, Strengthen, and Synchronize for Efficient Egocentric Reasoning",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The ICML 2026 virtual poster page was the top hit this session for the query requiring both 'Ego3S' and 'EgoVLM', implying EgoVLM appears in the poster page text; no citing sentence displayed.",
+     "evidence_notes": "No arXiv full text located for this ICML poster."
+    },
+    {
+     "idx": 11,
+     "title": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's combined query surfaced the paper's HTML but the result summary found no EgoVLM sentence; citation rests on the prior enumeration's single full-text hit and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 12,
+     "title": "EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML and PDF were both top hits this session for the query requiring 'EgoExoMem' + 'EgoVLM', implying EgoVLM is named in its text; no citing sentence displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 13,
+     "title": "EgoMind: Activating Spatial Cognition through Linguistic Reasoning in MLLMs",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search returned the paper's pages but displayed no EgoVLM mention; citation rests on the prior enumeration's single full-text hit and remains unverified.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "dmix",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Self-Evolution Learning for Mixup: Enhance Data Augmentation on Few-Shot Text Classification Tasks",
+     "quotes": [
+      {
+       "text": "Recent work like Sawhney et al. (2022) and Park and Caragea (2022) have focused on selecting similar sample pairs for the mixup, with Sawhney et al. selecting samples according to the embedding similarity.",
+       "source_url": "https://arxiv.org/html/2305.13547"
+      }
+     ],
+     "mention_count_estimate": 1,
+     "status": "quotes-found",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "DMIX (Sawhney et al., 2022) is discussed individually — the paper characterizes its embedding-similarity-based pair selection in a dedicated clause when positioning its own mixup approach.",
+     "evidence_notes": "Prior snippet re-confirmed this session via exact-phrase search; top hits arxiv.org/html/2305.13547 and aclanthology.org/2023.emnlp-main.555.pdf. Search summary continued: 'while Park and Caragea (2022) merge one sample considering the confidence of the model's predictions.'"
+    },
+    {
+     "idx": 1,
+     "title": "A Survey of Mix-based Data Augmentation: Taxonomy, Methods, Applications, and Explainability",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "Prior targeted search confirmed DMix is one of the MixDA techniques reviewed in this ACM Computing Surveys survey (individual coverage is standard for reviewed methods); the survey author's companion Awesome-Mix repository also lists DMix. No verbatim survey sentence retrievable through the search index.",
+     "evidence_notes": "This session's searches surfaced DMix descriptions ('leverages the hyperbolic space as a similarity measure...') but they match the DMix abstract, not confirmed survey text, so none are recorded as quotes. Survey may cite the MRL-2021 sibling and/or the ACL-2022 version — undistinguishable from search evidence. Note: the MRL-2021 sibling 'DMix: Distance Constrained Interpolative Mixup' is marked [RETRACTED] on ACL Anthology."
+    },
+    {
+     "idx": 2,
+     "title": "LM-mixup: Text Data Augmentation via Language Model based Mixup",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML/PDF returned this session for the query requiring 'LM-mixup' + ('DMix' OR 'Sawhney'), consistent with the prior enumeration's full-text hit; no citing sentence displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 3,
+     "title": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning",
+     "quotes": [],
+     "mention_count_estimate": 1,
+     "status": "citation-confirmed-no-quote",
+     "impact": "medium",
+     "usage_type": "motivation",
+     "rationale": "Two independent search-result summaries this session consistently rendered LH-Mix (KDD 2025) as citing Sawhney et al., 2022 for the finding that examples with different similarity levels should be mixed with varying intensities, used to justify LH-Mix's correlation-guided mixup-ratio design — a conclusion-of-the-work-justifies-design-decision use.",
+     "evidence_notes": "Candidate citing sentence (search-summary rendering, not verbatim-verified): 'Sawhney et al., 2022 demonstrate that examples with different levels of similarity should be mixed with varying intensities.' An exact-phrase query for 'varying intensities' + 'Sawhney' returned arxiv.org/html/2412.16963 as a full-text hit, confirming both strings appear in the paper."
+    },
+    {
+     "idx": 4,
+     "title": "A Streamlined Approach to Multimodal Few-Shot Class Incremental Learning for Fine-Grained Datasets",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search displayed no Sawhney/DMix text from the paper; citation rests on the prior enumeration's single full-text hit. The paper's use of hyperbolic distance makes a DMix citation plausible but unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 5,
+     "title": "SNR-ST-Mix: Sample-specific Neighborhood Regression Mixup for Augmented Spatial Transcriptomics Imputation with Deep Neural Network",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv abs/HTML/PDF were the top three hits this session for the query requiring 'DMix' + 'Sawhney' (+ SNR-ST-Mix terms), implying both strings appear in its text; no citing sentence displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 6,
+     "title": "MSMix: An Interpolation-Based Text Data Augmentation Method — Manifold Swap Mixup",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search did not surface the MSMix paper's full text under the marker query; citation rests on the prior enumeration's single hit and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 7,
+     "title": "PowMix: A Versatile Regularizer for Multimodal Sentiment Analysis",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search surfaced PowMix's PDF among results for the quoted 'DMix' 'Sawhney' query but the summary found no such mention; citation rests on the prior enumeration's single hit and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 8,
+     "title": "Learning Through Interpolative Augmentation of Dynamic Curvature Spaces (DynaMix, SIGIR 2023)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search confirmed the paper (authors include Ramit Sawhney and Megh Thakkar — overlapping author group, likely self-citation) but displayed no DMIX reference text; the prior enumeration's evidence was an ACM DL page hit for the quoted DMIX title.",
+     "evidence_notes": "Self-citation candidate: DynaMix is a hyperbolic interpolative-augmentation follow-up by an overlapping author group."
+    },
+    {
+     "idx": 9,
+     "title": "Data Augmentation by Selecting Mixed Classes Considering Distance Between Classes",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's OR-query hit is ambiguous (cannot tell which quoted phrase matched); no citing sentence displayed. Citation rests on the prior enumeration's single quoted-title hit and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 10,
+     "title": "AUG-BERT: An Efficient Data Augmentation Algorithm for Text Classification",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "not-actually-citing",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "AUG-BERT is a Springer book chapter (978-981-13-9409-6, ca. 2019) that predates DMIX (ACL 2022) and therefore cannot cite it. The prior enumeration's Semantic Scholar page hit is most plausibly reverse-direction or co-occurrence (S2 pages render both references and citing papers).",
+     "evidence_notes": "This session's search found no DMix/Sawhney connection in any AUG-BERT record."
+    },
+    {
+     "idx": 11,
+     "title": "Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search found no DMIX/Sawhney/anthology-ID text in this LLM-agent paper; topically it is far from interpolative mixup. The prior enumeration's hit came from a noisy anthology-ID query and is likely a false positive.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 12,
+     "title": "Exploring the Potential of Multimodal LLM with Knowledge-Intensive Multimodal ASR",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search found no Sawhney/DMix/interpolative-mixup text in this multimodal-ASR paper; topically distant. The prior enumeration's hit came from the same noisy anthology-ID query and is likely a false positive.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "hard2verify",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "The Hidden Signal of Verifier Strictness: Controlling and Improving Step-Wise Verification via Selective Latent Steering (VerifySteer)",
+     "quotes": [
+      {
+       "text": "On ProcessBench and Hard2Verify, VerifySteer outperforms prompt optimization and activation steering baselines, and is competitive with self-consistency while requiring 4-7x less inference compute.",
+       "source_url": "https://arxiv.org/html/2605.20745v1"
+      }
+     ],
+     "mention_count_estimate": 3,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "VerifySteer is evaluated directly on Hard2Verify (one of its two headline benchmarks), reporting comparative numbers on it.",
+     "evidence_notes": "Prior snippet re-confirmed this session via exact-phrase search; top hits are the paper's own arXiv abs/html/pdf pages. Prior enumeration also captured 'on Hard2Verify, VerifySteer surpasses Cons@8 by a margin'."
+    },
+    {
+     "idx": 1,
+     "title": "Pseudo-Formalization for Automatic Proof Verification",
+     "quotes": [
+      {
+       "text": "The first is Hard2Verify [24], a benchmark of Olympiad and Putnam level competition-math problems paired with AI generated solutions and step-level correctness labels.",
+       "source_url": "https://arxiv.org/html/2605.20531"
+      },
+      {
+       "text": "For competition math, we take the existing benchmark Hard2Verify.",
+       "source_url": "https://arxiv.org/html/2605.20531"
+      },
+      {
+       "text": "Figure 3: Per-proof/paper and per-error metrics on Hard2Verify and ArxivMathGradingBench.",
+       "source_url": "https://arxiv.org/html/2605.20531"
+      }
+     ],
+     "mention_count_estimate": 5,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "The paper adopts Hard2Verify as one of its two evaluation benchmarks for competition math, describes it in a dedicated sentence, and reports per-proof and per-error metrics on it.",
+     "evidence_notes": "A fourth partial sentence was surfaced but cut off in results ('We perform similarly to the baseline on Hard2Verify, both recovering around ... 90% of the errors...') and is not recorded as a full quote."
+    },
+    {
+     "idx": 2,
+     "title": "Pessimistic Verification for Open Ended Math Questions",
+     "quotes": [
+      {
+       "text": "Figure 6: The main results on IMO-GradingBench, Hard2Verify and QiuZhen-Bench.",
+       "source_url": "https://arxiv.org/pdf/2511.21522"
+      },
+      {
+       "text": "Hard2Verify contains 200 challenging problems and solutions from recent math conpetitions such as IMO and Putnam.",
+       "source_url": "https://arxiv.org/pdf/2511.21522"
+      }
+     ],
+     "mention_count_estimate": 4,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "Pessimistic verification methods are evaluated on Hard2Verify as one of three main benchmarks, with a dedicated description sentence and results figures (including an efficiency plot axis labeled Hard2Verify).",
+     "evidence_notes": "The typo 'conpetitions' is preserved verbatim as rendered in the search result. Reference-list entry 'Hard2Verify (Pandit et al.,2025).' also surfaced."
+    },
+    {
+     "idx": 3,
+     "title": "Unmasking Reasoning Processes: A Process-aware Benchmark for Evaluating Structural Mathematical Reasoning in LLMs",
+     "quotes": [
+      {
+       "text": "Benchmarks such as CMATH Wei et al. (2023), GAOKAO Zhang et al. (2023), ZebraLogic Lin et al. (2025), Hard2Verify Pandit et al. (2025), Omni-MATH Gao et al. (2024), and FineMATH Liu et al. (2024) have played a central role in quantifying these advances and in driving techniques including chain-of-thought prompting, verifier-based reasoning, and reward learning.",
+       "source_url": "https://arxiv.org/html/2602.00564"
+      }
+     ],
+     "mention_count_estimate": 1,
+     "status": "quotes-found",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "Hard2Verify appears in a grouped citation among six benchmarks in the related-work framing, with no individual discussion.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 4,
+     "title": "Scaling Generative Verifiers For Natural Language Mathematical Proof Verification And Selection",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search confirmed the reference-list entry ('Hard2verify: A step-level verification benchmark for open-ended frontier math', Pandit et al., arXiv:2510.13744) in the paper, but no body-text citing sentence was displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 5,
+     "title": "VeriBound: PAC-Bayesian Generalization Bounds for Process Reward Models Trained with Formal Verification Tools",
+     "quotes": [
+      {
+       "text": "Hard2Verify Pandit et al. (2025) introduced a step-level verification benchmark for open-ended reasoning, highlighting the difficulty of verification beyond mathematical tasks.",
+       "source_url": "https://arxiv.org/html/2606.20740"
+      }
+     ],
+     "mention_count_estimate": 1,
+     "status": "quotes-found",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "Dedicated individual sentence discussing Hard2Verify and its finding (the difficulty of verification), used to position VeriBound's related work.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 6,
+     "title": "Granularity-Regulated Adaptive Computational Efficiency for Optimal Verification in Test-Time Scaling (GRACE-Adapt)",
+     "quotes": [
+      {
+       "text": "[24] develop Hard2Verify, a benchmark for evaluating step-level verification on frontier math.",
+       "source_url": "https://arxiv.org/pdf/2606.19354"
+      }
+     ],
+     "mention_count_estimate": 2,
+     "status": "quotes-found",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "One brief descriptive sentence in related work identifying Hard2Verify; no engagement with its findings beyond the description.",
+     "evidence_notes": "Reference-list entry also surfaced."
+    },
+    {
+     "idx": 7,
+     "title": "Process Reward Models for Sentence-Level Verification of LVLM Radiology Reports",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search displayed no Hard2Verify mention in the paper's visible excerpts (including its references excerpt); citation rests on the prior enumeration's two search hits and remains unverified.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "llep",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "TEMPO: Makespan-Aware Expert-Parallel Load Balancing Across Memory- and Compute-Bound Regimes",
+     "quotes": [
+      {
+       "text": "Training-side balancers (LLEP [14], TAOT [22], UltraEP [17]) cannot be reproduced end-to-end on a serving stack—they exploit weight-migration windows between gradient steps that serving does not have.",
+       "source_url": "https://arxiv.org/html/2608.13057"
+      },
+      {
+       "text": "LLEP-R is LLEP's least-loaded greedy spill restricted to existing replicas.",
+       "source_url": "https://arxiv.org/html/2608.13057"
+      }
+     ],
+     "mention_count_estimate": 4,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "baseline",
+     "rationale": "TEMPO implements LLEP-R — an adaptation of LLEP's least-loaded greedy spill — as one of the dispatch policies it compares against, and discusses LLEP individually when delimiting training-side vs serving-side balancers; the method is a load-bearing comparison ingredient.",
+     "evidence_notes": "Prior enumeration additionally reported LLEP-R compared alongside Token-LP and METRO."
+    },
+    {
+     "idx": 1,
+     "title": "ELDR: Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Prior enumeration confirmed via three independent searches (including one pairing '2607.00466' with '2601.17111') that ELDR cites the LLEP work; this session's search returned both papers together but displayed no citing sentence.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 2,
+     "title": "Harnessing Routing Foresight for Micro-step-level MoE Load Balancing in RL Post-training (ForeMoE)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML was the top hit this session for the query requiring quoted 'LLEP', consistent with the prior enumeration's two full-text hits; no citing sentence displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 3,
+     "title": "LAER-MoE: Load-Adaptive Expert Re-layout for Efficient Mixture-of-Experts Training (ASPLOS 2026)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv PDF returned this session for the query requiring the exact phrase 'Least-Loaded Expert Parallelism', consistent with the prior enumeration's hit on 'LAER-MoE' + full LLEP title; no citing sentence displayed.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 4,
+     "title": "Mixture-of-Parallelisms: Towards Memory-Efficient Training Stack for Mixture-of-Experts Models",
+     "quotes": [
+      {
+       "text": "Building on Least-Loaded Expert Parallelism [nguyen2026llep], we adopt a memory-efficient expert-parallel scheme that overlaps routing communication with expert computation to keep the transient MoE activation footprint small while preserving LLEP's speedup (§3.3).",
+       "source_url": "https://arxiv.org/html/2607.01844v1"
+      }
+     ],
+     "mention_count_estimate": 3,
+     "status": "quotes-found",
+     "impact": "high",
+     "usage_type": "extends",
+     "rationale": "The paper explicitly builds on LLEP, adopting and extending its expert-parallel scheme as a core system component while preserving LLEP's speedup — a direct load-bearing extension.",
+     "evidence_notes": "Self-citation: overlapping authors (Nguyen, Pandit, Joty) per the input file; counted per instructions and tagged accordingly. The visible '[nguyen2026llep]' is an unresolved LaTeX citation key in the arXiv HTML rendering, further confirming the reference target."
+    }
+   ]
+  },
+  {
+   "paper_key": "ciaug",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "A Survey of Mix-based Data Augmentation: Taxonomy, Methods, Applications, and Explainability",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Prior enumeration matched the survey's PDF on two independent quoted-'CIAug' searches, implying CIAug is covered in this ACM Computing Surveys mixup survey; this session's searches surfaced CIAug descriptions matching CIAug's own abstract rather than confirmed survey text, so no quote is recorded and depth of coverage is unknown.",
+     "evidence_notes": "CIAug description surfaced (matches CIAug abstract): 'a novel curriculum-based learning method that builds upon mixup' that 'leverages the relative position of samples in hyperbolic embedding space as a complexity measure'."
+    },
+    {
+     "idx": 1,
+     "title": "SymTax: Symbiotic Relationship and Taxonomy Fusion for Effective Citation Recommendation",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "Prior enumeration's targeted search stated 'CIAug is referenced as a related work in the SymTax paper' (matched on 'CIAug' + 'Sawhney' full-text queries); this session's search displayed no CIAug text. A related-work reference in a citation-recommendation paper (topically unrelated to mixup) indicates a background mention.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 2,
+     "title": "Learning Through Interpolative Augmentation of Dynamic Curvature Spaces (DynaMix, SIGIR 2023)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search confirmed the paper and its authorship (Ramit Sawhney, Megh Thakkar among authors — self-citation) but displayed no CIAug reference text; prior enumeration's evidence was Scilit/ACM record hits on quoted-'CIAug' queries.",
+     "evidence_notes": "Self-citation candidate: overlapping author group with CIAug."
+    },
+    {
+     "idx": 3,
+     "title": "MixUp-MIL: A Study on Linear & Multilinear Interpolation-Based Data Augmentation for Whole Slide Image Classification",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search displayed no CIAug text from the paper; citation rests on the prior enumeration's two quoted-'CIAug' hits and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 4,
+     "title": "Mixup Augmentation with Multiple Interpolations (multi-mix)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search returned the paper's PDF among results for a quoted-'CIAug' query but displayed no citing text; citation rests on the prior enumeration's two hits and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 5,
+     "title": "inversedMixup: Data Augmentation via Inverting Mixed Embeddings",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML was the top hit this session for the query requiring 'inversedMixup' + 'CIAug', consistent with the prior enumeration's dedicated dual-exact-phrase hit on both HTML and PDF; no citing sentence displayed.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "teaching-with-lies",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "HalluGuard: Evidence-Grounded Small Reasoning Models to Mitigate Hallucinations in Retrieval-Augmented Generation",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Prior enumeration matched both HalluGuard's arXiv HTML and its ACL Anthology PDF on exact-phrase 'Teaching with Lies' searches; this session's search summary stated that Pandit et al. (2025)/HaluCheck is referenced in HalluGuard's related work on hallucination detection, but no verbatim citing sentence was displayed.",
+     "evidence_notes": "Search-summary rendering (not verbatim-verified): 'Pandit et al. (2025) presented HaluCheck, a hallucination detection model trained with a curriculum-based Direct Preference Optimization (DPO) framework.' A follow-up site:arxiv.org query for 'HaluCheck' + 'HalluGuard' did not display the sentence."
+    }
+   ]
+  },
+  {
+   "paper_key": "web-agents",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Internal APIs Are All You Need: Shadow APIs, Shared Discovery, and the Case Against Browser-First Agent Architectures",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session surfaced the paper but displayed no ProgSearch/Pandit text; citation rests on the prior enumeration's two full-text hits and remains unverified.",
+     "evidence_notes": ""
+    },
+    {
+     "idx": 1,
+     "title": "LocalSearchBench: Benchmarking Agentic Search in Real-World Local Life Services",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "no-context-found",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search displayed no ProgSearch/Pandit text from the paper, matching the prior enumeration's failed re-confirmation; the original single OR-query hit may be a false positive.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "adapt",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Hyperbolic Graph Embeddings: a Survey and an Evaluation on Anomaly Detection",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The survey's arXiv PDF was the top hit this session for the query requiring quoted 'AdaPT' + 'Sawhney', consistent with the prior enumeration's quoted-title-prefix hit, implying the AdaPT paper appears in its reference list; no citing sentence displayed.",
+     "evidence_notes": ""
+    }
+   ]
+  },
+  {
+   "paper_key": "sports-autoencoder",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "In-game soccer outcome prediction with offline reinforcement learning (Rahimian et al., Machine Learning 113, 2024)",
+     "quotes": [],
+     "mention_count_estimate": null,
+     "status": "citation-confirmed-no-quote",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The article's Springer full-text PDF (link.springer.com/content/pdf/10.1007/s10994-024-06611-1.pdf) returned this session for a query requiring the exact title phrase 'Autoencoder Based Approach to Simulate Sports Games', re-confirming the prior enumeration's reference-list match; no citing sentence displayed.",
+     "evidence_notes": "The full-title match disambiguates this (Vaswani et al., 2020) sports-autoencoder citation from the common transformer citation (Vaswani et al., 2017)."
+    }
+   ]
+  }
+ ]
+}
