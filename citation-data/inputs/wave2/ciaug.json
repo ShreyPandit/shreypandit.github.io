@@ -1,0 +1,77 @@
+{
+ "paper_key": "ciaug",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "A Survey of Mix-based Data Augmentation: Taxonomy, Methods, Applications, and Explainability",
+   "first_author": "Chengtai Cao",
+   "year": "2024",
+   "venue_or_source": "ACM Computing Surveys (arXiv:2212.10888)",
+   "arxiv_id": "2212.10888",
+   "url": "https://arxiv.org/abs/2212.10888",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Survey's arXiv PDF returned on two independent searches requiring exact phrase \"CIAug\" (including '\"Survey of Mix-based Data Augmentation\" \"CIAug\"'), implying CIAug is covered/cited in this comprehensive mixup survey.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 1,
+   "title": "SymTax: Symbiotic Relationship and Taxonomy Fusion for Effective Citation Recommendation",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2024",
+   "venue_or_source": "Findings of ACL 2024 (arXiv:2406.01606)",
+   "arxiv_id": "2406.01606",
+   "url": "https://aclanthology.org/2024.findings-acl.533/",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv HTML returned on searches requiring \"CIAug\" (paired with \"Sawhney\" and standalone); search summary for '\"SymTax\" \"CIAug\"' states: 'CIAug is referenced as a related work in the SymTax paper.'",
+   "prior_snippets": []
+  },
+  {
+   "idx": 2,
+   "title": "Learning Through Interpolative Augmentation of Dynamic Curvature Spaces (DynaMix)",
+   "first_author": "Parth Chhabra",
+   "year": "2023",
+   "venue_or_source": "SIGIR 2023 (short paper) [self-citation]",
+   "arxiv_id": "",
+   "url": "https://dl.acm.org/doi/10.1145/3539618.3592008",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's Scilit/ACM records returned on two searches requiring exact phrase \"CIAug\". DynaMix is a hyperbolic-interpolative-augmentation follow-up by an overlapping author group (Ramit Sawhney, Megh Thakkar co-authors of CIAug) \u2014 tagged self-citation.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 3,
+   "title": "MixUp-MIL: A Study on Linear & Multilinear Interpolation-Based Data Augmentation for Whole Slide Image Classification",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2023",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2311.03052",
+   "url": "https://arxiv.org/abs/2311.03052",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv PDF returned on two independent searches requiring exact phrase \"CIAug\" ('\"CIAug\" curriculum mixup interpolative augmentation cited' and the multi-candidate check query), implying CIAug appears in its text/references.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 4,
+   "title": "Mixup Augmentation with Multiple Interpolations (multi-mix)",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2406.01417",
+   "url": "https://arxiv.org/abs/2406.01417",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv PDF returned on two independent searches requiring exact phrase \"CIAug\", implying CIAug appears in its text/references.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 5,
+   "title": "inversedMixup: Data Augmentation via Inverting Mixed Embeddings",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2601.21543",
+   "url": "https://arxiv.org/abs/2601.21543",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv HTML and PDF both returned on the dedicated search requiring exact phrases \"inversedMixup\" AND \"CIAug\", implying CIAug appears in its text/references.",
+   "prior_snippets": []
+  }
+ ]
+}

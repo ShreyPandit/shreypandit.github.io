@@ -1,0 +1,17 @@
+{
+ "paper_key": "teaching-with-lies",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "HalluGuard: Evidence-Grounded Small Reasoning Models to Mitigate Hallucinations in Retrieval-Augmented Generation",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2026",
+   "venue_or_source": "Findings of ACL 2026 (2026.findings-acl.835; arXiv:2510.00880)",
+   "arxiv_id": "2510.00880",
+   "url": "https://aclanthology.org/2026.findings-acl.835.pdf",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "HalluGuard's arXiv HTML and its ACL Anthology PDF both returned on searches requiring exact phrase \"Teaching with Lies\"; search summary states: 'This research by Pandit et al. (2025) on teaching with lies and curriculum DPO on synthetic negatives for hallucination detection is referenced in other ha",
+   "prior_snippets": []
+  }
+ ]
+}

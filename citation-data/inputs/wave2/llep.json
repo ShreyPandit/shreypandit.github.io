@@ -1,0 +1,65 @@
+{
+ "paper_key": "llep",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "TEMPO: Makespan-Aware Expert-Parallel Load Balancing Across Memory- and Compute-Bound Regimes",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2608.13057",
+   "url": "https://arxiv.org/abs/2608.13057",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "Paper's arXiv HTML returned on exact-phrase searches for \"LLEP\"; search summary explicitly states: 'LLEP-R (LLEP's least-loaded greedy spill restricted to existing replicas) is one of the dispatch policies compared in the TEMPO paper, alongside other approaches like Token-LP and METRO.' LLEP is used",
+   "prior_snippets": []
+  },
+  {
+   "idx": 1,
+   "title": "ELDR: Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving",
+   "first_author": "unknown (Microsoft Research; not surfaced in search snippets)",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint / Microsoft Research publication page",
+   "arxiv_id": "2607.00466",
+   "url": "https://arxiv.org/abs/2607.00466",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "Paper's arXiv PDF/HTML returned on three independent searches requiring \"LLEP\"/\"least-loaded expert parallelism\"/\"2601.17111\"; search summary for query '\"2607.00466\" \"least-loaded expert parallelism\" OR \"2601.17111\"' states: 'The paper 2607.00466 cites the least-loaded expert parallelism work (2601.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 2,
+   "title": "Harnessing Routing Foresight for Micro-step-level MoE Load Balancing in RL Post-training (ForeMoE)",
+   "first_author": "unknown (not surfaced in search snippets)",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2606.11867",
+   "url": "https://arxiv.org/abs/2606.11867",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv PDF/HTML returned on two independent searches requiring exact phrase \"LLEP\" (queries pairing LLEP with MoE load balancing and with Routing Foresight), implying LLEP is named in its text/references. No verbatim citing sentence captured.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 3,
+   "title": "LAER-MoE: Load-Adaptive Expert Re-layout for Efficient Mixture-of-Experts Training",
+   "first_author": "unknown (dblp: conf/asplos/LiuWF0LL026)",
+   "year": "2026",
+   "venue_or_source": "ASPLOS 2026 (also arXiv)",
+   "arxiv_id": "2602.11686",
+   "url": "https://arxiv.org/abs/2602.11686",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv HTML returned on search requiring exact phrases \"LAER-MoE\" AND \"Least-Loaded Expert Parallelism\", implying the full LLEP title appears in its text (reference list). Also surfaced on a search requiring \"LLEP\"/\"least-loaded\"/\"2601.17111\".",
+   "prior_snippets": []
+  },
+  {
+   "idx": 4,
+   "title": "Mixture-of-Parallelisms: Towards Memory-Efficient Training Stack for Mixture-of-Experts Models",
+   "first_author": "Xuan-Phi Nguyen",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint [self-citation]",
+   "arxiv_id": "2607.01844",
+   "url": "https://arxiv.org/abs/2607.01844",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Paper's arXiv HTML (2607.01844v1) returned on exact-phrase search '\"Least-Loaded Expert Parallelism\" mixture-of-experts', implying LLEP is named in its text. Overlapping authors (Nguyen, Pandit, Joty) \u2014 counted per instructions and tagged as self-citation.",
+   "prior_snippets": []
+  }
+ ]
+}

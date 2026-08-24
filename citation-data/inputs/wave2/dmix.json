@@ -1,0 +1,163 @@
+{
+ "paper_key": "dmix",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "Self-Evolution Learning for Mixup: Enhance Data Augmentation on Few-Shot Text Classification Tasks",
+   "first_author": "unknown",
+   "year": "2023",
+   "venue_or_source": "EMNLP 2023 main (2023.emnlp-main.555); arXiv",
+   "arxiv_id": "2305.13547",
+   "url": "https://arxiv.org/abs/2305.13547",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "Verbatim citing sentence with the (Sawhney et al., 2022) marker surfaced in search snippets of its full text; its arXiv html/pdf and aclanthology PDF matched quoted \"Sawhney\"+\"DMix\" queries three times.",
+   "prior_snippets": [
+    "Recent work like Sawhney et al. (2022) and Park and Caragea (2022) have focused on selecting similar sample pairs for the mixup, with Sawhney et al. selecting samples according to the embedding similarity."
+   ]
+  },
+  {
+   "idx": 1,
+   "title": "A Survey of Mix-based Data Augmentation: Taxonomy, Methods, Applications, and Explainability",
+   "first_author": "Chengtai Cao",
+   "year": "2022",
+   "venue_or_source": "ACM Computing Surveys (10.1145/3696206); arXiv",
+   "arxiv_id": "2212.10888",
+   "url": "https://arxiv.org/abs/2212.10888",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "Its html/pdf matched quoted \"Sawhney\" \"DMix\" queries twice; targeted query confirmed 'DMix is mentioned as one of the MixDA techniques reviewed in the survey'. Survey may cite the MRL-2021 and/or ACL-2022 version \u2014 search evidence does not distinguish.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 2,
+   "title": "LM-mixup: Text Data Augmentation via Language Model based Mixup",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2510.20449",
+   "url": "https://arxiv.org/abs/2510.20449",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/html/2510.20449 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 3,
+   "title": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2412.16963",
+   "url": "https://arxiv.org/abs/2412.16963",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/html/2412.16963 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 4,
+   "title": "A Streamlined Approach to Multimodal Few-Shot Class Incremental Learning for Fine-Grained Datasets",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2403.06295",
+   "url": "https://arxiv.org/abs/2403.06295",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/html/2403.06295 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 5,
+   "title": "SNR-ST-Mix: Sample-specific Neighborhood Regression Mixup for Augmented Spatial Transcriptomics Imputation with Deep Neural Network",
+   "first_author": "unknown",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2606.08712",
+   "url": "https://arxiv.org/abs/2606.08712",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2606.08712 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 6,
+   "title": "MSMix: An Interpolation-Based Text Data Augmentation Method \u2014 Manifold Swap Mixup",
+   "first_author": "unknown",
+   "year": "2023",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2305.19617",
+   "url": "https://arxiv.org/abs/2305.19617",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2305.19617 returned as full-text hit for the quoted query \"DMix\" mixup text augmentation survey \"Sawhney et al\".",
+   "prior_snippets": []
+  },
+  {
+   "idx": 7,
+   "title": "PowMix: A Versatile Regularizer for Multimodal Sentiment Analysis",
+   "first_author": "unknown",
+   "year": "2023",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2312.12334",
+   "url": "https://arxiv.org/abs/2312.12334",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2312.12334 returned as full-text hit for the quoted query \"DMix\" mixup text augmentation survey \"Sawhney et al\".",
+   "prior_snippets": []
+  },
+  {
+   "idx": 8,
+   "title": "Learning Through Interpolative Augmentation of Dynamic Curvature Spaces",
+   "first_author": "unknown",
+   "year": "2023",
+   "venue_or_source": "SIGIR 2023 (dl.acm.org 10.1145/3539618.3592008); may share authors with the target's group (possible self-citation \u2014 unverified)",
+   "arxiv_id": "",
+   "url": "https://dl.acm.org/doi/10.1145/3539618.3592008",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Its ACM DL page returned as a hit for the quoted full title \"Adaptive Distance-aware Interpolative Mixup\" cited \u2014 ACM DL pages render reference lists.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 9,
+   "title": "Data Augmentation by Selecting Mixed Classes Considering Distance Between Classes",
+   "first_author": "unknown",
+   "year": "2022",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2209.05122",
+   "url": "https://arxiv.org/abs/2209.05122",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2209.05122 returned as a hit for the quoted full title query \"Adaptive Distance-aware Interpolative Mixup\" cited.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 10,
+   "title": "AUG-BERT: An Efficient Data Augmentation Algorithm for Text Classification",
+   "first_author": "Shi (per Semantic Scholar entry 'Shi-Liu')",
+   "year": "unknown",
+   "venue_or_source": "Semantic Scholar listing (venue not surfaced)",
+   "arxiv_id": "",
+   "url": "https://www.semanticscholar.org/paper/AUG-BERT:-An-Efficient-Data-Augmentation-Algorithm-Shi-Liu/40d7ccb64bae0d2633c7900d62bae37b9608f43b",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Its Semantic Scholar page returned as a hit for the quoted query \"DMix\" \"Adaptive Distance-aware\" citations \u2014 S2 pages render full reference lists, so DMix (ACL 2022) very likely appears in its references. Version cited not distinguishable from snippet.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 11,
+   "title": "Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration",
+   "first_author": "unknown",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2604.18131",
+   "url": "https://arxiv.org/abs/2604.18131",
+   "confidence_from_enum": "uncertain",
+   "evidence_from_enum": "arxiv.org/pdf/2604.18131 returned as a hit for the quoted anthology-ID query \"2022.acl-short.67\" (bibliographies often embed anthology URLs), but the result set for that query contained unrelated noise, so held at uncertain.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 12,
+   "title": "Exploring the Potential of Multimodal LLM with Knowledge-Intensive Multimodal ASR",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2406.10880",
+   "url": "https://arxiv.org/abs/2406.10880",
+   "confidence_from_enum": "uncertain",
+   "evidence_from_enum": "arxiv.org/pdf/2406.10880 returned as a hit for the quoted anthology-ID query \"2022.acl-short.67\"; same caveat as above \u2014 held at uncertain.",
+   "prior_snippets": []
+  }
+ ]
+}

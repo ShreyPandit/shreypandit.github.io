@@ -1,0 +1,233 @@
+{
+ "paper_key": "codeupdatearena",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "ReCode: Updating Code API Knowledge with Reinforcement Learning",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "AAAI 2026 (ojs.aaai.org 40683) + arXiv",
+   "arxiv_id": "2506.20495",
+   "url": "https://arxiv.org/abs/2506.20495",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "Its arXiv PDF, html v5, and AAAI proceedings PDF all returned as full-text hits for quoted \"CodeUpdateArena\" across four queries; search snippets include third-person citing descriptions of the target and report training on it.",
+   "prior_snippets": [
+    "CodeUpdateArena (Liu et al. 2025) is designed to evaluate the ability of LLMs to handle API updates. The dataset comprises 670 program synthesis tasks, covering updates to 54 functions across seven different Python packages.",
+    "For CodeUpdateArena, they take the approach of training LLMs using the updated API function\u2014using docstrings or examples\u2014and then test if without access to the update during inference, the LLM's reflects the synthetic changes."
+   ]
+  },
+  {
+   "idx": 1,
+   "title": "Model Editing for LLMs4Code: How Far are We?",
+   "first_author": "Li (per Semantic Scholar entry 'Li-Wang')",
+   "year": "2024",
+   "venue_or_source": "arXiv (ICSE-track study); Semantic Scholar",
+   "arxiv_id": "2411.06638",
+   "url": "https://arxiv.org/abs/2411.06638",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "arxiv.org/pdf/2411.06638 returned as full-text hit for quoted \"CodeUpdateArena\" in three queries; its Semantic Scholar page also matched; snippet describes the target in the citing paper's framing.",
+   "prior_snippets": [
+    "CodeUpdateArena is a benchmark that focuses on API function changes for LLMs4Code editing, addressing the issue of API function updates through model editing."
+   ]
+  },
+  {
+   "idx": 2,
+   "title": "Conflict-Resolving and Sharpness-Aware Minimization for Generalized Knowledge Editing with Multiple Updates",
+   "first_author": "unknown",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2602.03696",
+   "url": "https://arxiv.org/abs/2602.03696",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "arxiv.org/pdf/2602.03696 returned as full-text hit for quoted \"CodeUpdateArena\" in three independent queries; a citing-style description sentence surfaced in snippets of the query that returned it first.",
+   "prior_snippets": [
+    "CodeUpdateArena (Liu et al., 2024) is a benchmark for knowledge editing in the code domain that evaluates whether language models can internalize API updates."
+   ]
+  },
+  {
+   "idx": 3,
+   "title": "Lightweight Model Editing for LLMs to Correct Deprecated API Recommendations",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2511.21022",
+   "url": "https://arxiv.org/html/2511.21022",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "arxiv.org/html/2511.21022 returned as top hit for query \"knowledge editing\" \"API updates\" \"Liu et al., 2024\"; snippet critiques the target's LoRA experiments in third person.",
+   "prior_snippets": [
+    "Liu et al. (2024) relied solely on LoRA, which yielded limited effectiveness with the maximum improvement in Pass@1 reaching only 6%."
+   ]
+  },
+  {
+   "idx": 4,
+   "title": "GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2411.05830",
+   "url": "https://arxiv.org/abs/2411.05830",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "arxiv.org/pdf/2411.05830 returned as full-text hit for quoted \"CodeUpdateArena\" in two queries; citing-comparison sentences surfaced in snippets of the GitChameleon result sets.",
+   "prior_snippets": [
+    "CodeUpdateArena valuably assesses LLM knowledge editing using synthetically generated API updates for functions in popular libraries, a different approach from using documented historical breaking changes.",
+    "CodeUpdateArena investigates model adaptation to synthetic API changes, while other approaches focus on real API changes to assess how effectively an LLM can generate code for version-specific changes of library versions that they have been trained with."
+   ]
+  },
+  {
+   "idx": 5,
+   "title": "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv + OpenReview (wtqdcVfJUN)",
+   "arxiv_id": "2507.12367",
+   "url": "https://arxiv.org/abs/2507.12367",
+   "confidence_from_enum": "confirmed",
+   "evidence_from_enum": "arxiv.org/html/2507.12367 (v1,v2, .pdf) and its OpenReview PDF returned as full-text hits for quoted \"CodeUpdateArena\" in four queries.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 6,
+   "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv + OpenReview (8NN0ZEBuQk)",
+   "arxiv_id": "2502.16645",
+   "url": "https://arxiv.org/abs/2502.16645",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2502.16645 and its OpenReview PDF returned as full-text hits for quoted \"CodeUpdateArena\" in three queries.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 7,
+   "title": "CODEMENV: Benchmarking Large Language Models on Code Migration",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint (+ anonymous OpenReview 'Can Language Models Be Used for Code Migration?')",
+   "arxiv_id": "2506.00894",
+   "url": "https://arxiv.org/abs/2506.00894",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2506.00894 returned as full-text hit for quoted \"CodeUpdateArena\" site:arxiv.org and again in the survey query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 8,
+   "title": "BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2510.08697",
+   "url": "https://arxiv.org/abs/2510.08697",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2510.08697 returned as full-text hit for quoted \"CodeUpdateArena\" in two queries.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 9,
+   "title": "Challenges and Paths Towards AI for Software Engineering",
+   "first_author": "Alex Gu",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint (75-page survey)",
+   "arxiv_id": "2503.22625",
+   "url": "https://arxiv.org/abs/2503.22625",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2503.22625 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\"; title and authors verified by follow-up query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 10,
+   "title": "Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2501.10711",
+   "url": "https://arxiv.org/abs/2501.10711",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2501.10711 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\".",
+   "prior_snippets": []
+  },
+  {
+   "idx": 11,
+   "title": "Evaluating LLMs on Sequential API Call Through Automated Test Generation",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2507.09481",
+   "url": "https://arxiv.org/abs/2507.09481",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2507.09481 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\".",
+   "prior_snippets": []
+  },
+  {
+   "idx": 12,
+   "title": "Identifying Knowledge Editing Types in Large Language Models",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2409.19663",
+   "url": "https://arxiv.org/abs/2409.19663",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2409.19663 returned as full-text hit for quoted \"CodeUpdateArena\" survey query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 13,
+   "title": "Understanding Robustness of Model Editing in Code LLMs: An Empirical Study",
+   "first_author": "unknown",
+   "year": "2025",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2511.03182",
+   "url": "https://arxiv.org/abs/2511.03182",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "Both abs and pdf pages returned as top hits for quoted \"CodeUpdateArena\" model editing empirical study query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 14,
+   "title": "LLMs Meet Library Evolution: Evaluating Deprecated API Usage in LLM-based Code Completion",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint (ICSE 2025); note: v1 (June 2024) predates the target \u2014 the citation appears in a revised version",
+   "arxiv_id": "2406.09834",
+   "url": "https://arxiv.org/abs/2406.09834",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2406.09834 (serves latest revision) returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 15,
+   "title": "Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition",
+   "first_author": "unknown",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2606.03657",
+   "url": "https://arxiv.org/abs/2606.03657",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2606.03657 returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 16,
+   "title": "When LLMs Lag Behind: Knowledge Conflicts from Evolving APIs in Code Generation",
+   "first_author": "unknown",
+   "year": "2026",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2604.09515",
+   "url": "https://arxiv.org/abs/2604.09515",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2604.09515 returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+   "prior_snippets": []
+  },
+  {
+   "idx": 17,
+   "title": "Composable Interventions for Language Models",
+   "first_author": "unknown",
+   "year": "2024",
+   "venue_or_source": "arXiv preprint",
+   "arxiv_id": "2407.06483",
+   "url": "https://arxiv.org/abs/2407.06483",
+   "confidence_from_enum": "likely",
+   "evidence_from_enum": "arxiv.org/pdf/2407.06483 returned as full-text hit for quoted \"CodeUpdateArena\" fine-tuning LoRA query.",
+   "prior_snippets": []
+  }
+ ]
+}
