@@ -1,0 +1,877 @@
+{
+  "batch": "enum-a",
+  "results": [
+    {
+      "paper_key": "sfr-rag",
+      "queries_run": [
+        "\"SFR-RAG\" site:arxiv.org",
+        "\"ContextualBench\" site:arxiv.org",
+        "\"2409.09916\" references",
+        "\"SFR-RAG\" citations semanticscholar",
+        "\"ContextualBench\" evaluation \"SFR-RAG\" -site:arxiv.org",
+        "huggingface.co/papers/2409.09916",
+        "\"SFR-RAG\" site:openreview.net",
+        "\"Nguyen\" \"SFR-RAG\" cited by emergentmind",
+        "REFRAG \"SFR-RAG\" rethinking RAG decoding",
+        "\"Comprehensive Survey of Retrieval-Augmented Generation\" \"SFR-RAG\"",
+        "\"SFR-DeepResearch\" \"SFR-RAG\"",
+        "\"Hidden Rationale-Based Retrieval\" \"Nguyen\" RAG references",
+        "\"SF-RAG\" \"SFR-RAG\" academic question answering",
+        "\"SFR-RAG\" site:aclanthology.org",
+        "\"SFR-RAG\" hallucination faithfulness 2025 cite",
+        "\"Nguyen et al., 2024\" \"SFR-RAG\" grounded generation",
+        "aclanthology \"2025.findings-naacl.176\"",
+        "\"ContextualBench\" -\"SFR-RAG\" benchmark results LLM",
+        "\"SFR-RAG\" baseline comparison table experiments arxiv 2025",
+        "\"Towards Contextually Faithful LLMs\" cited",
+        "\"Optimizing Question Semantic Space\" retrieval \"contextually faithful\"",
+        "\"Generate, Discriminate, Evolve\" context faithfulness \"SFR-RAG\"",
+        "\"CodeRAG-Bench\" \"SFR-RAG\"",
+        "\"RAG-Reasoning\" survey \"SFR-RAG\" OR \"Towards Contextually Faithful\"",
+        "\"SFR-RAG\" cited by catalyzex OR scite OR alphaxiv",
+        "\"arXiv:2409.09916\" -site:arxiv.org",
+        "arxiv 2504.07803 title abstract",
+        "\"Hidden Rationale-Based Retrieval\" first author \"Large Language Model Can Be a Foundation\"",
+        "\"FutureGen\" RAG \"contextually faithful\" OR \"SFR-RAG\"",
+        "\"SciRAG\" \"SFR-RAG\" OR \"Nguyen\" outline-guided scientific literature",
+        "\"SFR-RAG\" fine-tuning \"related work\" instruction-tuned model 2025 -Salesforce",
+        "\"2409.09916\" bibliography OR \"References\" arxiv html"
+      ],
+      "notes": "32 distinct WebSearch queries. All citing papers below were harvested from full-text search hits (arxiv.org/pdf|html and aclanthology.org PDFs are full-text indexed, so a quoted-phrase hit for 'SFR-RAG' on a paper's own PDF/HTML indicates the string appears in its body/references) or from explicit reference-list snippets. Search engines occasionally fuzzy-match (e.g. CodeRAG-Bench matched via 'SFR-Embedding-Mistral', an astronomy 'SFR' paper matched once), so every candidate whose hit could plausibly be a collision was re-verified with a targeted query or excluded; papers seen only in one fuzzy result set (FutureGen, SciRAG, SciRet, RegionRAG, RouteRAG, DeepNote) were EXCLUDED for lack of direct evidence even though some may genuinely cite. Coverage is therefore partial-but-verified: ~20 of ~31 Google Scholar citations. Could not open scholar.google.com or semanticscholar citation listings directly (egress blocked; WebSearch snippets only).",
+      "citing_papers": [
+        {
+          "title": "Large Language Model Can Be a Foundation for Hidden Rationale-Based Retrieval",
+          "first_author": "Luo Ji",
+          "year": "2024",
+          "venue_or_source": "ECIR 2025 (Advances in Information Retrieval, Springer LNCS 978-3-031-88714-7_27); arXiv",
+          "url": "https://arxiv.org/abs/2412.16615",
+          "arxiv_id": "2412.16615",
+          "evidence": "Search snippet of the Springer chapter's reference list explicitly lists the target: 'Nguyen, X.P., et al.: \"SFR-RAG: towards contextually faithful LLMs\" (2024)' with arXiv ID 2409.09916.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "The most relevant Nguyen reference appears to be: Nguyen, X.P., et al.: \"SFR-RAG: towards contextually faithful LLMs\" (2024) with the arXiv ID 2409.09916."
+          ]
+        },
+        {
+          "title": "A Comprehensive Survey of Retrieval-Augmented Generation (RAG): Evolution, Current Landscape and Future Directions",
+          "first_author": "Shailja Gupta",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2410.12837",
+          "arxiv_id": "2410.12837",
+          "evidence": "Its PDF (arxiv.org/pdf/2410.12837) is the top full-text hit for the quoted query \"SFR-RAG\" site:arxiv.org; search summary of the survey's text describes SFR-RAG in the survey's own words.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "SFR-RAG is described as a small but highly efficient Retrieval Augmented Generation (RAG) model, which is designed to enhance the integration of external contextual information into Large Language Models"
+          ]
+        },
+        {
+          "title": "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents",
+          "first_author": "unknown (Salesforce AI Research team)",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint [self-citation]",
+          "url": "https://arxiv.org/abs/2509.06283",
+          "arxiv_id": "2509.06283",
+          "evidence": "arxiv.org/html/2509.06283v2 returned as a full-text hit for quoted query \"SFR-RAG\" site:arxiv.org; same Salesforce AI Research group as the target (SFR- model family).",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "A Survey on Knowledge-Oriented Retrieval-Augmented Generation",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2503.10677",
+          "arxiv_id": "2503.10677",
+          "evidence": "arxiv.org/pdf/2503.10677 returned as a full-text hit for quoted \"SFR-RAG\" in two independent queries (\"SFR-RAG citations semanticscholar\" and \"SFR-RAG site:aclanthology.org\").",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "SF-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Question Answering",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2602.13647",
+          "arxiv_id": "2602.13647",
+          "evidence": "Its pdf/html returned as full-text hits for quoted \"SFR-RAG\" in four independent queries; targeted query \"SF-RAG\" \"SFR-RAG\" again returned its html v2, indicating both strings co-occur in the paper.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Generate, Discriminate, Evolve: Enhancing Context Faithfulness via Fine-Grained Sentence-Level Self-Evolution (GenDiE)",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "Findings of ACL 2025 (2025.findings-acl.878); arXiv",
+          "url": "https://aclanthology.org/2025.findings-acl.878/",
+          "arxiv_id": "2503.01695",
+          "evidence": "aclanthology.org/2025.findings-acl.878.pdf returned as a full-text hit for quoted \"SFR-RAG\" site:aclanthology.org; topically a context-faithfulness paper.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Optimizing Question Semantic Space for Dynamic Retrieval-Augmented Multi-hop Question Answering (Q-DREAM)",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "ACL 2025 (2025.acl-long.871); arXiv",
+          "url": "https://aclanthology.org/2025.acl-long.871/",
+          "arxiv_id": "2506.00491",
+          "evidence": "aclanthology.org/anthology-files/pdf/acl/2025.acl-long.871.pdf returned as a full-text hit for quoted \"SFR-RAG\" site:aclanthology.org.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Kanana: Compute-efficient Bilingual Language Models",
+          "first_author": "unknown (Kanana LLM Team, Kakao)",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2502.18934",
+          "arxiv_id": "2502.18934",
+          "evidence": "arxiv.org/pdf/2502.18934 returned as a full-text hit for the doubly-quoted query \"Nguyen et al., 2024\" \"SFR-RAG\" — both the citation marker and the model name appear in its text.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "POLYRAG: Integrating Polyviews into Retrieval-Augmented Generation for Medical Applications",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2504.14917",
+          "arxiv_id": "2504.14917",
+          "evidence": "arxiv.org/pdf/2504.14917 returned as a full-text hit for the doubly-quoted query \"Nguyen et al., 2024\" \"SFR-RAG\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Support Evaluation for the TREC 2024 RAG Track: Comparing Human versus LLM Judges",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2504.15205",
+          "arxiv_id": "2504.15205",
+          "evidence": "arxiv.org/pdf/2504.15205 returned as a full-text hit for the doubly-quoted query \"Nguyen et al., 2024\" \"SFR-RAG\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "A Visionary Look at Vibe Researching",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.00945",
+          "arxiv_id": "2604.00945",
+          "evidence": "arxiv.org/pdf/2604.00945 returned as a full-text hit for the doubly-quoted query \"Nguyen et al., 2024\" \"SFR-RAG\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Benchmarking LLM Faithfulness in RAG with Evolving Leaderboards",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "EMNLP 2025 Industry Track (2025.emnlp-industry.54); arXiv",
+          "url": "https://arxiv.org/abs/2505.04847",
+          "arxiv_id": "2505.04847",
+          "evidence": "Both its arXiv page and aclanthology.org/2025.emnlp-industry.54.pdf returned as hits for quoted \"SFR-RAG\" hallucination faithfulness query; topic (hallucination leaderboards for RAG faithfulness) directly overlaps the target.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Evaluating Faithfulness in Agentic RAG Systems for e-Governance Applications Using LLM-Based Judging Frameworks",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "MDPI Big Data and Cognitive Computing 9(12):309",
+          "url": "https://www.mdpi.com/2504-2289/9/12/309",
+          "arxiv_id": "",
+          "evidence": "Returned as a hit for quoted \"SFR-RAG\" hallucination faithfulness 2025 cite query (MDPI pages are full-text indexed).",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "A System for Comprehensive Assessment of RAG Frameworks (SCARF)",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2504.07803",
+          "arxiv_id": "2504.07803",
+          "evidence": "arxiv.org/pdf/2504.07803 returned as top full-text hit for quoted \"SFR-RAG\" baseline comparison query; title/abstract verified by follow-up query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "From Evidence-Based Medicine to Knowledge Graph: Retrieval-Augmented Generation for Sports Rehabilitation and a Domain Benchmark",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2601.00216",
+          "arxiv_id": "2601.00216",
+          "evidence": "arxiv.org/pdf/2601.00216 returned as a full-text hit for quoted \"SFR-RAG\" baseline comparison query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Towards Global Retrieval Augmented Generation: A Benchmark for Corpus-Level Reasoning",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2510.26205",
+          "arxiv_id": "2510.26205",
+          "evidence": "arxiv.org/html/2510.26205v2 returned as a full-text hit for quoted \"SFR-RAG\" baseline comparison query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2504.01346",
+          "arxiv_id": "2504.01346",
+          "evidence": "arxiv.org/html/2504.01346v4 returned as a full-text hit for quoted \"SFR-RAG\" baseline comparison query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "S2G-RAG: Structured Sufficiency and Gap Judging for Iterative Retrieval-Augmented QA",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.23783",
+          "arxiv_id": "2604.23783",
+          "evidence": "arxiv.org/pdf/2604.23783 returned as a full-text hit for quoted \"SFR-RAG\" baseline comparison query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "FrugalRAG: Less is More in RL Finetuning for Multi-Hop Question Answering",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2507.07634",
+          "arxiv_id": "2507.07634",
+          "evidence": "arxiv.org/pdf/2507.07634 returned as a full-text hit for quoted \"SFR-RAG\" baseline comparison query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2512.08892",
+          "arxiv_id": "2512.08892",
+          "evidence": "arxiv.org/pdf/2512.08892 returned as a full-text hit for quoted \"SFR-RAG\" hallucination faithfulness query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "REFRAG: Rethinking RAG based Decoding",
+          "first_author": "unknown (Meta Superintelligence Labs)",
+          "year": "2025",
+          "venue_or_source": "arXiv / OpenReview (uOi0MHNrwo)",
+          "url": "https://arxiv.org/abs/2509.01092",
+          "arxiv_id": "2509.01092",
+          "evidence": "Its OpenReview forum page returned for the quoted query \"SFR-RAG\" site:openreview.net (OpenReview pages render full reference lists), but a targeted follow-up query did not surface a direct mention — weaker evidence.",
+          "confidence": "uncertain",
+          "context_snippets": []
+        },
+        {
+          "title": "A Survey of RAG-Reasoning Systems in LLMs",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "Findings of EMNLP 2025 (2025.findings-emnlp.648)",
+          "url": "https://aclanthology.org/2025.findings-emnlp.648/",
+          "arxiv_id": "",
+          "evidence": "aclanthology.org/2025.findings-emnlp.648.pdf returned as a full-text hit for quoted \"SFR-RAG\" site:aclanthology.org; not individually re-verified, and one other hit in that result set (CodeRAG-Bench) proved to be an 'SFR-Embedding' collision, so held at uncertain.",
+          "confidence": "uncertain",
+          "context_snippets": []
+        },
+        {
+          "title": "Reasoning-focused Multi-turn Conversational Retrieval",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "Findings of ACL 2026 (2026.findings-acl.129)",
+          "url": "https://aclanthology.org/2026.findings-acl.129.pdf",
+          "arxiv_id": "",
+          "evidence": "aclanthology.org/2026.findings-acl.129.pdf returned as a full-text hit for quoted \"SFR-RAG\" site:aclanthology.org; not individually re-verified (same caveat as above).",
+          "confidence": "uncertain",
+          "context_snippets": []
+        }
+      ]
+    },
+    {
+      "paper_key": "codeupdatearena",
+      "queries_run": [
+        "\"CodeUpdateArena\" site:arxiv.org",
+        "\"CodeUpdateArena\" knowledge editing benchmark cited",
+        "\"2407.06249\"",
+        "\"CodeUpdateArena\" site:aclanthology.org OR site:openreview.net",
+        "\"CodeUpdateArena\" \"Liu et al\" cited benchmark API",
+        "\"CodeUpdateArena\" survey knowledge editing large language models",
+        "\"CodeUpdateArena\" code generation library version deprecated API",
+        "semanticscholar \"CodeUpdateArena\" citations",
+        "\"CodeUpdateArena\" model editing code LLM evaluation empirical study",
+        "\"CodeUpdateArena\" API evolution outdated knowledge LLM agents",
+        "\"knowledge editing\" \"API updates\" \"Liu et al., 2024\" arxiv -site:arxiv.org/abs/2407.06249",
+        "arxiv 2503.22625 \"Challenges and Paths Towards\" title",
+        "\"CodeUpdateArena\" retrieval documentation agent coding assistant 2025",
+        "\"CodeUpdateArena\" emergentmind OR catalyzex OR \"cited by\"",
+        "\"CodeUpdateArena\" fine-tuning LoRA editing experiments related work -Durrett",
+        "\"CodeArena\" \"CodeUpdateArena\" collective evaluation platform"
+      ],
+      "notes": "16 distinct WebSearch queries. 'CodeUpdateArena' is a highly distinctive string, so quoted full-text hits on a paper's own arxiv/openreview/aclanthology PDF are strong evidence. GS shows ~29 across two split entries; ~17 verified citers found here. Excluded: TAXI and CodeBenchGen (they PREDATE the target — their Semantic Scholar page matches almost certainly reflect CodeUpdateArena citing THEM), CodeArena (2503.01295 — targeted query found no connection), CodeEditorBench (predates, weak), one anonymous OpenReview submission (openreview.net/pdf?id=7rxn2wnx88, unidentifiable but repeatedly matched quoted 'CodeUpdateArena' — likely a real citer that could not be attributed). GitChameleon v1 (2411.05830) and GitChameleon 2.0 (2507.12367) are recorded as one lineage in two entries since both PDFs independently matched.",
+      "citing_papers": [
+        {
+          "title": "ReCode: Updating Code API Knowledge with Reinforcement Learning",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "AAAI 2026 (ojs.aaai.org 40683) + arXiv",
+          "url": "https://arxiv.org/abs/2506.20495",
+          "arxiv_id": "2506.20495",
+          "evidence": "Its arXiv PDF, html v5, and AAAI proceedings PDF all returned as full-text hits for quoted \"CodeUpdateArena\" across four queries; search snippets include third-person citing descriptions of the target and report training on it.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "CodeUpdateArena (Liu et al. 2025) is designed to evaluate the ability of LLMs to handle API updates. The dataset comprises 670 program synthesis tasks, covering updates to 54 functions across seven different Python packages.",
+            "For CodeUpdateArena, they take the approach of training LLMs using the updated API function—using docstrings or examples—and then test if without access to the update during inference, the LLM's reflects the synthetic changes."
+          ]
+        },
+        {
+          "title": "Model Editing for LLMs4Code: How Far are We?",
+          "first_author": "Li (per Semantic Scholar entry 'Li-Wang')",
+          "year": "2024",
+          "venue_or_source": "arXiv (ICSE-track study); Semantic Scholar",
+          "url": "https://arxiv.org/abs/2411.06638",
+          "arxiv_id": "2411.06638",
+          "evidence": "arxiv.org/pdf/2411.06638 returned as full-text hit for quoted \"CodeUpdateArena\" in three queries; its Semantic Scholar page also matched; snippet describes the target in the citing paper's framing.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "CodeUpdateArena is a benchmark that focuses on API function changes for LLMs4Code editing, addressing the issue of API function updates through model editing."
+          ]
+        },
+        {
+          "title": "Conflict-Resolving and Sharpness-Aware Minimization for Generalized Knowledge Editing with Multiple Updates",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2602.03696",
+          "arxiv_id": "2602.03696",
+          "evidence": "arxiv.org/pdf/2602.03696 returned as full-text hit for quoted \"CodeUpdateArena\" in three independent queries; a citing-style description sentence surfaced in snippets of the query that returned it first.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "CodeUpdateArena (Liu et al., 2024) is a benchmark for knowledge editing in the code domain that evaluates whether language models can internalize API updates."
+          ]
+        },
+        {
+          "title": "Lightweight Model Editing for LLMs to Correct Deprecated API Recommendations",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/html/2511.21022",
+          "arxiv_id": "2511.21022",
+          "evidence": "arxiv.org/html/2511.21022 returned as top hit for query \"knowledge editing\" \"API updates\" \"Liu et al., 2024\"; snippet critiques the target's LoRA experiments in third person.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "Liu et al. (2024) relied solely on LoRA, which yielded limited effectiveness with the maximum improvement in Pass@1 reaching only 6%."
+          ]
+        },
+        {
+          "title": "GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2411.05830",
+          "arxiv_id": "2411.05830",
+          "evidence": "arxiv.org/pdf/2411.05830 returned as full-text hit for quoted \"CodeUpdateArena\" in two queries; citing-comparison sentences surfaced in snippets of the GitChameleon result sets.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "CodeUpdateArena valuably assesses LLM knowledge editing using synthetically generated API updates for functions in popular libraries, a different approach from using documented historical breaking changes.",
+            "CodeUpdateArena investigates model adaptation to synthetic API changes, while other approaches focus on real API changes to assess how effectively an LLM can generate code for version-specific changes of library versions that they have been trained with."
+          ]
+        },
+        {
+          "title": "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv + OpenReview (wtqdcVfJUN)",
+          "url": "https://arxiv.org/abs/2507.12367",
+          "arxiv_id": "2507.12367",
+          "evidence": "arxiv.org/html/2507.12367 (v1,v2, .pdf) and its OpenReview PDF returned as full-text hits for quoted \"CodeUpdateArena\" in four queries.",
+          "confidence": "confirmed",
+          "context_snippets": []
+        },
+        {
+          "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv + OpenReview (8NN0ZEBuQk)",
+          "url": "https://arxiv.org/abs/2502.16645",
+          "arxiv_id": "2502.16645",
+          "evidence": "arxiv.org/pdf/2502.16645 and its OpenReview PDF returned as full-text hits for quoted \"CodeUpdateArena\" in three queries.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "CODEMENV: Benchmarking Large Language Models on Code Migration",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint (+ anonymous OpenReview 'Can Language Models Be Used for Code Migration?')",
+          "url": "https://arxiv.org/abs/2506.00894",
+          "arxiv_id": "2506.00894",
+          "evidence": "arxiv.org/pdf/2506.00894 returned as full-text hit for quoted \"CodeUpdateArena\" site:arxiv.org and again in the survey query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2510.08697",
+          "arxiv_id": "2510.08697",
+          "evidence": "arxiv.org/pdf/2510.08697 returned as full-text hit for quoted \"CodeUpdateArena\" in two queries.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Challenges and Paths Towards AI for Software Engineering",
+          "first_author": "Alex Gu",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint (75-page survey)",
+          "url": "https://arxiv.org/abs/2503.22625",
+          "arxiv_id": "2503.22625",
+          "evidence": "arxiv.org/pdf/2503.22625 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\"; title and authors verified by follow-up query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2501.10711",
+          "arxiv_id": "2501.10711",
+          "evidence": "arxiv.org/pdf/2501.10711 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Evaluating LLMs on Sequential API Call Through Automated Test Generation",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2507.09481",
+          "arxiv_id": "2507.09481",
+          "evidence": "arxiv.org/pdf/2507.09481 returned as full-text hit for the doubly-quoted query \"CodeUpdateArena\" \"Liu et al\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Identifying Knowledge Editing Types in Large Language Models",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2409.19663",
+          "arxiv_id": "2409.19663",
+          "evidence": "arxiv.org/pdf/2409.19663 returned as full-text hit for quoted \"CodeUpdateArena\" survey query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Understanding Robustness of Model Editing in Code LLMs: An Empirical Study",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2511.03182",
+          "arxiv_id": "2511.03182",
+          "evidence": "Both abs and pdf pages returned as top hits for quoted \"CodeUpdateArena\" model editing empirical study query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "LLMs Meet Library Evolution: Evaluating Deprecated API Usage in LLM-based Code Completion",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint (ICSE 2025); note: v1 (June 2024) predates the target — the citation appears in a revised version",
+          "url": "https://arxiv.org/abs/2406.09834",
+          "arxiv_id": "2406.09834",
+          "evidence": "arxiv.org/pdf/2406.09834 (serves latest revision) returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2606.03657",
+          "arxiv_id": "2606.03657",
+          "evidence": "arxiv.org/pdf/2606.03657 returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "When LLMs Lag Behind: Knowledge Conflicts from Evolving APIs in Code Generation",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.09515",
+          "arxiv_id": "2604.09515",
+          "evidence": "arxiv.org/pdf/2604.09515 returned as full-text hit for quoted \"CodeUpdateArena\" API evolution query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Composable Interventions for Language Models",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2407.06483",
+          "arxiv_id": "2407.06483",
+          "evidence": "arxiv.org/pdf/2407.06483 returned as full-text hit for quoted \"CodeUpdateArena\" fine-tuning LoRA query.",
+          "confidence": "likely",
+          "context_snippets": []
+        }
+      ]
+    },
+    {
+      "paper_key": "egovlm",
+      "queries_run": [
+        "\"EgoVLM\" site:arxiv.org",
+        "\"EgoVLM\" egocentric video GRPO cited",
+        "\"2506.03097\" OR \"arXiv:2506.03097\"",
+        "\"Vinod et al\" \"EgoVLM\" egocentric",
+        "\"EgoVLM\" baseline comparison EgoSchema table 2026",
+        "\"EgoVLM\" site:openreview.net OR site:aclanthology.org",
+        "\"EgoVLM\" survey embodied AI vision language reinforcement learning",
+        "\"Ego-R1\" OR \"EgoVITA\" \"EgoVLM\" references",
+        "\"EgoVLM\" keyframe reward OR \"first-person\" video QA -Vinod",
+        "\"EgoVLM\" 2026 model comparison related work egocentric reasoning"
+      ],
+      "notes": "10 distinct WebSearch queries. 'EgoVLM' is distinctive (one unrelated 'EgoVLA'/'EgoVLP' family was excluded by name check). Two citers confirmed with verbatim citing sentences; the rest are full-text quoted-string hits, several strengthened by co-occurrence with the quoted citation marker \"Vinod et al\". Excluded: papers predating June 2025 (ICLR 2025 proceedings hit, 2409.18127), GitHub awesome-lists and topic pages (not papers). ~14 candidates vs ~14 GS citations — coverage near-complete but first-author names were mostly not surfaced by snippets.",
+      "citing_papers": [
+        {
+          "title": "Incentivizing Temporal-Awareness in Egocentric Video Understanding Models (TGPO)",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2603.27184",
+          "arxiv_id": "2603.27184",
+          "evidence": "Verbatim citing sentence with benchmark comparison surfaced in search snippet of its html; also matched the doubly-quoted query \"Vinod et al\" \"EgoVLM\".",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "On EgoSchema (Table 3), TGPO improves upon the strongest open-source baseline (EgoVLM GRPO, 3B) by a clear margin (49.7 vs. 46.5), and surpasses substantially larger models such as LLaVA-Video (72B)."
+          ]
+        },
+        {
+          "title": "EgoVITA: Learning to Plan and Verify for Egocentric Video Reasoning",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint (project page people-robots.github.io/EgoVITA)",
+          "url": "https://arxiv.org/abs/2511.18242",
+          "arxiv_id": "2511.18242",
+          "evidence": "Verbatim citing sentences comparing against EgoVLM surfaced in search snippets of arxiv.org/html/2511.18242v1.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "Unlike EgoVLM which relies on sparse, rule-based rewards for RL training, EgoVITA introduces dense ACMG and confidence rewards to guide planning and verification.",
+            "EgoVITA outperforms recent egocentric reasoning models including EgoThinker and EgoVLM, despite using far fewer training samples (47k vs. 5M for EgoThinker)."
+          ]
+        },
+        {
+          "title": "EgoProceVQA: A Novel Egocentric Procedural Understanding Task with Self-Skill-Exploration Agent",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2607.13792",
+          "arxiv_id": "2607.13792",
+          "evidence": "arxiv.org/html/2607.13792v1 returned as top full-text hit for the doubly-quoted query \"Vinod et al\" \"EgoVLM\" — both citation marker and model name appear in its text.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Egocentric Multimodal Driver Behavior Recognition (Gaze4NLP workshop paper)",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "ACL Anthology 2025.gaze4nlp-1.3",
+          "url": "https://aclanthology.org/2025.gaze4nlp-1.3.pdf",
+          "arxiv_id": "",
+          "evidence": "aclanthology.org/2025.gaze4nlp-1.3.pdf returned as full-text hit for the doubly-quoted query \"Vinod et al\" \"EgoVLM\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "TPAMI 2026; arXiv",
+          "url": "https://arxiv.org/abs/2506.13654",
+          "arxiv_id": "2506.13654",
+          "evidence": "arxiv.org/pdf/2506.13654 returned as full-text hit for quoted \"EgoVLM\" in two queries.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "EgoHandICL: Egocentric 3D Hand Reconstruction with In-Context Learning",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2601.19850",
+          "arxiv_id": "2601.19850",
+          "evidence": "Returned as hit for quoted \"EgoVLM\" site:arxiv.org and again (pdf) for \"Vinod et al\" \"EgoVLM\" and the 2026-related-work query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2512.16793",
+          "arxiv_id": "2512.16793",
+          "evidence": "arxiv.org/pdf/2512.16793 returned as full-text hit for the doubly-quoted query \"Vinod et al\" \"EgoVLM\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Chain-of-Glimpse: Search-Guided Progressive Object-Grounded Reasoning for Video Understanding",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.14692",
+          "arxiv_id": "2604.14692",
+          "evidence": "arxiv.org/pdf/2604.14692 returned as full-text hit for quoted \"EgoVLM\" EgoSchema baseline query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Video Finetuning Improves Reasoning Between Frames",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2511.12868",
+          "arxiv_id": "2511.12868",
+          "evidence": "arxiv.org/pdf/2511.12868 returned as full-text hit for quoted \"EgoVLM\" EgoSchema baseline query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "From My View to Yours: Learning Egocentric Cues from Exocentric Video using Privileged Egocentric Supervision (Ego2ExoVLM)",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint (citation appears in revised version; v1 Jan 2025 predates target)",
+          "url": "https://arxiv.org/abs/2501.05711",
+          "arxiv_id": "2501.05711",
+          "evidence": "arxiv.org/pdf/2501.05711(v3) returned as full-text hit for quoted \"EgoVLM\" in two queries including site:openreview.net OR site:aclanthology.org sweep.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Ego3S: Select, Strengthen, and Synchronize for Efficient Egocentric Reasoning",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "ICML 2026 poster (icml.cc/virtual/2026/poster/63931)",
+          "url": "https://icml.cc/virtual/2026/poster/63931",
+          "arxiv_id": "",
+          "evidence": "ICML virtual poster page returned as hit for quoted \"EgoVLM\" 2026 related-work query; poster pages include abstract/related-work text.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2605.17262",
+          "arxiv_id": "2605.17262",
+          "evidence": "arxiv.org/html/2605.17262v1 returned as full-text hit for quoted \"EgoVLM\" 2026 related-work query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2605.18734",
+          "arxiv_id": "2605.18734",
+          "evidence": "arxiv.org/pdf/2605.18734 returned as full-text hit for quoted \"EgoVLM\" 2026 related-work query.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "EgoMind: Activating Spatial Cognition through Linguistic Reasoning in MLLMs",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.03318",
+          "arxiv_id": "2604.03318",
+          "evidence": "arxiv.org/pdf/2604.03318 returned as full-text hit for quoted \"EgoVLM\" 2026 related-work query.",
+          "confidence": "likely",
+          "context_snippets": []
+        }
+      ]
+    },
+    {
+      "paper_key": "dmix",
+      "queries_run": [
+        "\"DMIX\" \"interpolative Mixup\" Sawhney",
+        "\"Adaptive Distance-aware Interpolative Mixup\" cited",
+        "\"Sawhney\" \"DMix\" mixup site:arxiv.org",
+        "\"DMix\" mixup text augmentation survey \"Sawhney et al\"",
+        "\"Self-Evolution Learning for Mixup\" references \"DMix\" hyperbolic OR \"Sawhney et al., 2022\"",
+        "\"DMix\" hyperbolic space mixup sentence classification citing -Sawhney",
+        "semanticscholar.org \"DMix\" \"Adaptive Distance-aware\" citations",
+        "\"2022.acl-short.67\" OR \"acl22_dmix\"",
+        "\"PowMix\" OR \"MSMix\" \"Sawhney\" mixup references",
+        "\"Survey of Mix-based Data Augmentation\" \"DMix\" Sawhney taxonomy",
+        "\"Distance Constrained Interpolative Mixup\" cited MRL workshop"
+      ],
+      "notes": "11 distinct WebSearch queries. 'DMix' collides with unrelated terms (music mixes, DiSMix, data-mixing 'Olmix'), so every candidate here matched a query that also quoted 'Sawhney'/'Sawhney et al' or the full target title, or was verified topically as a text-mixup paper. Where the search evidence could not distinguish whether a citer references the ACL 2022 version or the retracted MRL@EMNLP 2021 sibling ('DMix: Distance Constrained Interpolative Mixup'), that is stated in the evidence field. Note: the MRL 2021 version is marked [RETRACTED] on the ACL Anthology. ~12 candidates vs ~12 GS citations. Excluded: DiSMix, Olmix, MixGen (no direct-evidence match), GitHub awesome-mixup lists (not papers).",
+      "citing_papers": [
+        {
+          "title": "Self-Evolution Learning for Mixup: Enhance Data Augmentation on Few-Shot Text Classification Tasks",
+          "first_author": "unknown",
+          "year": "2023",
+          "venue_or_source": "EMNLP 2023 main (2023.emnlp-main.555); arXiv",
+          "url": "https://arxiv.org/abs/2305.13547",
+          "arxiv_id": "2305.13547",
+          "evidence": "Verbatim citing sentence with the (Sawhney et al., 2022) marker surfaced in search snippets of its full text; its arXiv html/pdf and aclanthology PDF matched quoted \"Sawhney\"+\"DMix\" queries three times.",
+          "confidence": "confirmed",
+          "context_snippets": [
+            "Recent work like Sawhney et al. (2022) and Park and Caragea (2022) have focused on selecting similar sample pairs for the mixup, with Sawhney et al. selecting samples according to the embedding similarity."
+          ]
+        },
+        {
+          "title": "A Survey of Mix-based Data Augmentation: Taxonomy, Methods, Applications, and Explainability",
+          "first_author": "Chengtai Cao",
+          "year": "2022",
+          "venue_or_source": "ACM Computing Surveys (10.1145/3696206); arXiv",
+          "url": "https://arxiv.org/abs/2212.10888",
+          "arxiv_id": "2212.10888",
+          "evidence": "Its html/pdf matched quoted \"Sawhney\" \"DMix\" queries twice; targeted query confirmed 'DMix is mentioned as one of the MixDA techniques reviewed in the survey'. Survey may cite the MRL-2021 and/or ACL-2022 version — search evidence does not distinguish.",
+          "confidence": "confirmed",
+          "context_snippets": []
+        },
+        {
+          "title": "LM-mixup: Text Data Augmentation via Language Model based Mixup",
+          "first_author": "unknown",
+          "year": "2025",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2510.20449",
+          "arxiv_id": "2510.20449",
+          "evidence": "arxiv.org/html/2510.20449 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2412.16963",
+          "arxiv_id": "2412.16963",
+          "evidence": "arxiv.org/html/2412.16963 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "A Streamlined Approach to Multimodal Few-Shot Class Incremental Learning for Fine-Grained Datasets",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2403.06295",
+          "arxiv_id": "2403.06295",
+          "evidence": "arxiv.org/html/2403.06295 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "SNR-ST-Mix: Sample-specific Neighborhood Regression Mixup for Augmented Spatial Transcriptomics Imputation with Deep Neural Network",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2606.08712",
+          "arxiv_id": "2606.08712",
+          "evidence": "arxiv.org/pdf/2606.08712 returned as full-text hit for the doubly-quoted query \"Sawhney\" \"DMix\" mixup site:arxiv.org.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "MSMix: An Interpolation-Based Text Data Augmentation Method — Manifold Swap Mixup",
+          "first_author": "unknown",
+          "year": "2023",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2305.19617",
+          "arxiv_id": "2305.19617",
+          "evidence": "arxiv.org/pdf/2305.19617 returned as full-text hit for the quoted query \"DMix\" mixup text augmentation survey \"Sawhney et al\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "PowMix: A Versatile Regularizer for Multimodal Sentiment Analysis",
+          "first_author": "unknown",
+          "year": "2023",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2312.12334",
+          "arxiv_id": "2312.12334",
+          "evidence": "arxiv.org/pdf/2312.12334 returned as full-text hit for the quoted query \"DMix\" mixup text augmentation survey \"Sawhney et al\".",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Learning Through Interpolative Augmentation of Dynamic Curvature Spaces",
+          "first_author": "unknown",
+          "year": "2023",
+          "venue_or_source": "SIGIR 2023 (dl.acm.org 10.1145/3539618.3592008); may share authors with the target's group (possible self-citation — unverified)",
+          "url": "https://dl.acm.org/doi/10.1145/3539618.3592008",
+          "arxiv_id": "",
+          "evidence": "Its ACM DL page returned as a hit for the quoted full title \"Adaptive Distance-aware Interpolative Mixup\" cited — ACM DL pages render reference lists.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Data Augmentation by Selecting Mixed Classes Considering Distance Between Classes",
+          "first_author": "unknown",
+          "year": "2022",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2209.05122",
+          "arxiv_id": "2209.05122",
+          "evidence": "arxiv.org/pdf/2209.05122 returned as a hit for the quoted full title query \"Adaptive Distance-aware Interpolative Mixup\" cited.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "AUG-BERT: An Efficient Data Augmentation Algorithm for Text Classification",
+          "first_author": "Shi (per Semantic Scholar entry 'Shi-Liu')",
+          "year": "unknown",
+          "venue_or_source": "Semantic Scholar listing (venue not surfaced)",
+          "url": "https://www.semanticscholar.org/paper/AUG-BERT:-An-Efficient-Data-Augmentation-Algorithm-Shi-Liu/40d7ccb64bae0d2633c7900d62bae37b9608f43b",
+          "arxiv_id": "",
+          "evidence": "Its Semantic Scholar page returned as a hit for the quoted query \"DMix\" \"Adaptive Distance-aware\" citations — S2 pages render full reference lists, so DMix (ACL 2022) very likely appears in its references. Version cited not distinguishable from snippet.",
+          "confidence": "likely",
+          "context_snippets": []
+        },
+        {
+          "title": "Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration",
+          "first_author": "unknown",
+          "year": "2026",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2604.18131",
+          "arxiv_id": "2604.18131",
+          "evidence": "arxiv.org/pdf/2604.18131 returned as a hit for the quoted anthology-ID query \"2022.acl-short.67\" (bibliographies often embed anthology URLs), but the result set for that query contained unrelated noise, so held at uncertain.",
+          "confidence": "uncertain",
+          "context_snippets": []
+        },
+        {
+          "title": "Exploring the Potential of Multimodal LLM with Knowledge-Intensive Multimodal ASR",
+          "first_author": "unknown",
+          "year": "2024",
+          "venue_or_source": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2406.10880",
+          "arxiv_id": "2406.10880",
+          "evidence": "arxiv.org/pdf/2406.10880 returned as a hit for the quoted anthology-ID query \"2022.acl-short.67\"; same caveat as above — held at uncertain.",
+          "confidence": "uncertain",
+          "context_snippets": []
+        }
+      ]
+    }
+  ]
+}
