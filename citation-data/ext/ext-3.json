@@ -1,0 +1,988 @@
+{
+ "batch": "ext-3",
+ "paper_key": "medhallu",
+ "entries": [
+  {
+   "idx": 0,
+   "title": "ClinHallu: A Benchmark for Diagnosing Stage-wise Hallucinations in Medical MLLM Reasoning",
+   "arxiv_id": "2606.14697",
+   "url": "https://arxiv.org/abs/2606.14697",
+   "quotes": [
+    {
+     "text": "Text-only benchmarks, such as Med-HALT (Pal et al., 2023), MedHalu (Agarwal et al., 2024), and MedHallu (Pandit et al., 2025), mainly focus on hallucination detection in medical question answering, healthcare queries, and clinical knowledge assessment.",
+     "source_url": "https://arxiv.org/html/2606.14697v1"
+    },
+    {
+     "text": "Pandit et al. (2025) Shrey Pandit, Jiawei Xu, Junyuan Hong, Zhangyang Wang, Tianlong Chen, Kaidi Xu, and Ying Ding. 2025. Medhallu: A comprehensive benchmark for detecting medical hallucinations in large language models. In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing, pages 2858–2873.",
+     "source_url": "https://arxiv.org/html/2606.14697v1"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "MedHallu appears in a grouped related-work sentence listing text-only medical hallucination benchmarks, with no individual discussion.",
+   "evidence_notes": "Quote re-confirmed this session; matches prior_snippet. Reference-list entry also surfaced verbatim."
+  },
+  {
+   "idx": 1,
+   "title": "Med-HEAL: Analyzing and Mitigating Hallucinations in Medical LLMs with Hallucination-Aware In-Context Learning",
+   "arxiv_id": "2606.01301",
+   "url": "https://arxiv.org/html/2606.01301",
+   "quotes": [
+    {
+     "text": "MedHallu generates hallucinations through controlled LLM pipelines that introduce specific error types, such as evidence fabrication or misinterpretation of questions (Pandit et al., 2025).",
+     "source_url": "https://arxiv.org/html/2606.01301v1"
+    },
+    {
+     "text": "Recent studies have highlighted the prevalence of hallucinations in medical LLMs and proposed benchmark datasets to measure these failures (Agarwal et al., 2024; Kim et al., 2025; Pandit et al., 2025).",
+     "source_url": "https://arxiv.org/html/2606.01301v1"
+    },
+    {
+     "text": "For example, MedHallu (Pandit et al., 2025) iteratively refines incorrect answers using GPT-4 to produce adversarial distractors.",
+     "source_url": "https://arxiv.org/html/2606.01301v1"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The paper individually discusses MedHallu's hallucination-generation pipeline in multiple dedicated sentences, beyond a grouped citation.",
+   "evidence_notes": "Additional partial snippets seen in search: 'Datasets such as MedHalu (Agarwal et al., 2024) and MedHallu (Pandit et al., 2025) draw questions from structured knowledge bases including PubMedQA...' (truncated in result) and '...and MedHallu use LLMs to identify hallucinated statements or evaluate reasoning quality.' (fragment)."
+  },
+  {
+   "idx": 2,
+   "title": "Teaching with Lies: Curriculum DPO on Synthetic Negatives for Hallucination Detection",
+   "arxiv_id": "2505.17558",
+   "url": "https://arxiv.org/abs/2505.17558",
+   "quotes": [
+    {
+     "text": "Experimental evaluation demonstrates that our HaluCheck models, trained with curriculum DPO approach and high quality negative samples, significantly improves model performance across various metrics, achieving improvements of upto 24% on difficult benchmarks like MedHallu and HaluEval.",
+     "source_url": "https://arxiv.org/abs/2505.17558"
+    },
+    {
+     "text": "For the purpose of this work we choose MedHallu and HaluEval for the DPO alignment, as they have high quality hallucinated samples.",
+     "source_url": "https://arxiv.org/html/2505.17558"
+    },
+    {
+     "text": "Benchmarks like Hades (Liu et al., 2022) and HaluEval (Li et al., 2023) offer strong hallucination-detection protocols, and MedHallu (Pandit et al., 2025) provides carefully crafted adversarial answers that are ideal for our alignment approach.",
+     "source_url": "https://arxiv.org/html/2505.17558"
+    },
+    {
+     "text": "We conduct extensive evaluations on the MedHallu (Pandit et al., 2025) and HaluEval (Li et al., 2023) benchmarks and zero-shot evaluation on DROP, CovidQA, and PubMedQA, demonstrating that HaluCheck substantially outperforms existing baselines, including the widely adopted Llama-3.2 (1B and 3B) models.",
+     "source_url": "https://arxiv.org/html/2505.17558"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "MedHallu is load-bearing: its adversarial samples are used for DPO alignment training and it is one of the two main evaluation benchmarks with reported numbers (up to 24% gains).",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 3,
+   "title": "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+   "arxiv_id": "2502.04556",
+   "url": "https://arxiv.org/abs/2502.04556",
+   "quotes": [
+    {
+     "text": "First, we train and test TruthFlow on the MedHallu (Pandit et al., 2025) dataset to evaluate how truthful our method can achieve in medical domain.",
+     "source_url": "https://openreview.net/pdf?id=7TDnfx5s14"
+    },
+    {
+     "text": "Train And Test TruthFlow on MedHallu.",
+     "source_url": "https://openreview.net/pdf?id=7TDnfx5s14"
+    },
+    {
+     "text": "Again, we use the same setting as Section 5.1 to apply the TruthFlow trained on the whole TruthfulQA to the entire MedHallu.",
+     "source_url": "https://openreview.net/pdf?id=7TDnfx5s14"
+    },
+    {
+     "text": "Table 11: Open-ended generation results on MedHallu.",
+     "source_url": "https://openreview.net/pdf?id=7TDnfx5s14"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "TruthFlow is trained and tested on MedHallu with a dedicated experimental section and results table, plus a transfer experiment applied to the entire MedHallu dataset.",
+   "evidence_notes": "One additional partial snippet: 'In addition, we directly apply TruthFlow which is trained on TruthfulQA to MedHallu to evaluate the transferability of our method to...' (truncated in search result)."
+  },
+  {
+   "idx": 4,
+   "title": "MIRIAD: Augmenting LLMs with millions of medical query-response pairs",
+   "arxiv_id": "2506.06091",
+   "url": "https://arxiv.org/abs/2506.06091",
+   "quotes": [
+    {
+     "text": "To evaluate whether structured domain knowledge from MIRIAD can improve hallucination detection in medical contexts, we leveraged the MedHallu benchmark [25], a dataset specifically constructed to assess LLMs' ability to distinguish between accurate and hallucinated responses.",
+     "source_url": "https://arxiv.org/html/2506.06091"
+    },
+    {
+     "text": "We adopted the original experimental setup proposed in the MedHallu paper, using Llama-3.1-8B-Instruct as the base model for classification.",
+     "source_url": "https://arxiv.org/html/2506.06091"
+    },
+    {
+     "text": "Results in Table 2 demonstrate that augmentation with MIRIAD significantly improved hallucination detection: the LLM achieved an F1-score of 45.93% on the full 10k MedHallu dataset, while the LLM with access to MIRIAD reached an F1-score of 68.46%, reflecting a net improvement of 22.53 points.",
+     "source_url": "https://arxiv.org/html/2506.06091"
+    },
+    {
+     "text": "Table 2: RAG results on the MedHallu benchmark.",
+     "source_url": "https://arxiv.org/html/2506.06091"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "MIRIAD runs a dedicated hallucination-detection experiment on the full 10k MedHallu benchmark, adopting MedHallu's original experimental setup and reporting a results table with F1 numbers.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 5,
+   "title": "CareGuardAI: Context-Aware Multi-Agent Guardrails for Clinical Safety & Hallucination Mitigation in Patient-Facing LLMs",
+   "arxiv_id": "2604.26959",
+   "url": "https://arxiv.org/abs/2604.26959",
+   "quotes": [
+    {
+     "text": "We evaluate CareGuardAI on PatientSafeBench, MedSafetyBench, and MedHallu, covering both safety and hallucination detection.",
+     "source_url": "https://arxiv.org/pdf/2604.26959"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "CareGuardAI is evaluated on MedHallu as one of its three evaluation benchmarks, covering the hallucination-detection axis of its results.",
+   "evidence_notes": "Reference-list entry 'Pandit, S., et al. Medhallu: A comprehensive ...' was visible but truncated in search results; body-text sentence above confirmed this session."
+  },
+  {
+   "idx": 6,
+   "title": "Self-Attention as Transport: Limits of Symmetric Spectral Diagnostics",
+   "arxiv_id": "2605.04893",
+   "url": "https://arxiv.org/abs/2605.04893",
+   "quotes": [
+    {
+     "text": "MedHallu, directionally as predicted though asymmetric in strength, with decision polarity calibrated per regime.",
+     "source_url": "https://arxiv.org/pdf/2605.04893"
+    },
+    {
+     "text": "MedHallu, and TruthfulQA (Table 3, which reports 95% clustered bootstrap CIs).",
+     "source_url": "https://arxiv.org/pdf/2605.04893"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "The paper uses MedHallu as one of its evaluation benchmarks, reporting results on it in a table with confidence intervals and analyzing polarity behavior on MedHallu specifically.",
+   "evidence_notes": "Both quotes are sentence fragments as returned verbatim by the search index (sentence starts truncated). Prior-phase snippets ('On MedHallu, hallucinations cluster in the high-OC tercile with a mean of 45.1%') were not re-confirmed this session and are excluded from quotes."
+  },
+  {
+   "idx": 7,
+   "title": "MedFabric and EtHER: A Data-Centric Framework for Word-Level Fabrication Generation and Detection in Medical LLMs",
+   "arxiv_id": "2605.04180",
+   "url": "https://arxiv.org/abs/2605.04180",
+   "quotes": [
+    {
+     "text": "Med-HALT and MedHallu [26,28] gather ground truths from human sources and generates hallucinations with LLMs.",
+     "source_url": "https://arxiv.org/pdf/2605.04180"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The paper discusses MedHallu's construction method (LLM-generated hallucinations over human ground truths) when positioning its own fabrication-generation framework against prior medical hallucination benchmarks.",
+   "evidence_notes": "Prior-phase snippet describing MedHallu as 'a comprehensive corpus of 10,000 medical question-answer pairs' could not be re-confirmed this session; only the sentence in quotes was verified."
+  },
+  {
+   "idx": 8,
+   "title": "MedHELM: Holistic Evaluation of Large Language Models for Medical Tasks",
+   "arxiv_id": "2505.23802",
+   "url": "https://arxiv.org/abs/2505.23802",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "The MedHELM project's official site confirms MedHallu is one of the datasets in its benchmark suite ('PubMedQA, MedCalc-Bench, MedicationQA, MedHallu, and others in the Standard and Summarization tiers' offered as non-gated datasets), i.e. MedHallu is adopted as an evaluation component of the MedHELM framework.",
+   "evidence_notes": "Full text of the arXiv paper not indexed by the search channel this session; no verbatim paper sentence retrievable. Inclusion of MedHallu in the MedHELM suite confirmed via https://medhelm.org/ this session. Prior-phase snippets ('safety detection benchmarks ... (MedHallu for hallucination detection, Medec for medical error identification, RaceBias for bias detection)') not re-confirmed and excluded."
+  },
+  {
+   "idx": 9,
+   "title": "CrossHallu: Do Hallucination Signals Generalize Across Languages and Domains in Large Language Model's Internals?",
+   "arxiv_id": "2607.04029",
+   "url": "https://arxiv.org/abs/2607.04029",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Three searches this session could not surface any verbatim CrossHallu sentence mentioning MedHallu; search summaries of CrossHallu describe its transfer experiments as using TruthfulQA (EN/AR) and HalluScore.",
+   "evidence_notes": "The prior-phase snippet about MedHallu's 10,000 samples / difficulty distribution re-surfaced only attributed to MedHallu's own pages and reviews, not verifiably to CrossHallu's text, so it is excluded. MedHallu may still appear in CrossHallu's full text (e.g., as an additional domain dataset), but this could not be verified through the search index."
+  },
+  {
+   "idx": 10,
+   "title": "MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models",
+   "arxiv_id": "2606.24155",
+   "url": "https://arxiv.org/abs/2606.24155",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "MedBench v5's full text repeatedly co-occurs with quoted 'MedHallu' searches (its pdf/html surfaced in multiple such searches this session), consistent with a related-work mention of MedHallu among hallucination-oriented benchmarks, but no verbatim citing sentence could be extracted.",
+   "evidence_notes": "Two searches this session could not surface the exact sentence; the paper's pdf/html ranked in several quoted '\"MedHallu\"' searches this session (e.g., alongside ClinHallu and Behaviorally-Calibrated-RL queries), corroborating a full-text mention. Prior-phase paraphrase ('MedHallu is among existing hallucination-oriented benchmarks...') not re-confirmed verbatim."
+  },
+  {
+   "idx": 11,
+   "title": "Mitigating LLM Hallucination via Behaviorally Calibrated Reinforcement Learning",
+   "arxiv_id": "2512.19920",
+   "url": "https://arxiv.org/abs/2512.19920",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "Search evidence this session (with the paper's own PDF among top results) relayed a detailed individual related-work description of MedHallu's 10,000 curated pairs and multi-model majority-voting generation framework, indicating substantive individual discussion rather than a grouped mention.",
+   "evidence_notes": "Search answer this session relayed: 'MedHallu is a comprehensive benchmark comprising 10,000 rigorously curated medical question-answer pairs with hallucinated answers. It integrates fine-grained categorization of medical hallucination types, a hallucination generation framework that uses multi-model majority voting to balance difficulty levels while mitigating single-LLM bias, and systematically evaluates diverse LLM configurations' hallucination detection capabilities.' — wording may be search-engine paraphrase (differs slightly from prior-phase snippet), so it is recorded here rather than as a verbatim quote."
+  },
+  {
+   "idx": 12,
+   "title": "Do Hallucination Neurons Generalize? Evidence from Cross-Domain Transfer in LLMs",
+   "arxiv_id": "2604.19765",
+   "url": "https://arxiv.org/html/2604.19765v1",
+   "quotes": [],
+   "mention_count_estimate": "1",
+   "status": "no-context-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "Search evidence (with the paper's html top-ranked) relayed the paper's dedicated sentence discussing MedHallu's finding that medical hallucination has distinct characteristics from general-knowledge errors, indicating individual discussion used to motivate its cross-domain study.",
+   "evidence_notes": "Search answer this session relayed: 'In the medical domain, MedHallu provides a benchmark showing that medical hallucination has distinct characteristics from general-knowledge errors, including domain-specific error types such as incorrect drug interactions and fabricated clinical trial results.' — wording likely search-engine paraphrase of the paper's sentence, so recorded here, not as verbatim quote. Prior phase observed this paper's citation marker as '(Pal et al., 2024)', an apparent mis-attribution, but the benchmark named and described is MedHallu (Pandit et al.)."
+  },
+  {
+   "idx": 13,
+   "title": "Comparing Clinical and General LLMs on Knowledge Boundaries and Robustness",
+   "arxiv_id": "",
+   "url": "https://openreview.net/pdf?id=6TIxFMoA4k",
+   "quotes": [
+    {
+     "text": "While many subsequent works explore probability- or consistency-based hallucination detectors, performance remains limited in the medical domain: on MedHallu, even GPT-4o achieves only moderate F1 scores, and hallucinations that are semantically close to the truth are the most difficult to detect [10].",
+     "source_url": "https://openreview.net/pdf?id=6TIxFMoA4k"
+    },
+    {
+     "text": "S. Pandit, J. Xu, J. Hong, Z. Wang, T. Chen, K. Xu & Y. Ding. \"Medhallu: A comprehensive benchmark for detecting medical hallucinations in large language models\".",
+     "source_url": "https://openreview.net/pdf?id=6TIxFMoA4k"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The paper devotes a dedicated sentence to MedHallu's results (GPT-4o's limited F1, difficulty of semantically-close hallucinations) when motivating its study of knowledge boundaries in medical LLMs.",
+   "evidence_notes": "Quotes cleaned of '·' PDF line-break artifacts introduced by the search index. A second search suggested the paper may also run a medical-hallucination evaluation task and prior phase noted 'general LLMs perform better than medically fine-tuned LLMs in the task of Medical Hallucination', but direct evaluation ON the MedHallu dataset could not be verbatim-verified, so impact is conservatively MEDIUM."
+  },
+  {
+   "idx": 14,
+   "title": "Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks",
+   "arxiv_id": "2605.01417",
+   "url": "https://arxiv.org/pdf/2605.01417",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "Medmarks is a runnable medical LLM benchmark suite whose components (per its GitHub description surfaced this session) include 'a medical hallucination detection benchmark with four domain-specific error categories derived from the PubMedQA dataset' — a description matching MedHallu — indicating MedHallu is integrated as one of the suite's evaluation environments.",
+   "evidence_notes": "No verbatim paper sentence could be extracted; the Medmarks arXiv PDF was the top hit in this session's quoted '\"Medmarks\" \"MedHallu\"' full-text search, and the prior phase matched a '\"MedHallu test set\"' full-text search. Confirmation of suite inclusion comes from the MedARC-AI/Medmarks GitHub description via search."
+  },
+  {
+   "idx": 15,
+   "title": "HalluHard: A Hard Multi-Turn Hallucination Benchmark",
+   "arxiv_id": "2602.01031",
+   "url": "https://arxiv.org/html/2602.01031v1",
+   "quotes": [
+    {
+     "text": "Pandit, S., Xu, J., Hong, J., Wang, Z., Chen, T., Xu, K., and Ding, Y. Medhallu: A comprehensive benchmark for detecting medical hallucinations in large language models, 2025.",
+     "source_url": "https://arxiv.org/html/2602.01031v1"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "Only the bibliography entry for MedHallu could be verified; the citation appears to be a related-work mention among prior hallucination benchmarks with no in-body discussion surfaced.",
+   "evidence_notes": "Search this session confirmed the reference-list entry verbatim; the in-body citing sentence (likely a grouped list of hallucination benchmarks) was not retrievable through the index."
+  },
+  {
+   "idx": 16,
+   "title": "ADRD-Bench: A Preliminary LLM Benchmark for Alzheimer's Disease and Related Dementias",
+   "arxiv_id": "2602.11460",
+   "url": "https://arxiv.org/html/2602.11460",
+   "quotes": [
+    {
+     "text": "MedHallu (Pandit et al., 2025) focuses on medical hallucination detection, comprising question-answer pairs from PubMedQA with deliberately fabricated answers, challenging a model to judge correctness, and results show that even top models struggle to reliably identify incorrect medical statements.",
+     "source_url": "https://arxiv.org/html/2602.11460v1"
+    },
+    {
+     "text": "We consolidated ADRD questions from seven existing non-generation task benchmarks in Table 1, including PubMedQA (Jin et al., 2019), HEAD-QA (Vilares and Gómez-Rodríguez, 2019), MedBullets (Chen et al., 2025), MedMCQA (Pal et al., 2022), MedQA (Jin et al., 2021), MEDEC (Abacha et al., 2025), and MedHallu (Pandit et al., 2025).",
+     "source_url": "https://arxiv.org/html/2602.11460v1"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "extends",
+   "rationale": "ADRD-Bench uses MedHallu as one of the seven source benchmarks from which it consolidates its dementia-related questions (dataset used as a construction ingredient), and additionally devotes an individual related-work sentence to MedHallu's design and findings.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 17,
+   "title": "MedInsightBench: Evaluating Medical Analytics Agents Through Multi-Step Insight Discovery in Multi-modal Medical Data",
+   "arxiv_id": "2512.13297",
+   "url": "https://arxiv.org/html/2512.13297",
+   "quotes": [
+    {
+     "text": "Finally, some studies address evaluation gaps and modality-specific challenges, such as MedHallu (Pandit et al., 2025), which focuses on hallucination detection, and work that disentangles knowledge from reasoning to expose benchmark inflation.",
+     "source_url": "https://arxiv.org/html/2512.13297"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "MedHallu appears in a grouped related-work sentence about studies addressing evaluation gaps, with only a brief clause of description.",
+   "evidence_notes": "Search returned the sentence twice, once truncated and once complete with a '·' line-break artifact (removed here); one variant rendered the name as 'Med-Hallu' due to PDF hyphenation."
+  },
+  {
+   "idx": 18,
+   "title": "BenHalluEval: A Multi-Task Hallucination Evaluation Framework for Large Language Models on Bengali",
+   "arxiv_id": "2605.31483",
+   "url": "https://arxiv.org/html/2605.31483",
+   "quotes": [
+    {
+     "text": "MedHallu extended this to the clinical domain, showing how domain specificity amplifies the impact of hallucination errors 27.",
+     "source_url": "https://arxiv.org/html/2605.31483"
+    },
+    {
+     "text": "Pandit et al. (2025) S. Pandit, J. Xu, J. Hong, Z. Wang, T. Chen, K. Xu, and Y. Ding Medhallu: a comprehensive benchmark for detecting medical hallucinations in large language models. In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing, pp. 2858–2873.",
+     "source_url": "https://arxiv.org/html/2605.31483"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "BenHalluEval devotes an individual related-work sentence to MedHallu's contribution (extending hallucination evaluation to the clinical domain and showing domain specificity amplifies hallucination impact).",
+   "evidence_notes": "Single dedicated sentence rather than a grouped list; borderline MEDIUM/LOW, rated MEDIUM because MedHallu is discussed individually."
+  },
+  {
+   "idx": 19,
+   "title": "AMNESIA: A Large Scale Medical Unlearning Benchmark Suite with Disease-Informed Analysis",
+   "arxiv_id": "2605.30599",
+   "url": "https://arxiv.org/pdf/2605.30599",
+   "quotes": [
+    {
+     "text": "Recent benchmarks have pushed medical QA in several directions: evaluating LLM reasoning and explanation on challenging clinical cases (Chen et al., 2025), detecting hallucinations in medical outputs (Pandit et al., 2025), assessing multi-hop biomedical reasoning across knowledge graphs (Kim et al., 2025), and supporting argumentative explanation of diagnoses (Sviridova et al., 2024).",
+     "source_url": "https://arxiv.org/html/2605.30599"
+    },
+    {
+     "text": "S. Pandit, J. Xu, J. Hong, Z. Wang, T. Chen, K. Xu, and Y. Ding (2025) MedHallu: a comprehensive benchmark for detecting medical hallucinations in large language models.",
+     "source_url": "https://arxiv.org/html/2605.30599"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "MedHallu is cited in a grouped related-work sentence listing directions in recent medical QA benchmarks, with no individual discussion.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 20,
+   "title": "MedRAGChecker: Claim-Level Verification for Biomedical Retrieval-Augmented Generation",
+   "arxiv_id": "2601.06519",
+   "url": "https://arxiv.org/html/2601.06519v1",
+   "quotes": [
+    {
+     "text": "Hallucination—producing plausible but factually incorrect statements—is a major concern in clinical settings (Yu et al., 2025; Singhal et al., 2025; Vladika et al., 2024; Pandit et al., 2025; Liu and Yu, 2025).",
+     "source_url": "https://arxiv.org/pdf/2601.06519"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "MedHallu (Pandit et al., 2025) is cited in a grouped list supporting the general claim that hallucination is a major concern in clinical settings.",
+   "evidence_notes": "The '(Pandit et al., 2025)' marker in this grouped citation corresponds to MedHallu per the prior phase's full-text co-occurrence of 'MedRAGChecker', 'MedHallu' and 'Pandit'; no individual MedHallu discussion surfaced this session."
+  },
+  {
+   "idx": 21,
+   "title": "MedHallTune: An Instruction-Tuning Benchmark for Mitigating Medical Hallucination in Vision-Language Models",
+   "arxiv_id": "2502.20780",
+   "url": "https://arxiv.org/abs/2502.20780",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "Search evidence this session (MedHallTune's arXiv html top-ranked in a quoted '\"MedHallTune\" \"MedHallu\"' search) relayed the paper's direct comparison contrasting MedHallTune with MedHallu's text-based medical QA focus, indicating individual positioning against MedHallu.",
+   "evidence_notes": "Search answer relayed: 'Unlike MedHallu which focuses on text-based medical QA, MedHallTune stands out in data size and includes hallucinatory objects, attributes and knowledge...' — likely a paraphrase of the paper's comparison (e.g., in its benchmark-comparison table/related work), so recorded here rather than as a verbatim quote."
+  },
+  {
+   "idx": 22,
+   "title": "Medical Hallucinations in Foundation Models and Their Impact on Healthcare",
+   "arxiv_id": "2503.05777",
+   "url": "https://arxiv.org/abs/2503.05777",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "This large multi-institution survey of medical hallucinations indexes MedHallu (its arXiv/medRxiv pages matched quoted '\"MedHallu\"' full-text searches in the prior phase), most plausibly as one of the benchmarks covered in its survey of the field, but no verbatim citing sentence could be extracted this session.",
+   "evidence_notes": "Two searches this session surfaced only the paper's metadata and MedHallu's own pages; the full text is not sentence-indexed by the search channel. Impact could be higher if the survey discusses MedHallu individually in its benchmark tables — unverifiable here."
+  },
+  {
+   "idx": 23,
+   "title": "Reliable and Responsible Foundation Models: A Comprehensive Survey",
+   "arxiv_id": "2602.08145",
+   "url": "https://arxiv.org/html/2602.08145",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "A broad survey on reliable/responsible foundation models whose full text matched quoted '\"MedHallu\"' searches (prior phase); the expected usage is a grouped mention of MedHallu among hallucination benchmarks, but no verbatim sentence could be extracted this session.",
+   "evidence_notes": "Search this session returned only the survey's abstract-level description plus MedHallu's own pages."
+  },
+  {
+   "idx": 24,
+   "title": "Loki's Dance of Illusions: A Comprehensive Survey of Hallucination in Large Language Models",
+   "arxiv_id": "2507.02870",
+   "url": "https://arxiv.org/abs/2507.02870",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "LOW",
+   "usage_type": "background-mention",
+   "rationale": "This hallucination survey's full text matched quoted '\"MedHallu\"' searches in the prior phase, consistent with MedHallu appearing among the benchmarks it catalogs, but no verbatim citing sentence could be extracted this session.",
+   "evidence_notes": "Two searches this session returned only metadata for the survey; full text not sentence-indexed by the search channel."
+  },
+  {
+   "idx": 25,
+   "title": "A comprehensive taxonomy of hallucinations in Large Language Models",
+   "arxiv_id": "2508.01781",
+   "url": "https://arxiv.org/pdf/2508.01781",
+   "quotes": [
+    {
+     "text": "MedHallu this is a comprehensive benchmark specifically designed for detecting medical hallucinations in LLMs.",
+     "source_url": "https://arxiv.org/html/2508.01781"
+    },
+    {
+     "text": "It comprises 10,000 high-quality question-answer pairs derived from PubMedQA, with hallucinated answers systematically generated through a controlled pipeline.",
+     "source_url": "https://arxiv.org/html/2508.01781"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The taxonomy dedicates an individual descriptive entry to MedHallu (its design and construction), beyond a grouped citation.",
+   "evidence_notes": "First quote's grammar ('MedHallu this is...') reflects the paper's glossary/benchmark-entry formatting as indexed. Prior-phase snippet about per-category breakdown (Diseases 25.9% etc.) not re-confirmed this session and excluded from quotes."
+  },
+  {
+   "idx": 26,
+   "title": "A Survey of Automatic Hallucination Evaluation on Natural Language Generation",
+   "arxiv_id": "2404.12041",
+   "url": "https://openreview.net/pdf/f70331f15c5ea578cf3e7587b87dfda965af5c9f.pdf",
+   "quotes": [
+    {
+     "text": "Similarly, MedHallu (Pandit et al., 2025) provides introduces synthetic hallucination QA pairs, where hallucinated answers are generated through a controlled pipeline built upon PubMedQA.",
+     "source_url": "https://arxiv.org/html/2404.12041v3"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The survey devotes an individual sentence to MedHallu's construction (synthetic hallucination QA pairs via a controlled pipeline over PubMedQA) in its coverage of hallucination evaluation datasets.",
+   "evidence_notes": "The phrase 'provides introduces' appears to be a typo in the survey's text as indexed. The survey exists both on arXiv (2404.12041, later versions) and as a TMLR/OpenReview submission; the quote was surfaced from the arXiv v3 html."
+  },
+  {
+   "idx": 27,
+   "title": "MedScore: Generalizable Factuality Evaluation of Free-Form Medical Answers by Domain-adapted Claim Decomposition and Verification",
+   "arxiv_id": "2505.18452",
+   "url": "https://arxiv.org/abs/2505.18452",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "Two searches this session could not surface any MedScore sentence mentioning MedHallu; the prior phase's evidence was full-text co-occurrence only, so neither the citing context nor its depth can be characterized.",
+   "evidence_notes": "Prior phase: top hit in quoted search '\"MedScore\" \"Factuality Evaluation of Free-Form Medical Answers\" \"MedHallu\"' (full-text co-occurrence). No snippet ever extracted."
+  },
+  {
+   "idx": 28,
+   "title": "MedFact: Benchmarking the Fact-Checking Capabilities of Large Language Models on Chinese Medical Texts",
+   "arxiv_id": "2509.12440",
+   "url": "https://arxiv.org/html/2509.12440",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from this paper this session; the only evidence remains a prior-phase full-text co-occurrence match.",
+   "evidence_notes": "Search this session returned only the paper's metadata. Prior phase: matched a quoted '\"MedHallu\"' LLM-as-a-judge/medical-factuality sweep (full-text co-occurrence), no snippet."
+  },
+  {
+   "idx": 29,
+   "title": "A Scoping Review of LLM-as-a-Judge in Healthcare and the MedJUDGE Framework",
+   "arxiv_id": "2604.25933",
+   "url": "https://arxiv.org/pdf/2604.25933",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from this scoping review this session; the only evidence remains a prior-phase full-text co-occurrence match.",
+   "evidence_notes": "Search this session returned only metadata. Prior phase: matched the quoted '\"MedHallu\" \"LLM-as-a-judge\"' sweep (full-text co-occurrence), no snippet. As a scoping review, a mention would most plausibly be an inventory/background reference."
+  },
+  {
+   "idx": 30,
+   "title": "Same Verdict, Different Reasons: LLM-as-a-Judge and Clinician Disagreement on Medical Chatbot Completeness",
+   "arxiv_id": "2604.16383",
+   "url": "https://arxiv.org/html/2604.16383",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was a single full-text co-occurrence sweep and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 31,
+   "title": "Streaming Hallucination Detection in Long Chain-of-Thought Reasoning",
+   "arxiv_id": "2601.02170",
+   "url": "https://arxiv.org/abs/2601.02170",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was full-text co-occurrence across multiple URL variants only.",
+   "evidence_notes": "Paper published at ACL 2026 Findings (2026.findings-acl.1064). Full text not sentence-indexed by the search channel this session."
+  },
+  {
+   "idx": 32,
+   "title": "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents",
+   "arxiv_id": "2601.06818",
+   "url": "https://arxiv.org/abs/2601.06818",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was full-text co-occurrence across three URL variants only.",
+   "evidence_notes": "Likely a related-work mention among hallucination benchmarks given the paper's topic, but unverified."
+  },
+  {
+   "idx": 33,
+   "title": "UniVRSE: Unified Vision-conditioned Response Semantic Entropy for Hallucination Detection in Medical Vision-Language Models",
+   "arxiv_id": "2503.20504",
+   "url": "https://arxiv.org/pdf/2503.20504",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was matches in four quoted '\"MedHallu\"' full-text searches without any snippet.",
+   "evidence_notes": "The paper's medical hallucination-detection topic makes a related-work mention plausible, but no citing context was retrievable."
+  },
+  {
+   "idx": 34,
+   "title": "Quantifying Hallucinations in Large Language Models on Medical Textbooks",
+   "arxiv_id": "2603.09986",
+   "url": "https://arxiv.org/html/2603.09986",
+   "quotes": [
+    {
+     "text": "MedHallu builds ten thousand PubMedQA-derived pairs in which a generator model writes each hallucinated answer under automatic filtering, so the evaluated task is binary detection rather than measurement of spontaneous error Pandit et al. (2025).",
+     "source_url": "https://arxiv.org/html/2603.09986"
+    },
+    {
+     "text": "S. Pandit, J. Xu, J. Hong, Z. Wang, T. Chen, K. Xu, and Y. Ding (2025) MedHallu: a comprehensive benchmark for detecting medical hallucinations in large language models.",
+     "source_url": "https://arxiv.org/html/2603.09986"
+    }
+   ],
+   "mention_count_estimate": "1",
+   "status": "quotes-found",
+   "impact": "MEDIUM",
+   "usage_type": "discussion",
+   "rationale": "The paper individually discusses MedHallu's construction and contrasts its own spontaneous-error measurement against MedHallu's binary detection task, a dedicated positioning sentence.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 35,
+   "title": "ReGraM: Region-First Knowledge Graph Reasoning for Medical Question Answering",
+   "arxiv_id": "2601.09280",
+   "url": "https://arxiv.org/html/2601.09280",
+   "quotes": [
+    {
+     "text": "Figure 11: Hallucination Judge Prompt (MedHallu)",
+     "source_url": "https://arxiv.org/html/2601.09280v1"
+    }
+   ],
+   "mention_count_estimate": "2-3",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "ReGraM's appendix contains a dedicated 'Hallucination Judge Prompt (MedHallu)' figure, indicating MedHallu is used as an evaluation dataset in its hallucination-judging experiments.",
+   "evidence_notes": "Only the figure caption was retrievable verbatim; the surrounding experimental text describing the MedHallu evaluation could not be extracted, so the HIGH rating rests on the caption's implication that a MedHallu-specific judging protocol is part of the paper's experiments."
+  },
+  {
+   "idx": 36,
+   "title": "BLUEmed: Retrieval-Augmented Multi-Agent Debate for Clinical Error Detection",
+   "arxiv_id": "2604.10389",
+   "url": "https://arxiv.org/pdf/2604.10389",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was full-text co-occurrence in three quoted '\"MedHallu\"' searches without any snippet.",
+   "evidence_notes": "Clinical error-detection topic makes a benchmark-related mention plausible (possibly even evaluation use), but nothing could be verified."
+  },
+  {
+   "idx": 37,
+   "title": "Bridging External and Parametric Knowledge: Mitigating Hallucination of LLMs with Shared-Private Semantic Synergy in Dual-Stream Knowledge (DSSP-RAG)",
+   "arxiv_id": "2506.06240",
+   "url": "https://aclanthology.org/2025.emnlp-main.549.pdf",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search could not confirm any MedHallu mention in the DSSP-RAG paper; the search explicitly found no such sentence in the indexed excerpts.",
+   "evidence_notes": "Prior-phase evidence was only that its ACL Anthology PDF matched a quoted search containing '\"MedHallu\"'. This session found the paper (arXiv 2506.06240 / EMNLP 2025 main 549) but no MedHallu mention — the citation itself remains unverified; possible false positive from the search index."
+  },
+  {
+   "idx": 38,
+   "title": "MedHal: An Evaluation Dataset for Medical Hallucination Detection",
+   "arxiv_id": "2504.08596",
+   "url": "https://arxiv.org/abs/2504.08596",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "not-actually-citing",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search of MedHal's indexed text found it discusses 'MedHALU (Agarwal et al. (2024))' — the different MedHalu paper by Agarwal et al. (arXiv 2409.19492) — with its reference list citing Agarwal et al., and no citation to Pandit et al. was found.",
+   "evidence_notes": "Sentence found this session: 'MedHALU (Agarwal et al. (2024)) and Med-Halt (Pal et al. (2023)), on the other hand, are centered around QA and focus on evaluating LLMs' ability to answer complex medical questions and detect inconsistencies in their responses.' plus the Agarwal reference entry. Residual uncertainty: a later revision (v2) could add a Pandit citation, but nothing indexed shows one; prior-phase 'likely' rating appears to have been a MedHalu/MedHallu confusion."
+  },
+  {
+   "idx": 39,
+   "title": "K-FinHallu: A Hallucination Detection Benchmark for Multi-Turn RAG in Korean Finance",
+   "arxiv_id": "2605.29523",
+   "url": "https://arxiv.org/abs/2605.29523",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from K-FinHallu this session; prior-phase evidence was full-text co-occurrence only.",
+   "evidence_notes": "As a domain-transfer hallucination benchmark, a related-work mention of MedHallu among domain-specific benchmarks is plausible but unverified."
+  },
+  {
+   "idx": 40,
+   "title": "AraHalluEval: A Fine-grained Hallucination Evaluation Framework for Arabic LLMs",
+   "arxiv_id": "2509.04656",
+   "url": "https://arxiv.org/pdf/2509.04656",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No verbatim sentence mentioning MedHallu could be surfaced from AraHalluEval this session despite multiple targeted searches.",
+   "evidence_notes": "Published at ArabicNLP 2025 (2025.arabicnlp-main.12). Prior phase: top hit in a quoted '\"MedHallu\" multilingual...' search (full-text co-occurrence); a related-work mention among domain-specific hallucination benchmarks is plausible but unverified."
+  },
+  {
+   "idx": 41,
+   "title": "HalluScore: Large Language Model Hallucination Question Answering Benchmark",
+   "arxiv_id": "2605.17007",
+   "url": "https://arxiv.org/pdf/2605.17007",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from HalluScore this session; prior-phase evidence was full-text co-occurrence in two quoted sweeps only.",
+   "evidence_notes": ""
+  },
+  {
+   "idx": 42,
+   "title": "Detecting Hallucinations and Recovering Verified Answers in Arabic Islamic Question Answering",
+   "arxiv_id": "2608.03720",
+   "url": "https://arxiv.org/html/2608.03720",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu was found in the indexed portions of this paper this session; the prior phase's evidence was a single OR-sweep co-occurrence and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 43,
+   "title": "A multilingual hallucination benchmark: MultiWikiQHalluA",
+   "arxiv_id": "2605.02504",
+   "url": "https://arxiv.org/pdf/2605.02504",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu was found in the indexed portions of this paper this session; prior-phase evidence was a single multilingual-sweep co-occurrence and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "Also published at RESOURCEFUL 2026 (2026.resourceful-4.17). It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 44,
+   "title": "Trustworthy Medical Imaging with Large Language Models: A Study of Hallucinations Across Modalities",
+   "arxiv_id": "2508.07031",
+   "url": "https://arxiv.org/abs/2508.07031",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was that its abs/pdf/html pages top-ranked a quoted verification search containing '\"MedHallu\"' (full-text co-occurrence), without a snippet.",
+   "evidence_notes": "A related-work mention among medical hallucination benchmarks is plausible given the paper's topic, but unverified."
+  },
+  {
+   "idx": 45,
+   "title": "Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints",
+   "arxiv_id": "2606.13211",
+   "url": "https://arxiv.org/html/2606.13211v1",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was a single quoted-search co-occurrence and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 46,
+   "title": "C-MIG: Multi-view Information Gain-based Retrieval-Augmented Generation for Clinical Diagnosis Reasoning",
+   "arxiv_id": "2605.27860",
+   "url": "https://arxiv.org/pdf/2605.27860",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was a single quoted-sweep co-occurrence and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 47,
+   "title": "MEGA-RAG: a retrieval-augmented generation framework with multi-evidence guided answer refinement for mitigating hallucinations of LLMs in public health",
+   "arxiv_id": "",
+   "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1635381/full",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "This session's search summarized MEGA-RAG's method and its HealthQuestDB evaluation without surfacing any MedHallu mention; prior-phase evidence was co-occurrence in two quoted sweeps only.",
+   "evidence_notes": "MEGA-RAG's own evaluation uses HealthQuestDB, so any MedHallu citation is most plausibly background/related work, but no citing sentence could be verified."
+  },
+  {
+   "idx": 48,
+   "title": "Improving the Safety and Trustworthiness of Medical AI via Multi-Agent Evaluation Loops",
+   "arxiv_id": "2601.13268",
+   "url": "https://arxiv.org/html/2601.13268",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was co-occurrence of its html and pdf in one quoted sweep only.",
+   "evidence_notes": "Also published as 'Enhancing Medical AI Safety Through Multi-Agent Evaluation and Iterative Refinement' (ACM-BCB 2025, doi 10.1145/3765612.3768142). Citation context unverifiable through the search index."
+  },
+  {
+   "idx": 49,
+   "title": "Transforming Healthcare with State-of-the-Art Medical-LLMs: A Comprehensive Evaluation of Current Advances Using Benchmarking Framework",
+   "arxiv_id": "",
+   "url": "https://www.techscience.com/cmc/v86n2/64752/html",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence from this CMC journal survey mentioning MedHallu could be surfaced this session; the entry was already flagged 'uncertain' from a single co-occurrence sweep.",
+   "evidence_notes": "First author Saha et al. per search. As a benchmarking-framework survey of Med-LLMs, a MedHallu mention in its benchmark inventory is plausible but unverified."
+  },
+  {
+   "idx": 50,
+   "title": "Uncertainty-aware abstention in medical diagnosis based on medical texts",
+   "arxiv_id": "2502.18050",
+   "url": "https://arxiv.org/html/2502.18050v1",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was a single quoted-sweep co-occurrence and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "Also published in npj Artificial Intelligence (s44387-026-00097-z). It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 51,
+   "title": "Online Conformal Abstention for Factuality Control Under Adversarial Bandit Feedback",
+   "arxiv_id": "2506.14067",
+   "url": "https://arxiv.org/html/2506.14067",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was two URL variants matching one quoted sweep and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "Earlier version titled 'A Regret Perspective on Online Selective Generation'. It remains unverified whether this paper cites MedHallu at all (it may use MedHallu as an experimental dataset for abstention, but nothing could be confirmed)."
+  },
+  {
+   "idx": 52,
+   "title": "H-Neurons: On the Existence, Impact, and Origin of Hallucination-Associated Neurons in LLMs",
+   "arxiv_id": "2512.01797",
+   "url": "https://arxiv.org/abs/2512.01797",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No H-Neurons sentence mentioning MedHallu could be surfaced; the MedHallu-describing sentence returned by search belongs to a different paper (arXiv 2604.19765), and the only Pandit reference surfaced in H-Neurons context is to FaithEval, a different Pandit co-authored paper.",
+   "evidence_notes": "Search surfaced H-Neurons-adjacent reference: 'Y. Ming, S. Purushwalkam, S. Pandit, Z. Ke, X. Nguyen, C. Xiong, and S. Joty (2025) FaithEval...' — that is a citation to FaithEval (Pandit is a co-author), not to MedHallu. Whether H-Neurons cites MedHallu remains unverified; prior-phase evidence was co-occurrence in two internal-states sweeps."
+  },
+  {
+   "idx": 53,
+   "title": "VaaS is a Multi-Layer Hallucination Reduction Pipeline for AI-Assisted Science: Production Validation and Prospective Benchmarking (VaaS-RIKER2)",
+   "arxiv_id": "",
+   "url": "https://www.medrxiv.org/content/10.64898/2026.03.24.26348935v1.full",
+   "quotes": [
+    {
+     "text": "The VaaS protocol achieved F1 = 0.9853 on the hard tier of the MedHallu clinical hallucination benchmark (cases where all benchmark ensemble models were fooled), compared to the published GPT-4o baseline of F1 = 0.811 (Pandit et al., 2025).",
+     "source_url": "https://www.medrxiv.org/content/10.64898/2026.03.24.26348935v1.full"
+    }
+   ],
+   "mention_count_estimate": "many",
+   "status": "quotes-found",
+   "impact": "HIGH",
+   "usage_type": "evaluated-on",
+   "rationale": "VaaS benchmarks its hallucination-reduction pipeline directly on MedHallu's hard tier, reporting F1 numbers and comparing against the GPT-4o baseline published in the MedHallu paper.",
+   "evidence_notes": "Two searches this session consistently attributed the F1=0.9853-on-MedHallu-hard-tier result (vs. Pandit et al. 2025 baseline 0.811) to this preprint; minor wording variation between the two search renderings suggests the quote may be lightly normalized by the index."
+  },
+  {
+   "idx": 54,
+   "title": "MedHallBench: A New Benchmark for Assessing Hallucination in Medical Large Language Models",
+   "arxiv_id": "2412.18947",
+   "url": "https://arxiv.org/pdf/2412.18947",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from any version of MedHallBench this session; whether a revised version (up to v4) cites MedHallu remains unverified since the original v1 predates MedHallu.",
+   "evidence_notes": "Prior phase: its PDF matched at least five quoted '\"MedHallu\"' full-text searches, suggesting a revised version mentions MedHallu, but no snippet was ever extracted. The similar benchmark name (MedHallBench vs MedHallu) also raises index-confusion risk."
+  },
+  {
+   "idx": 55,
+   "title": "A Typology of Synthetic Datasets for Dialogue Processing in Clinical Contexts",
+   "arxiv_id": "2505.03025",
+   "url": "https://arxiv.org/pdf/2505.03025",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was two quoted-sweep co-occurrences and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "Published at LREC 2026 (2026.lrec-1.653). If MedHallu appears, it is most plausibly in its typology inventory of synthetic clinical datasets, but this is unverified."
+  },
+  {
+   "idx": 56,
+   "title": "Reducing Hallucinations of Medical Multimodal Large Language Models with Visual Retrieval-Augmented Generation",
+   "arxiv_id": "2502.15040",
+   "url": "https://arxiv.org/abs/2502.15040",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; the prior phase's later direct verification also failed to re-confirm, and the entry was flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation (possible search-index false positive)."
+  },
+  {
+   "idx": 57,
+   "title": "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights",
+   "arxiv_id": "2511.06738",
+   "url": "https://arxiv.org/pdf/2511.06738",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; prior-phase evidence was a single quoted-sweep co-occurrence and the entry was flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 58,
+   "title": "Hybrid Retrieval for Hallucination Mitigation in Large Language Models: A Comparative Analysis",
+   "arxiv_id": "2504.05324",
+   "url": "https://arxiv.org/pdf/2504.05324",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced this session; the paper's retrievable text discusses the HaluBench dataset (with PubMedQA) rather than MedHallu, and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "Possible search-index false positive: the paper's confirmed evaluation dataset is HaluBench. Whether MedHallu is cited anywhere (e.g., references) remains unverified."
+  },
+  {
+   "idx": 59,
+   "title": "A Survey of Multimodal Hallucination Evaluation and Detection",
+   "arxiv_id": "2507.19024",
+   "url": "https://link.springer.com/article/10.1007/s11263-026-02756-9",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from this IJCV survey this session; prior-phase evidence was a single quoted-sweep co-occurrence and the entry was flagged 'uncertain'.",
+   "evidence_notes": "arXiv version identified as 2507.19024. A survey-inventory mention of MedHallu is plausible but unverified."
+  },
+  {
+   "idx": 60,
+   "title": "Towards Safe and Trustworthy Healthcare AI: Risk Assessment of Medical Dialogue Using LLMs",
+   "arxiv_id": "",
+   "url": "https://link.springer.com/article/10.1007/s44230-025-00131-4",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No sentence mentioning MedHallu could be surfaced from this Springer article this session; its own evaluation uses the NTCIR-18 MedNLP-CHAT dataset, and the entry was already flagged 'uncertain'.",
+   "evidence_notes": "It remains unverified whether this paper cites MedHallu at all; treat as unconfirmed citation."
+  },
+  {
+   "idx": 61,
+   "title": "Thinking, Faithful and Stable: Mitigating Hallucinations in LLMs (Stanford CS224R course project report)",
+   "arxiv_id": "",
+   "url": "https://cs224r.stanford.edu/projects/pdfs/Final_Report_CS224r.pdf",
+   "quotes": [],
+   "mention_count_estimate": "unknown",
+   "status": "no-context-found",
+   "impact": "unknown",
+   "usage_type": "unknown",
+   "rationale": "No verbatim sentence could be extracted; this session's search indicated the report 'appears to reference MedHallu as one of the benchmarks for evaluating hallucination detection methods' but returned no quotable text.",
+   "evidence_notes": "Non-archival Stanford CS224R course report. Search-engine summary suggests benchmark-evaluation use of MedHallu, which if confirmed would be HIGH impact, but the wording was hedged and no sentence was retrievable, so impact is left unknown."
+  }
+ ]
+}
