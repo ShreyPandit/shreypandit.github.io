@@ -1,0 +1,522 @@
+{
+ "batch": "ext-5",
+ "results": [
+  {
+   "paper_key": "sfr-rag",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "Large Language Model Can Be a Foundation for Hidden Rationale-Based Retrieval",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "This session's search summary described SFR-RAG only as 'a work by Nguyen et al. (2024) ... referenced as a related approach in the context of improving RAG systems' in this paper, with no dedicated discussion surfaced.",
+     "evidence_notes": "arxiv.org/html/2412.16615v2 returned as a hit for the quoted co-occurrence query '\"Hidden Rationale-Based Retrieval\" \"SFR-RAG\"' this session. Prior wave confirmed the citation via the Springer LNCS chapter reference list (Nguyen, X.P., et al., arXiv 2409.09916). No verbatim body sentence could be retrieved from the indexed text."
+    },
+    {
+     "idx": 1,
+     "title": "A Comprehensive Survey of Retrieval-Augmented Generation (RAG): Evolution, Current Landscape and Future Directions",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "introduce SFR-RAG, a small but highly efficient Retrieval Augmented Generation (RAG) model, which is designed to enhance the integration of external contextual information into Large Language Models",
+       "source_url": "https://arxiv.org/pdf/2410.12837"
+      }
+     ],
+     "mention_count_estimate": "2-3",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The survey describes SFR-RAG individually in its own words (a small but highly efficient RAG model designed to enhance integration of external contextual information into LLMs), which is substantive individual discussion rather than a bare grouped citation.",
+     "evidence_notes": "Quote surfaced verbatim in this session's search of the survey's indexed full text (sentence fragment; the leading subject, e.g. 'Nguyen et al. [] introduce', precedes the quoted span). The reference title 'SFR-RAG: Towards Contextually Faithful LLMs.' also appears in the bibliography. Matches the prior-wave snippet."
+    },
+    {
+     "idx": 2,
+     "title": "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session confirmed the bibliography entry 'Sfr-rag: Towards contextually faithful llms. arXiv preprint arXiv:2409.09916, 2024.' in the paper's reference list, but no body sentence discussing SFR-RAG was retrievable from the indexed text.",
+     "evidence_notes": "Same Salesforce AI Research group (SFR- model family), so this is a self-citation of prior lab work; the depth of in-text engagement could not be verified."
+    },
+    {
+     "idx": 3,
+     "title": "A Survey on Knowledge-Oriented Retrieval-Augmented Generation",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "The survey's full text repeatedly matched quoted 'SFR-RAG' queries and a search summary reported that the survey mentions SFR-RAG among models it covers, consistent with a survey inventory mention rather than load-bearing use.",
+     "evidence_notes": "arxiv.org/pdf/2503.10677 returned as a hit in multiple 'SFR-RAG' queries this session that did not contain the survey's title (e.g. alongside the 2412.16615 and TREC-support queries). A search summary attributed to it a description of SFR-RAG as 'a small but highly efficient Retrieval Augmented Generation model', but that wording may be conflated with arXiv 2410.12837, so it is not recorded as a quote."
+    },
+    {
+     "idx": 4,
+     "title": "SF-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Question Answering",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's PDF was returned in this session's result lists for two independent quoted-'SFR-RAG' queries that did not contain its title, indicating the string likely occurs in its full text, but no sentence was retrievable.",
+     "evidence_notes": "arxiv.org/pdf/2602.13647 appeared in results for '\"SFR-DeepResearch\" \"SFR-RAG\" contextually faithful' and for a GenDiE-related 'SFR-RAG' query. Note: the arXiv abstract page now shows the title as 'PT-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Papers' (apparent retitling across versions). A direct query about the paper could not surface any SFR-RAG sentence."
+    },
+    {
+     "idx": 5,
+     "title": "Generate, Discriminate, Evolve: Enhancing Context Faithfulness via Fine-Grained Sentence-Level Self-Evolution (GenDiE)",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session located the bibliography entry for SFR-RAG ('Sfr-rag: Towards contextually faithful llms. Preprint ...') in the GenDiE paper, but no in-text sentence was retrievable from the indexed full text.",
+     "evidence_notes": "GenDiE is itself a context-faithfulness paper (Findings of ACL 2025), so SFR-RAG plausibly appears in its related work on faithful generation, but that could not be verified verbatim."
+    },
+    {
+     "idx": 6,
+     "title": "Optimizing Question Semantic Space for Dynamic Retrieval-Augmented Multi-hop Question Answering (Q-DREAM)",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session confirmed the full bibliography entry in the paper ('Xuan-Phi Nguyen, Shrey Pandit, Senthil Purushwalkam, Austin Xu, Hailin Chen, Yifei Ming, Zixuan Ke, Silvio Savarese, Caiming Xong, and Shafiq Joty. 2024. Sfr-rag: Towards contextually faithful llms. arXiv preprint arXiv:2409.09916.'), but no body sentence was retrievable.",
+     "evidence_notes": "Bibliography entry surfaced from arxiv.org/html/2506.00491 (ACL 2025 main-conference paper). In-text citation context not indexed in retrievable snippets."
+    },
+    {
+     "idx": 7,
+     "title": "Kanana: Compute-efficient Bilingual Language Models",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "ContextualBench (Nguyen et al., 2024) is set of multi-hop QA, which we specifically include to consider the conciseness in evaluation.",
+       "source_url": "https://arxiv.org/html/2502.18934v3"
+      }
+     ],
+     "mention_count_estimate": "2-3",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "The Kanana team explicitly includes ContextualBench (introduced by the SFR-RAG paper) in their model evaluation suite, i.e., they evaluate their models on the cited work's benchmark.",
+     "evidence_notes": "The sentence was reported to appear twice in the paper (per this session's search of the indexed full text). The citation marker used is 'ContextualBench (Nguyen et al., 2024)', which attributes ContextualBench to the target paper."
+    },
+    {
+     "idx": 8,
+     "title": "POLYRAG: Integrating Polyviews into Retrieval-Augmented Generation for Medical Applications",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "POLYRAG's PDF appeared in this session's result lists for two independent quoted-'SFR-RAG' queries that did not contain its title, indicating the term likely occurs in its full text, but no sentence was retrievable.",
+     "evidence_notes": "arxiv.org/pdf/2504.14917 appeared in result lists for 'SFR-RAG' queries about other papers (2412.16615 and TREC 2504.15205 searches). Direct queries about POLYRAG did not surface the citing sentence."
+    },
+    {
+     "idx": 9,
+     "title": "Support Evaluation for the TREC 2024 RAG Track: Comparing Human versus LLM Judges",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session could not confirm any SFR-RAG mention; the only Pandit-related item surfaced from its bibliography was the FaithEval paper (Ming et al., 2024), a different work.",
+     "evidence_notes": "This session found in its indexed bibliography: 'Yifei Ming, Senthil Purushwalkam, Shrey Pandit, Zixuan Ke, Xuan-Phi Nguyen, Caiming Xiong, and Shafiq Joty. 2024. FaithEval...' (CoRR abs/2410.03727) - evidence the paper cites the authors' FaithEval work, not necessarily SFR-RAG. Prior wave reported arxiv.org/pdf/2504.15205 as a full-text hit for '\"Nguyen et al., 2024\" \"SFR-RAG\"'; not reproduced this session."
+    },
+    {
+     "idx": 10,
+     "title": "A Visionary Look at Vibe Researching",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Multiple searches this session surfaced the paper's text excerpts but no evidence of an SFR-RAG mention.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2604.00945 as a full-text hit for the doubly-quoted query '\"Nguyen et al., 2024\" \"SFR-RAG\"'; this session could not reproduce or locate any citing sentence."
+    },
+    {
+     "idx": 11,
+     "title": "Benchmarking LLM Faithfulness in RAG with Evolving Leaderboards",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session (including a quoted co-occurrence query) did not surface any SFR-RAG mention in the indexed text of this EMNLP 2025 Industry Track paper.",
+     "evidence_notes": "Prior wave reported both its arXiv page and aclanthology.org/2025.emnlp-industry.54.pdf as hits for a quoted 'SFR-RAG' query; not reproduced this session."
+    },
+    {
+     "idx": 12,
+     "title": "Evaluating Faithfulness in Agentic RAG Systems for e-Governance Applications Using LLM-Based Judging Frameworks",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "1",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The MDPI article was the top hit for this session's quoted 'SFR-RAG' query and the search summary attributed to the article an individual sentence discussing SFR-RAG in its related work, indicating a dedicated (single-sentence) discussion.",
+     "evidence_notes": "Search summary reported (wording not verified verbatim, so not recorded as a quote): 'SFR-RAG integrates semantic filtering and reranking to improve contextual fidelity, while other work distinguishes correctness from faithfulness, noting that accurate answers may still lack evidence support.' Source: https://www.mdpi.com/2504-2289/9/12/309 (MDPI Big Data and Cognitive Computing 9(12):309)."
+    },
+    {
+     "idx": 13,
+     "title": "A System for Comprehensive Assessment of RAG Frameworks (SCARF)",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session could not surface any SFR-RAG mention in SCARF's indexed text; SFR-RAG content in result summaries traced back to the SFR-RAG paper itself.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2504.07803 as a top full-text hit for a quoted 'SFR-RAG' baseline-comparison query; not reproduced this session."
+    },
+    {
+     "idx": 14,
+     "title": "From Evidence-Based Medicine to Knowledge Graph: Retrieval-Augmented Generation for Sports Rehabilitation and a Domain Benchmark",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search returned the paper for a query containing both its title terms and quoted 'SFR-RAG' (ambiguous match) but surfaced no citing sentence.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2601.00216 as a full-text hit for a quoted 'SFR-RAG' baseline-comparison query. This session's hit cannot distinguish title-match from marker-match, so citation is not independently re-confirmed."
+    },
+    {
+     "idx": 15,
+     "title": "Towards Global Retrieval Augmented Generation: A Benchmark for Corpus-Level Reasoning",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "Two searches this session (title+marker and GlobalRAG/GlobalQA+marker) surfaced no SFR-RAG mention; the second search summary explicitly noted no SFR-RAG content in the results.",
+     "evidence_notes": "Prior wave reported arxiv.org/html/2510.26205v2 as a full-text hit for a quoted 'SFR-RAG' baseline-comparison query; not reproduced this session."
+    },
+    {
+     "idx": 16,
+     "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted co-occurrence query returned the paper (T-RAG, now Findings of ACL 2026) but the search summary explicitly reported no SFR-RAG mention in the retrieved content.",
+     "evidence_notes": "Prior wave reported arxiv.org/html/2504.01346v4 as a full-text hit for a quoted 'SFR-RAG' baseline-comparison query; not reproduced this session. Paper now also published as aclanthology.org/2026.findings-acl.1902."
+    },
+    {
+     "idx": 17,
+     "title": "S2G-RAG: Structured Sufficiency and Gap Judging for Iterative Retrieval-Augmented QA",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query '\"S2G-RAG\" \"SFR-RAG\"' returned the S2G-RAG paper and separate SFR-RAG pages (mixed matching), with no citing sentence surfaced.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2604.23783 as a full-text hit for a quoted 'SFR-RAG' baseline-comparison query; not independently re-confirmed this session. Paper now also at aclanthology.org/2026.acl-long.1185."
+    },
+    {
+     "idx": 18,
+     "title": "FrugalRAG: Less is More in RL Finetuning for Multi-Hop Question Answering",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query '\"FrugalRAG\" \"SFR-RAG\"' returned the FrugalRAG paper and separate SFR-RAG pages (mixed matching), with no citing sentence surfaced.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2507.07634 as a full-text hit for a quoted 'SFR-RAG' baseline-comparison query; not independently re-confirmed this session."
+    },
+    {
+     "idx": 19,
+     "title": "Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search returned only the paper's own pages (ICLR 2026 / RAGLens) for a query containing its full title plus quoted 'SFR-RAG'; no citing sentence surfaced.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2512.08892 as a full-text hit for a quoted 'SFR-RAG' hallucination-faithfulness query; not independently re-confirmed this session."
+    },
+    {
+     "idx": 20,
+     "title": "REFRAG: Rethinking RAG based Decoding",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's search surfaced extensive REFRAG content but no evidence of an SFR-RAG mention; prior-wave evidence for this entry was already marked uncertain.",
+     "evidence_notes": "Prior wave's evidence was an OpenReview forum-page hit only, with a failed follow-up; this session also found nothing. This entry may not actually cite the target."
+    },
+    {
+     "idx": 21,
+     "title": "A Survey of RAG-Reasoning Systems in LLMs",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "low",
+     "usage_type": "background-mention",
+     "rationale": "The survey's ACL Anthology PDF appeared in this session's result list for a quoted 'SFR-RAG' query about a different paper (criterion: query did not contain the survey's title), indicating the term occurs in its full text; surveys of this type typically mention SFR-RAG within grouped coverage.",
+     "evidence_notes": "aclanthology.org/2025.findings-emnlp.648.pdf returned for the Kanana-related 'SFR-RAG' query and again for its own title query. No verbatim citing sentence was retrievable; impact 'low' is an inference from survey context and should be treated as tentative."
+    },
+    {
+     "idx": 22,
+     "title": "Reasoning-focused Multi-turn Conversational Retrieval (RECOR)",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the RECOR paper (title match) plus unrelated results; the search summary explicitly noted 'SFR-RAG' did not appear in the retrieved content.",
+     "evidence_notes": "Prior wave reported aclanthology.org/2026.findings-acl.129.pdf as a full-text hit for quoted 'SFR-RAG' site:aclanthology.org and flagged it as not individually re-verified; this session also could not verify it."
+    }
+   ]
+  },
+  {
+   "paper_key": "codeupdatearena",
+   "entries": [
+    {
+     "idx": 0,
+     "title": "ReCode: Updating Code API Knowledge with Reinforcement Learning",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Our experiments demonstrate that ReCode substantially boosts LLMs' code generation performance in dynamic API scenarios, especially on the unseen CodeUpdateArena task.",
+       "source_url": "https://arxiv.org/pdf/2506.20495"
+      },
+      {
+       "text": "It demonstrates that Qwen2.5-Coder-7B-Instruct can enhance performance on the unseen CodeUpdateArena, even surpassing 32B code model and reasoning model after training.",
+       "source_url": "https://arxiv.org/pdf/2506.20495"
+      },
+      {
+       "text": "The two dashed lines in the figure represent the Pass@1 of the corresponding models on CodeUpdateArena.",
+       "source_url": "https://arxiv.org/pdf/2506.20495"
+      }
+     ],
+     "mention_count_estimate": "many",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "ReCode (AAAI 2026) uses CodeUpdateArena as a held-out generalization benchmark, reporting Pass@1 numbers on it and highlighting CodeUpdateArena results as a headline finding of the paper.",
+     "evidence_notes": "Prior-wave snippets additionally describe the benchmark in detail ('670 program synthesis tasks, covering updates to 54 functions across seven different Python packages') and note ReCode trains/evaluates with its protocol; those exact sentences were not re-surfaced verbatim this session but are consistent with this session's quotes."
+    },
+    {
+     "idx": 1,
+     "title": "Model Editing for LLMs4Code: How Far are We?",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "This ICSE 2025 study of model editing for code LLMs discusses CodeUpdateArena individually as the benchmark addressing API-function updates via model editing, per this session's and the prior wave's search summaries of its text.",
+     "evidence_notes": "This session's search summary reported (wording not verified verbatim): 'CodeUpdateArena introduces a benchmark for updating LLMs with new API function knowledge to solve program synthesis tasks.' The paper's Semantic Scholar page matched the quoted co-occurrence query. Prior-wave snippet: 'CodeUpdateArena is a benchmark that focuses on API function changes for LLMs4Code editing...' (not re-confirmed verbatim this session, so not recorded as a quote)."
+    },
+    {
+     "idx": 2,
+     "title": "Conflict-Resolving and Sharpness-Aware Minimization for Generalized Knowledge Editing with Multiple Updates (CoRSA)",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "CodeUpdateArena (Liu et al., 2024) is a benchmark for knowledge editing in the code domain that evaluates whether language models can internalize API updates, with each instance consisting of a synthetic update to an existing API function paired with multiple program synthesis tasks whose correct solutions require using the updated functionality.",
+       "source_url": "https://arxiv.org/html/2602.03696v1"
+      }
+     ],
+     "mention_count_estimate": "many",
+     "impact": "high",
+     "usage_type": "evaluated-on",
+     "rationale": "CoRSA uses CodeUpdateArena as an evaluation benchmark and reports numeric results on it: this session's search reported CoRSA 'surpassing F-Learning by 3.16% Pass@1 and 5.48% Pass@5 in update efficacy on CodeUpdateArena (Liu et al., 2024)'.",
+     "evidence_notes": "The quoted benchmark-description sentence extends the prior-wave snippet (identical first clause) and was surfaced by this session's search of the paper's indexed text. The Pass@1/Pass@5 comparison sentence is kept here rather than in quotes because the search summary may have lightly rephrased its frame."
+    },
+    {
+     "idx": 3,
+     "title": "Lightweight Model Editing for LLMs to Correct Deprecated API Recommendations",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Liu et al. (2024) relied solely on LoRA, which yielded limited effectiveness with the maximum improvement in Pass@1 reaching only 6%.",
+       "source_url": "https://arxiv.org/html/2511.21022"
+      }
+     ],
+     "mention_count_estimate": "2-3",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "The paper individually discusses and critiques the target's LoRA-based knowledge-updating experiments (limited Pass@1 improvement), using that limitation to position its own lightweight model-editing approach.",
+     "evidence_notes": "This session independently re-confirmed the critique via the quoted-fragment query '\"relied solely on LoRA\" ... \"Liu et al\"', whose summary restated the same claim and numbers from arxiv.org/html/2511.21022, confirming the prior-wave snippet recorded here as the quote. The full bibliography entry ('Zeyu Leo Liu, Shrey Pandit, Xi Ye, Eunsol Choi, and Greg Durrett. 2024. Codeupdatearena: Benchmarking knowledge editing on api updates. arXiv preprint arXiv:2407.06249') was also confirmed this session."
+    },
+    {
+     "idx": 4,
+     "title": "GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "CodeUpdateArena valuably assesses LLM knowledge editing using synthetically generated API updates for functions in popular libraries, a different approach from using documented historical breaking changes.",
+       "source_url": "https://arxiv.org/html/2411.05830v1"
+      },
+      {
+       "text": "CodeUpdateArena evaluates LLMs' ability to adapt to API changes, such as adding a boolean flag, by running tests. However, the dataset is synthetic and are not extracted from real-life version changes.",
+       "source_url": "https://arxiv.org/html/2411.05830v1"
+      }
+     ],
+     "mention_count_estimate": "many",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "GitChameleon dedicates multiple sentences to comparing itself against CodeUpdateArena, contrasting the target's synthetic API updates with its own real, documented historical breaking changes.",
+     "evidence_notes": "First quote matches the prior-wave snippet and was re-surfaced this session; the second quote surfaced this session from the paper's indexed HTML. This session's summary also paraphrased: 'Unlike CodeUpdateArena's synthetic changes, GitChameleon evaluates LLMs on their ability to generate code for actual, documented historical breaking changes...'."
+    },
+    {
+     "idx": 5,
+     "title": "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "Unlike CodeUpdateArena's synthetic changes, GitChameleon 2.0 evaluates LLMs on their ability to generate code for actual, documented historical breaking changes within library versions they were likely exposed to during training.",
+       "source_url": "https://arxiv.org/html/2507.12367v2"
+      }
+     ],
+     "mention_count_estimate": "2-3",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "GitChameleon 2.0 positions its benchmark directly against CodeUpdateArena in a dedicated comparison, contrasting synthetic API updates with real documented breaking changes.",
+     "evidence_notes": "Quote surfaced in this session's searches of the paper's indexed text (both the '\"GitChameleon\" \"CodeUpdateArena\"' and follow-up queries). The paper also states GitChameleon 2.0 'distinguishes itself by focusing on the real-world scenario where developers are often constrained to specific library versions due to technical debt' in the same comparison context."
+    },
+    {
+     "idx": 6,
+     "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "medium",
+     "usage_type": "motivation",
+     "rationale": "Per this session's search summary of the paper's text, CODESYNC (ICML 2025) individually critiques CodeUpdateArena's synthetic construction and positions its own benchmark as addressing that limitation with authentic GitHub-release updates.",
+     "evidence_notes": "This session's search summary reported (near-verbatim, wording not independently verified, so not recorded as a quote): 'While CodeUpdateArena relies on unauthentic API updates synthesized by GPT-4 rather than real-world library updates, CODESYNC addresses this by using authentic updates.' Sources in the hit list: arxiv.org/pdf/2502.16645 and openreview.net/pdf?id=8NN0ZEBuQk."
+    },
+    {
+     "idx": 7,
+     "title": "CODEMENV: Benchmarking Large Language Models on Code Migration",
+     "status": "quotes-found",
+     "quotes": [
+      {
+       "text": "CodeUpdateArena (Liu et al., 2024) introduces a benchmark for updating LLMs with new API function knowledge to solve program synthesis tasks.",
+       "source_url": "https://arxiv.org/html/2506.00894"
+      },
+      {
+       "text": "Unlike CodeUpdateArena, CODEMENV does not supply the model with contextual knowledge of function changes during evaluation.",
+       "source_url": "https://arxiv.org/html/2506.00894"
+      }
+     ],
+     "mention_count_estimate": "2-3",
+     "impact": "medium",
+     "usage_type": "discussion",
+     "rationale": "CODEMENV (ACL 2025) describes CodeUpdateArena individually and explicitly contrasts its own evaluation design against it (no contextual knowledge of function changes supplied at evaluation time).",
+     "evidence_notes": "Both sentences surfaced in this session's search of the paper's indexed HTML; the second appeared within the frame 'However, CODEMENV takes a broader approach: Unlike CodeUpdateArena, ...'."
+    },
+    {
+     "idx": 8,
+     "title": "BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution",
+     "status": "citation-confirmed-no-quote",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "The paper's arXiv HTML was the top hit for this session's quoted co-occurrence query '\"BigCodeArena\" \"CodeUpdateArena\"', indicating the term likely occurs in its full text, but no citing sentence could be attributed to the paper itself.",
+     "evidence_notes": "The CodeUpdateArena description returned in that search ('a benchmark for knowledge editing in the code domain. An instance in the benchmark consists of a synthetic API function update paired with a program synthesis example...') closely tracks CodeUpdateArena's own abstract and cannot be attributed to BigCodeArena's text, so it is not recorded as a quote. The summary's claim that the two are 'related resources within the BigCode project ecosystem' is a search-engine inference, not paper text."
+    },
+    {
+     "idx": 9,
+     "title": "Challenges and Paths Towards AI for Software Engineering",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted co-occurrence query returned only the paper's own pages and the search summary explicitly reported no CodeUpdateArena reference in the retrieved excerpts.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2503.22625 as a full-text hit for '\"CodeUpdateArena\" \"Liu et al\"'; not reproduced this session. As a 75-page survey, a grouped mention is plausible but unverified."
+    },
+    {
+     "idx": 10,
+     "title": "Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper (ICML 2026 position paper surveying 672 code benchmarks) but no CodeUpdateArena mention appeared in the retrieved excerpts.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2501.10711 as a full-text hit for '\"CodeUpdateArena\" \"Liu et al\"'; not reproduced this session. CodeUpdateArena is plausibly one of the surveyed benchmarks (grouped/tabulated mention), but unverified."
+    },
+    {
+     "idx": 11,
+     "title": "Evaluating LLMs on Sequential API Call Through Automated Test Generation",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper (StateGen) but the search summary explicitly noted no CodeUpdateArena content in the retrieved excerpts.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2507.09481 as a full-text hit for '\"CodeUpdateArena\" \"Liu et al\"'; not reproduced this session."
+    },
+    {
+     "idx": 12,
+     "title": "Identifying Knowledge Editing Types in Large Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the KETI paper and CodeUpdateArena's own pages separately (mixed matching); no citing sentence from the KETI paper surfaced.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2409.19663 as a full-text hit for a quoted 'CodeUpdateArena' survey query; not independently re-confirmed this session."
+    },
+    {
+     "idx": 13,
+     "title": "Understanding Robustness of Model Editing in Code LLMs: An Empirical Study",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper as the top hit alongside a CodeUpdateArena review page, but no citing sentence could be attributed to the paper's own text.",
+     "evidence_notes": "The paper builds a controlled benchmark of synthetic API modifications for evaluating model editing - squarely CodeUpdateArena's territory - and prior wave found its abs/pdf pages as top hits for a quoted 'CodeUpdateArena' query, so a citation is very plausible but was not verified verbatim this session. The CUA description in this session's summary traced to themoonlight.io's review of CodeUpdateArena, not to this paper."
+    },
+    {
+     "idx": 14,
+     "title": "LLMs Meet Library Evolution: Evaluating Deprecated API Usage in LLM-based Code Completion",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper (ICSE 2025) but the search summary explicitly reported no CodeUpdateArena reference in the retrieved content.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2406.09834 (latest revision) as a full-text hit for a quoted 'CodeUpdateArena' API-evolution query, noting the citation would appear only in a revision postdating June 2024; not reproduced this session."
+    },
+    {
+     "idx": 15,
+     "title": "Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper's html/pdf as top hits together with CodeUpdateArena's own pdf, but the CodeUpdateArena description in the result summary could not be attributed to this paper's text.",
+     "evidence_notes": "The description returned ('CodeUpdateArena evaluates whether language models can internalize API updates, with each instance consisting of a synthetic update...') is identical to the CoRSA paper's phrasing, and the CoRSA pdf was also in the result list, so provenance is ambiguous. Prior wave reported arxiv.org/pdf/2606.03657 as a full-text hit for a quoted 'CodeUpdateArena' API-evolution query."
+    },
+    {
+     "idx": 16,
+     "title": "When LLMs Lag Behind: Knowledge Conflicts from Evolving APIs in Code Generation",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper's pages as top hits, but the CodeUpdateArena description in the result summary matched themoonlight.io's standalone review of CodeUpdateArena (also in the hit list), so no citing sentence could be attributed to this paper.",
+     "evidence_notes": "Topically adjacent (empirical study of LLM code generation under API evolution, 270 real-world updates from eight Python libraries); prior wave reported arxiv.org/pdf/2604.09515 as a full-text hit for a quoted 'CodeUpdateArena' API-evolution query. Citation plausible but unverified verbatim."
+    },
+    {
+     "idx": 17,
+     "title": "Composable Interventions for Language Models",
+     "status": "no-context-found",
+     "quotes": [],
+     "mention_count_estimate": "unknown",
+     "impact": "unknown",
+     "usage_type": "unknown",
+     "rationale": "This session's quoted query returned the paper's pages but the search summary explicitly reported no CodeUpdateArena reference in the retrieved content.",
+     "evidence_notes": "Prior wave reported arxiv.org/pdf/2407.06483 as a full-text hit for a quoted 'CodeUpdateArena' fine-tuning/LoRA query; not reproduced this session. The paper studies knowledge editing (among interventions), so a related-work citation is plausible but unverified."
+    }
+   ]
+  }
+ ]
+}
